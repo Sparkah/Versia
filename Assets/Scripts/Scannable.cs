@@ -5,7 +5,6 @@ using DG.Tweening;
 
 public class Scannable : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         transform.DOMoveX(20,40);

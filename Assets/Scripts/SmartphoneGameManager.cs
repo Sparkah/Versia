@@ -18,7 +18,6 @@ public class SmartphoneGameManager : MonoBehaviour
 
     private IEnumerator ChangeTextureCoroutine()
     {
-        Debug.Log(currentMaterials);
         Material[] rendMaterials = myRend.materials;
 
         if (currentMaterials < materialAmount)

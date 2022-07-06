@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OVRInputNewManager : MonoBehaviour
 {
-    void Start()
+    void LateStart()
     {
-        
+        transform.Rotate(new Vector3(0, 180, 0));
     }
 
     // Update is called once per frame
@@ -14,7 +15,7 @@ public class OVRInputNewManager : MonoBehaviour
     {
         if (OVRInput.Get(OVRInput.Button.One))
         {
-            Debug.Log("x");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     /*

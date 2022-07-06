@@ -7,18 +7,21 @@ public class SceneSettings : MonoBehaviour
 {
     public int TimeToNextScene = 300;
     private float time = 0;
-    //private Clock clock;
+    private BoxCollider boxCollider;
 
     private void Start()
     {
-        //clock = GetComponentInChildren<Clock>();
+        boxCollider = GetComponent<BoxCollider>();
     }
     private void Update()
     {
         time += Time.deltaTime;
         if(time>TimeToNextScene)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if(boxCollider!=null)
+            {
+                Destroy(boxCollider);
+            }
         }
 }
 }

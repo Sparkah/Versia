@@ -6,21 +6,22 @@ using UnityEngine.SceneManagement;
 public class SceneSettings : MonoBehaviour
 {
     public int TimeToNextScene = 300;
-    private float time = 0;
-    private BoxCollider boxCollider;
+    public int timeUIToDisappear = 5;
+    public int timeUIToAppear = 5;
 
+    private float time = 0;
     private void Start()
     {
-        boxCollider = GetComponent<BoxCollider>();
     }
+
     private void Update()
     {
         time += Time.deltaTime;
         if(time>TimeToNextScene)
         {
-            if(boxCollider!=null)
+            if(SceneManager.GetActiveScene().buildIndex+1!= SceneManager.sceneCountInBuildSettings)
             {
-                Destroy(boxCollider);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 }

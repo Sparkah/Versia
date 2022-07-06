@@ -162,10 +162,38 @@ public class OVRGrabber : MonoBehaviour
         m_lastRot = transform.rotation;
 
 		float prevFlex = m_prevFlex;
-		// Update values from inputs
-		m_prevFlex = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, m_controller);
+        // Update values from inputs
+        if (OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, m_controller) == 1)
+        {
+            m_prevFlex = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, m_controller);
+        }
+        else if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, m_controller) == 1)
+        {
+            m_prevFlex = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, m_controller);
+        }
+        else
+        {
+            m_prevFlex = 0;
+        }
 
-		CheckForGrabOrRelease(prevFlex);
+        if (m_controller == OVRInput.Controller.LTouch)
+        {
+            if (OVRInput.Get(OVRInput.Button.Three) || OVRInput.Get(OVRInput.Button.Four))
+            {
+                m_prevFlex = 1;
+            }
+        }
+
+        if (m_controller == OVRInput.Controller.RTouch)
+        {
+            if (OVRInput.Get(OVRInput.Button.One) || OVRInput.Get(OVRInput.Button.Two))
+            {
+                m_prevFlex = 1;
+            }
+        }
+
+
+        CheckForGrabOrRelease(prevFlex);
     }
 
     void OnDestroy()

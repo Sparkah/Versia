@@ -15,7 +15,7 @@ public class OVRInputNewManager : MonoBehaviour
     {
         if (OVRInput.Get(OVRInput.Button.One))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(0);
         }
     }
     /*

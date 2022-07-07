@@ -3,7 +3,22 @@ guid: 7946d7f9d7510e14e8ec274a12b7f43d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concrete-wall-6 - Copy
+    second: {fileID: 2800000, guid: 2302ca12b8e6de04d9f899e57fd142c6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: floors_Material_BaseColor
+    second: {fileID: 2800000, guid: 219682b9cbad5a64988587c26272870b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: floors_Material_Normal
+    second: {fileID: 2800000, guid: e466fb5bb496be74d989c3b3e4c57bb2, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

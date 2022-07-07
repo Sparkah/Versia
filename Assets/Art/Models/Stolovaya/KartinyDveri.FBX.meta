@@ -3,7 +3,37 @@ guid: b12cd7d5e08feef4ba9cb9e0d63c2e32
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 13d65602f239176550a788b02e45643f
+    second: {fileID: 2800000, guid: 8b1d38eb707a6ed45a04845c47b8d4a3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1631407811_25-papik-pro-p-gollandskii-natyurmort-26
+    second: {fileID: 2800000, guid: 7d8d1f255fc9e3d43bac2645eff12a44, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BLine_toilenblu
+    second: {fileID: 2800000, guid: 5a75b0b22ad3d1642b7c9de7aa6e8750, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Locker d_01-700x700
+    second: {fileID: 2800000, guid: 347b8b7984c736445913104edb201bc4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: frame2_texture2
+    second: {fileID: 2800000, guid: dc338d845beb0ab409d32a6dc069385f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lambert1_albedoNadpis
+    second: {fileID: 2800000, guid: d533e404dae69a241bc0bea0af407db3, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

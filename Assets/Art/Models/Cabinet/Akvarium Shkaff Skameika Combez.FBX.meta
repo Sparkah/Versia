@@ -3,7 +3,72 @@ guid: d010a7da3b6afd848bb70af07e1e02d5
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1a3898b2a4150f95373be4bff1fc5803--grasses-texture
+    second: {fileID: 2800000, guid: f20a72a5df672954cafe2029602f0cfb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 30880003308_d0e2560c46_o
+    second: {fileID: 2800000, guid: a23a8ad17cc78a84e96925bfcc439ef4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 53276681
+    second: {fileID: 2800000, guid: d4b3a604516e1984480497a9c64d7cf8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "9a5226f7fadce5071ad3edfdbbb19901 \u2014 \u043A\u043E\u043F\u0438\u044F"
+    second: {fileID: 2800000, guid: f4cf59e515070c2409bdb227a30063f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: A8338
+    second: {fileID: 2800000, guid: d52732f35dcbe8c4dbc9efe74b113b37, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cyanlambert1_Base_Color
+    second: {fileID: 2800000, guid: 7e593b5e40ca1bd4086868c4bab2f66b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Coral_PavonaClavus_512_albedo
+    second: {fileID: 2800000, guid: 5646691af552cef41b1d9a68d3e59f60, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TurquoT
+    second: {fileID: 2800000, guid: e4d069fc93fed694a947eacbd3ccceb1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: klupa2_BaseColor
+    second: {fileID: 2800000, guid: fb8dc9ef3f8303f4aafdea08d588ad19, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lambert1_Normal_DirectX
+    second: {fileID: 2800000, guid: 07e4c2633a0b004439b203809fa40876, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lambert1_Roughness
+    second: {fileID: 2800000, guid: b57990a36765b6f4b969776b3993d4e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lambert9SG_baseColor
+    second: {fileID: 2800000, guid: 49a4013df167f5242ab163c44cbb4cce, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: photo_2022-07-06_12-54-32
+    second: {fileID: 2800000, guid: 4d487783d57083748aaa16c76b7391f4, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -1,19 +1,20 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FishFoodLifetime : MonoBehaviour
 {
    private float _lifetime;
-
    private float _currentTime = 0;
+    private List<GameObject> _pooledObjects;
     // Start is called before the first frame update
     void Start()
     {
-        _lifetime = Random.Range(1f, 4f);
+        //_lifetime = Random.Range(1f, 4f);
         //Debug.Log("lifetime " +_lifetime);
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         _currentTime += Time.deltaTime;
         if (_currentTime >= _lifetime)
@@ -22,5 +23,5 @@ public class FishFoodLifetime : MonoBehaviour
             //_humanPool.ReturnToPool(human);
             //gameObject.SetActive(false);
         }
-    }
+    }*/
 }

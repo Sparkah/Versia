@@ -11,18 +11,21 @@ public class FishFoodSpawner : MonoBehaviour
     public float val1 = 1f;
     public float val2 = 0.5f;
     public float val3 = 0.1f;
-    
-    //fishfood object pool
-    //[SerializeField] private List<GameObject> _fishFoodPrefabs;
+
     [SerializeField] private int _capacityPool;
-    private FishFoodPool _FishFoodPool;
-    [SerializeField] private List<GameObject> _spawnedFishFood;
+    [SerializeField] private List<GameObject> _spawnedFishFood = new List<GameObject>();
+    //spawn 50 particle, object pool after
     
     private float maxUp;
     private float maxBottom;
     private float percent;
     private float gap;
     private float currentTime = 0f;
+
+    private int maxFishFood = 40;
+    private int newlySpawnedFishFood = 0;
+    private int currentFishFood =0;
+    
 
 
 
@@ -33,16 +36,10 @@ public class FishFoodSpawner : MonoBehaviour
         percent = (maxUp - maxBottom) / 100;
     }
 
-    private void Start()
-    {
-        _FishFoodPool = new FishFoodPool(fishFood, _capacityPool, up);
-    }
-
-
     void Update()
     {
         var differenece = (up.position.y - bottom.position.y) / percent * -1;
-
+        Debug.Log(_spawnedFishFood.ToArray().Length);
         if (differenece > 5)
         {
             currentTime += Time.deltaTime;
@@ -51,7 +48,22 @@ public class FishFoodSpawner : MonoBehaviour
             if (currentTime > gap)
             {
                 //var human = _FishFoodPool.GetHuman();
-                Instantiate(fishFood, up.position, Quaternion.identity);
+                if (newlySpawnedFishFood < maxFishFood)
+                {
+                    var food = Instantiate(fishFood, up.position, Quaternion.identity);
+                    _spawnedFishFood.Add(food);
+                    newlySpawnedFishFood += 1;
+                }
+                else if(currentFishFood<maxFishFood)
+                {
+                    _spawnedFishFood[currentFishFood].transform.position = up.position;
+                    currentFishFood += 1;
+                }
+                else
+                {
+                    currentFishFood = 0;
+                }
+
                 currentTime = 0;
                // Debug.Log("fishfood");
             }
@@ -82,47 +94,4 @@ public class FishFoodSpawner : MonoBehaviour
     }
 
 
-}
-
-internal class FishFoodPool
-{
-    private int _capacityPool;
-    private GameObject _humanViews;
-    private Stack<GameObject> _humanPool;
-    private Transform _rootPool;
-
-    internal FishFoodPool(GameObject humanViews, int capacityPool, Transform root)
-    {
-        _humanViews = humanViews;
-        _capacityPool = capacityPool;
-        _rootPool = root;
-        _humanPool = new Stack<GameObject>();
-    }
-
-    public GameObject GetHuman()
-    {
-        GameObject human;
-
-        if (_humanPool.Count == 0)
-        {
-            for (var i = 0; i <= _capacityPool; i++)
-            {
-                human = UnityEngine.Object.Instantiate(_humanViews);
-                ReturnToPool(human);
-            }
-        }
-
-        human = _humanPool.Pop();
-        human.gameObject.SetActive(true);
-        human.transform.SetParent(null);
-        return human;
-    }
-
-    public void ReturnToPool(GameObject fishFood)
-    {
-        fishFood.transform.SetParent(_rootPool);
-        fishFood.transform.localPosition = Vector3.zero;
-        _humanPool.Push(fishFood);
-        fishFood.gameObject.SetActive(false);
-    }
 }

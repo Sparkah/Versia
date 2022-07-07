@@ -14,8 +14,8 @@ public class Cockroach : MonoBehaviour
         deadCockroach.SetActive(false);
         anim = GetComponent<Animation>();
     }
-    
-    
+
+
     // void Update()
     // {
     //     currentTime += Time.deltaTime;
@@ -25,6 +25,14 @@ public class Cockroach : MonoBehaviour
     //         isKilled = true;
     //     }
     // }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            KillCockroach();
+        }
+    }
 
     public void KillCockroach()
     {

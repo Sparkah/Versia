@@ -11,10 +11,16 @@ public class SceneSettings : MonoBehaviour
     public int scareSpeedMultiplier;
 
     private float time = 0;
+    private CanvasManager canvasManager;
 
-    private void Start()
+public void SetCanvasManager(CanvasManager _canvas)
     {
+        canvasManager = _canvas;
     }
+    public void DecreaseCanvasFade()
+    {
+        canvasManager.DecreaseScreFader();
+    }    
 
     private void Update()
     {

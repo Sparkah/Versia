@@ -17,6 +17,10 @@ public class OVRInputNewManager : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+        if (OVRInput.Get(OVRInput.Button.Any))
+        {
+            GetComponent<SceneSettings>().DecreaseCanvasFade();
+        }
     }
     /*
      One                       = 0x00000001, ///< Maps to RawButton: [Gamepad, Touch, RTouch: A], [LTouch: X], [Remote: Start]

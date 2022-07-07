@@ -5,43 +5,58 @@ using UnityEngine;
 public class SmartphoneGameManager : MonoBehaviour
 {
     [SerializeField] private Material[] materials;
-    MeshRenderer myRend;
-    private int materialAmount;
-    private int currentMaterials;
+    //Set these Textures in the Inspector
+    public Texture[] m_MainTexture;
+    Renderer m_Renderer;
+    private int textureCount = 0;
+    private int textureAmount;
+    private ParticleSystem ps;
+
     void Start()
     {
-        myRend = GetComponent<MeshRenderer>();
-        materialAmount = materials.Length;
-        currentMaterials = 0;
-        StartCoroutine(ChangeTextureCoroutine());
+        //Fetch the Renderer from the GameObject
+        m_Renderer = GetComponent<Renderer>();
+        textureAmount = m_MainTexture.Length;
+        StartCoroutine(SetMaterialTexture());
+        ps = GetComponentInChildren<ParticleSystem>();
     }
 
-    private IEnumerator ChangeTextureCoroutine()
+    // Use this for initialization
+    IEnumerator SetMaterialTexture()
     {
-        Material[] rendMaterials = myRend.materials;
-
-        if (currentMaterials < materialAmount)
+        //15-30 = success
+        if (textureCount < textureAmount - 1)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.1f);
+            m_Renderer.materials[1].SetTexture("_MainTex", m_MainTexture[textureCount]);
+            textureCount++;
 
-            // Get the current material applied on the GameObject
-            Material oldMaterial = rendMaterials[0];
-            // Set the new material on the GameObject
-            Material[] newMaterials = new Material[] { oldMaterial, materials[currentMaterials] };
-            myRend.materials = newMaterials;
-            currentMaterials += 1;
-            StartCoroutine(ChangeTextureCoroutine());
+            StartCoroutine(SetMaterialTexture());
         }
-        else 
+        else
         {
-            currentMaterials = 0;
-            yield return new WaitForSeconds(1f);
-            // Get the current material applied on the GameObject
-            Material oldMaterial = rendMaterials[0];
-            // Set the new material on the GameObject
-            Material[] newMaterials = new Material[] { oldMaterial, materials[currentMaterials] };
-            myRend.materials = newMaterials;
-            StartCoroutine(ChangeTextureCoroutine());
+            textureCount = 0;
+            StartCoroutine(SetMaterialTexture());
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player") && textureCount>=15&&textureCount<=30)
+        {
+            m_Renderer.materials[1].color = Color.green;
+            StartCoroutine(ReturnColor());
+        }
+        else if(other.CompareTag("Player"))
+        {
+            m_Renderer.materials[1].color = Color.red;
+            StartCoroutine(ReturnColor());
+        }
+    }
+
+    IEnumerator ReturnColor()
+    {
+        yield return new WaitForSeconds(1f);
+        m_Renderer.materials[1].color = Color.white;
     }
 }

@@ -1,9 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
-using TMPro;
 
 public class CanvasManager : MonoBehaviour
 {
@@ -21,6 +19,7 @@ public class CanvasManager : MonoBehaviour
 
     void Start()
     {
+        sceneSettings.SetCanvasManager(this.gameObject.GetComponent<CanvasManager>());
         scareFadeMultiplier = sceneSettings.scareSpeedMultiplier;
         timeUIToDisappear = sceneSettings.timeUIToDisappear;
         timeUIToAppear = sceneSettings.timeUIToAppear;
@@ -37,25 +36,34 @@ public class CanvasManager : MonoBehaviour
             descriptionText.DOFade(0, 1);
             fadeImage.DOFade(0, timeUIToDisappear);
             StartCoroutine(ScareFader());
-            Debug.Log("Fade Started");
-
         }
         if (time > timeToNextScene - timeUIToAppear&&canFade)
         {
             canFade = false;
             fadeImage.DOFade(1, timeUIToAppear);
         }
+
     }
 
     private IEnumerator ScareFader()
     {
-        yield return new WaitForSeconds(5f);
-        Debug.Log("Fading");
-        scaryFadeMain.DOFade(0.01f*scareFadeMultiplier, 5f);
+        yield return new WaitForSeconds(2f);
+        scaryFadeMain.DOFade(0.01f*scareFadeMultiplier, 2f);
         if (scareFadeMultiplier < 12f)
         {
             scareFadeMultiplier += 0.5f;
         }
         StartCoroutine(ScareFader());
+    }
+    public void DecreaseScreFader()
+    {
+        if (scareFadeMultiplier > 1)
+        {
+            scareFadeMultiplier -= 1;
+        }
+        else
+        {
+            scareFadeMultiplier = 0;
+        }
     }
 }

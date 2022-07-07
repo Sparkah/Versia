@@ -8,8 +8,10 @@ public class SceneSettings : MonoBehaviour
     public int TimeToNextScene = 300;
     public int timeUIToDisappear = 5;
     public int timeUIToAppear = 5;
+    public int scareSpeedMultiplier;
 
     private float time = 0;
+
     private void Start()
     {
     }

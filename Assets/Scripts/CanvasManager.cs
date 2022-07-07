@@ -12,37 +12,50 @@ public class CanvasManager : MonoBehaviour
     private int timeToNextScene;
     [SerializeField] private SceneSettings sceneSettings;
     private float time;
-    private Image image;
-    private Text descr;
+    [SerializeField] private Image fadeImage;
+    [SerializeField] private Text descriptionText;
     private bool canFade =true;
     private bool canAppear = true;
+    [SerializeField] private Image scaryFadeMain;
+    private float scareFadeMultiplier;
 
     void Start()
     {
+        scareFadeMultiplier = sceneSettings.scareSpeedMultiplier;
         timeUIToDisappear = sceneSettings.timeUIToDisappear;
         timeUIToAppear = sceneSettings.timeUIToAppear;
         timeToNextScene = sceneSettings.TimeToNextScene;
-        Debug.Log(timeUIToDisappear);
         time = 0;
-        descr = GetComponentInChildren<Text>();
-        image = GetComponentInChildren<Image>();
     }
 
     void Update()
     {
         time += Time.deltaTime;
-        Debug.Log(time);
         if(time>timeUIToDisappear && canAppear)
         {
             canAppear = false;
-            descr.DOFade(0, 1);
-            image.DOFade(0, timeUIToDisappear);
+            descriptionText.DOFade(0, 1);
+            fadeImage.DOFade(0, timeUIToDisappear);
+            StartCoroutine(ScareFader());
+            Debug.Log("Fade Started");
 
         }
         if (time > timeToNextScene - timeUIToAppear&&canFade)
         {
             canFade = false;
-            image.DOFade(1, timeUIToAppear);
+            fadeImage.DOFade(1, timeUIToAppear);
         }
+    }
+
+    private IEnumerator ScareFader()
+    {
+        yield return new WaitForSeconds(5f);
+        Debug.Log("Fading");
+        scaryFadeMain.DOFade(0.01f*scareFadeMultiplier, 5f);
+        if (scareFadeMultiplier < 12f)
+        {
+            scareFadeMultiplier += 0.5f;
+        }
+        StartCoroutine(ScareFader());
     }
 }

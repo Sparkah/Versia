@@ -3,7 +3,32 @@ guid: 161ebdd30f0bfb64c927ea553f68421a
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: '1Copy '
+    second: {fileID: 2800000, guid: 6ac4c6263f9953849b5f85fb4a697d6f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Factory_DefaultMaterial_AlbedoTransparency
+    second: {fileID: 2800000, guid: a58021e27532fb74eacde7808d8c8733, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Factory_DefaultMaterial_MetallicSmoothness
+    second: {fileID: 2800000, guid: 07cc151be2e89ee4c98c1ccfc1e6bced, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Factory_DefaultMaterial_Normal
+    second: {fileID: 2800000, guid: f2224be6558a17f46a827c4a0915f87b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rusted-Metal-and-Paint-Texture
+    second: {fileID: 2800000, guid: 440a9cf7df32d2042ade3c16f497d49a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

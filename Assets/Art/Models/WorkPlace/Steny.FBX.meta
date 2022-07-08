@@ -3,7 +3,52 @@ guid: d7296f85f5b41c94f8e3b268edd307bd
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: '1Copy '
+    second: {fileID: 2800000, guid: 17fc53cf451119c40a0d5f48a9ee347f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 4
+    second: {fileID: 2800000, guid: e7e306f1a22336042864d3f09d2ff70a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 6870.970
+    second: {fileID: 2800000, guid: ff745ddd6f1bff64c8c326f69f35a3f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: A8338
+    second: {fileID: 2800000, guid: 1680251e393b9cd46ad10fb8b9e59828, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Locker d_01-700x700
+    second: {fileID: 2800000, guid: 121d0137e74a49548adf61e52f23d4c7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rusted-Metal-and-Paint-Texture
+    second: {fileID: 2800000, guid: 4f1db372048b7394c9b14efc6e5c7ac1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concrete-wall-6 - Copy
+    second: {fileID: 2800000, guid: 3eb185b4d2c6dfd44b83c9c6ffd0247d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lambert1_albedoNadpis
+    second: {fileID: 2800000, guid: ca3e8f391639ff945ba9ba933372687d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: struktur
+    second: {fileID: 2800000, guid: 62f5c4ca9424120429ab3155208124d1, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

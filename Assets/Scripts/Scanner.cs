@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Scanner : MonoBehaviour
 {
+    [SerializeField] private Material scannerMaterial;
+    private float xOffSet=0;
+    private float yOffSet=0;
     void Update()
     {
         RaycastHit hit;
@@ -16,5 +19,11 @@ public class Scanner : MonoBehaviour
                 Destroy(hit.transform.gameObject);
             }
         }
+    }
+    private void FixedUpdate()
+    {
+        xOffSet += 0.01f;
+        yOffSet += 0.01f;
+        scannerMaterial.SetTextureOffset("_MainTex", new Vector2(xOffSet, yOffSet));
     }
 }

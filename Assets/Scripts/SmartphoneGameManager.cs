@@ -10,15 +10,14 @@ public class SmartphoneGameManager : MonoBehaviour
     Renderer m_Renderer;
     private int textureCount = 0;
     private int textureAmount;
-    private ParticleSystem ps;
+    private AudioSource _audiSource;
 
     void Start()
     {
-        //Fetch the Renderer from the GameObject
+        _audiSource = GetComponent<AudioSource>();
         m_Renderer = GetComponent<Renderer>();
         textureAmount = m_MainTexture.Length;
         StartCoroutine(SetMaterialTexture());
-        ps = GetComponentInChildren<ParticleSystem>();
     }
 
     // Use this for initialization
@@ -42,7 +41,7 @@ public class SmartphoneGameManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player") && textureCount>=15&&textureCount<=30)
+        if (other.CompareTag("Player") && textureCount>=15&&textureCount<=30)
         {
             m_Renderer.materials[1].color = Color.green;
             StartCoroutine(ReturnColor());
@@ -56,6 +55,7 @@ public class SmartphoneGameManager : MonoBehaviour
 
     IEnumerator ReturnColor()
     {
+        _audiSource.Play();
         yield return new WaitForSeconds(1f);
         m_Renderer.materials[1].color = Color.white;
     }

@@ -34,6 +34,7 @@ public void SetCanvasManager(CanvasManager _canvas)
             else
             {
                 SceneManager.LoadScene(0);
+                SceneChangeSystem.current = 0;
             }
         }
     }

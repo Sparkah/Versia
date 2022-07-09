@@ -8,6 +8,7 @@ public static class SceneChangeSystem
 
     public static void NextScene()
     {
+        
         current += 1;
         SceneManager.LoadScene(_scenes[current]);
     }

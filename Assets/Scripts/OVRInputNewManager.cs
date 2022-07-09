@@ -17,6 +17,10 @@ public class OVRInputNewManager : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+        if(OVRInput.Get(OVRInput.Button.Two))
+        {
+            SceneChangeSystem.NextScene();
+        }
         if (OVRInput.Get(OVRInput.Button.Any))
         {
             GetComponent<SceneSettings>().DecreaseCanvasFade();

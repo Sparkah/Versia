@@ -201,7 +201,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneSettings: {fileID: 0}
   fadeImage: {fileID: 2941598757189259577}
-  descriptionText: {fileID: 2941598758926174586}
   scaryFadeMain: {fileID: 6554653560824706893}
 --- !u!1 &2941598757943291128
 GameObject:
@@ -446,7 +445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2941598758926174587
 RectTransform:
   m_ObjectHideFlags: 0

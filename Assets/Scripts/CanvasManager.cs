@@ -11,7 +11,7 @@ public class CanvasManager : MonoBehaviour
     [SerializeField] private SceneSettings sceneSettings;
     private float time;
     [SerializeField] private Image fadeImage;
-    [SerializeField] private Text descriptionText;
+   // [SerializeField] private Text descriptionText;
     private bool canFade =true;
     private bool canAppear = true;
     [SerializeField] private Image scaryFadeMain;
@@ -33,7 +33,7 @@ public class CanvasManager : MonoBehaviour
         if(time>timeUIToDisappear && canAppear)
         {
             canAppear = false;
-            descriptionText.DOFade(0, 1);
+            //descriptionText.DOFade(0, 1);
             fadeImage.DOFade(0, timeUIToDisappear);
             StartCoroutine(ScareFader());
         }

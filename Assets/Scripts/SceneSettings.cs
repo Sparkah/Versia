@@ -27,10 +27,14 @@ public void SetCanvasManager(CanvasManager _canvas)
         time += Time.deltaTime;
         if(time>TimeToNextScene)
         {
-            if(SceneManager.GetActiveScene().buildIndex+1!= SceneManager.sceneCountInBuildSettings)
+            if (SceneChangeSystem.current < SceneManager.sceneCountInBuildSettings)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneChangeSystem.NextScene();
+            }
+            else
+            {
+                SceneManager.LoadScene(0);
             }
         }
-}
+    }
 }

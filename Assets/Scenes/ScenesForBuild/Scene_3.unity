@@ -1425,17 +1425,9 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 5945406736043394680}
-    - target: {fileID: 2941598757379510870, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2941598757379510877, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
       propertyPath: m_Name
       value: LightCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 2941598757379510877, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
@@ -18856,6 +18848,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0fa764f07653f479c5f4de5a3f465d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _leftArmScanner: {fileID: 0}
+  _rightArmScanner: {fileID: 0}
 --- !u!4 &5945406735931497865
 Transform:
   m_ObjectHideFlags: 0
@@ -32689,6 +32683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0fa764f07653f479c5f4de5a3f465d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _leftArmScanner: {fileID: 0}
+  _rightArmScanner: {fileID: 0}
 --- !u!1 &8997731429484933939
 GameObject:
   m_ObjectHideFlags: 0

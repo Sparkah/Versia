@@ -14,7 +14,15 @@ public class Scanner : MonoBehaviour
     [SerializeField] private GameObject lightCone;
     [SerializeField] private Transform rightHand;
     [SerializeField] private Transform leftHand;
-    private DistanceGrabbable distanceGrabbable;
+
+    //left arm
+    [SerializeField] private Light light3;
+    [SerializeField] private Light light4;
+    [SerializeField] private GameObject lightCone2;
+
+    public bool nearRightHand;
+    public bool nearLeftHand;
+
     void Update()
     {
         RaycastHit hit;
@@ -25,6 +33,26 @@ public class Scanner : MonoBehaviour
             {
                 Destroy(hit.transform.gameObject);
             }
+        }
+
+        if(Vector3.Distance(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z)
+            , new Vector3(rightHand.transform.position.x, rightHand.transform.position.y, rightHand.transform.position.z))<1f)
+        {
+            nearRightHand = true;
+        }
+        else
+        {
+            nearRightHand = false;
+        }
+
+        if (Vector3.Distance(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z)
+    , new Vector3(leftHand.transform.position.x, leftHand.transform.position.y, leftHand.transform.position.z)) < 1f)
+        {
+            nearLeftHand = true;
+        }
+        else
+        {
+            nearLeftHand = false;
         }
     }
     private void FixedUpdate()
@@ -41,6 +69,9 @@ public class Scanner : MonoBehaviour
             light1.gameObject.SetActive(true);
             light2.gameObject.SetActive(true);
             lightCone.SetActive(true);
+            light3.gameObject.SetActive(true);
+            light4.gameObject.SetActive(true);
+            lightCone2.SetActive(true);
         }
 
         if(other.CompareTag("LeftArm"))
@@ -56,6 +87,9 @@ public class Scanner : MonoBehaviour
             light1.gameObject.SetActive(false);
             light2.gameObject.SetActive(false);
             lightCone.SetActive(false);
+            light3.gameObject.SetActive(false);
+            light4.gameObject.SetActive(false);
+            lightCone2.SetActive(false);
         }
         if (other.CompareTag("LeftArm"))
         {

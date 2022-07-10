@@ -261,8 +261,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4610977246214983684}
-  - component: {fileID: 4610977246214983682}
-  - component: {fileID: 4610977246214983685}
   m_Layer: 0
   m_Name: Scanners
   m_TagString: Untagged
@@ -286,33 +284,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4610977246214983682
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4610977246214983687}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1.4091523, y: 3.6066384, z: 1.3567407}
-  m_Center: {x: 0.1746644, y: 0.10428434, z: -0.26670814}
---- !u!136 &4610977246214983685
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4610977246214983687}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.7564512
-  m_Height: 4.3082705
-  m_Direction: 1
-  m_Center: {x: -0.00000035696735, y: 0.017339498, z: -0.25645143}
 --- !u!1 &4610977246589676000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +976,9 @@ MonoBehaviour:
   lightCone: {fileID: 6007368095079338336}
   rightHand: {fileID: 0}
   leftHand: {fileID: 0}
+  light3: {fileID: 4610977247166546695}
+  light4: {fileID: 4610977247426262634}
+  lightCone2: {fileID: 4610977247242744554}
 --- !u!114 &5650726145594316502
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,31 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class OVRInputNewManager : MonoBehaviour
 {
+    [SerializeField] private GameObject _leftArmScanner;
+    [SerializeField] private GameObject _rightArmScanner;
+
     void LateStart()
     {
         transform.Rotate(new Vector3(0, 180, 0));
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (OVRInput.Get(OVRInput.Button.One))
+        if (OVRInput.Get(OVRInput.Button.One) || OVRInput.Get(OVRInput.Button.Two) || OVRInput.Get(OVRInput.Button.SecondaryShoulder) || OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) || OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
         {
-            SceneManager.LoadScene(0);
+            _leftArmScanner.gameObject.SetActive(false);
+            _rightArmScanner.gameObject.SetActive(true);
+            //_righArmScanMaesh.
         }
-        if(OVRInput.Get(OVRInput.Button.Two))
+
+        if (OVRInput.Get(OVRInput.Button.Three)|| OVRInput.Get(OVRInput.Button.Four) || OVRInput.Get(OVRInput.Button.PrimaryShoulder) || OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) || OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
         {
-            SceneChangeSystem.NextScene();
+            _leftArmScanner.gameObject.SetActive(true);
+            _rightArmScanner.gameObject.SetActive(false);
+            //_leftArmScanMesh.
         }
+
         if (OVRInput.Get(OVRInput.Button.Any))
         {
             GetComponent<SceneSettings>().DecreaseCanvasFade();
         }
     }
-    /*
-     One                       = 0x00000001, ///< Maps to RawButton: [Gamepad, Touch, RTouch: A], [LTouch: X], [Remote: Start]
-		Two                       = 0x00000002, ///< Maps to RawButton: [Gamepad, Touch, RTouch: B], [LTouch: Y], [Remote: Back]
-		Three                     = 0x00000004, ///< Maps to RawButton: [Gamepad, Touch: X], [LTouch, RTouch, Remote: None]
-		Four                      = 0x00000008, ///< Maps to RawButton: [Gamepad, Touch: Y], [LTouch, RTouch, Remote: None]
-    */
 }

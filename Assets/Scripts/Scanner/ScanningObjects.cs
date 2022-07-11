@@ -5,6 +5,8 @@ public class ScanningObjects : MonoBehaviour
     [SerializeField] private LayerMask scanningLayer;
     [SerializeField] private ScanDetector scanDetector1;
     [SerializeField] private ScanDetector scanDetector2;
+
+    [SerializeField] private BoxBeepSoundSystem beepSound;
     void Update()
     {
         RaycastHit hit;
@@ -12,17 +14,18 @@ public class ScanningObjects : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, scanningLayer))
         {
             var hitBox = hit.transform.gameObject.GetComponent<Scannable>();
-            if (hitBox != null && hitBox.isScanned == false)
+            if (hitBox != null && hitBox.isScanned == false) 
             {
-                //коробка в скан зоне и не просканирована
-                if (hitBox.isInScanZone)
+                
+                if (hitBox.isInScanZone) //коробка в скан зоне и не просканирована
                 {
                     hitBox.ScanBox(); //чтобы просканировать коробку только один раз
                     //Debug.Log("YES");
 
                     //секция со звуком
+                    beepSound.PlayCurrentSound(hitBox.boxNumber);
 
-                    //эффект попадания (моргание света нужного цвета)
+                    //моргание цвета у детекторов
                     if (scanDetector1 != null && scanDetector2 != null)
                     {
                         scanDetector1.DetectorGreen();
@@ -35,8 +38,9 @@ public class ScanningObjects : MonoBehaviour
                     //Debug.Log("NO");
 
                     //секция со звуком
+                    beepSound.PlayErrorSound();
 
-                    //эффект попадания (моргание света нужного цвета)
+                    //моргание цвета у детекторов
                     if (scanDetector1 != null && scanDetector2 != null)
                     {
                         scanDetector1.DetectorRed();

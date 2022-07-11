@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EndConveerZone : MonoBehaviour
 {
+    [SerializeField] private BoxBeepSoundSystem beep;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("ScanBox"))
@@ -10,7 +11,15 @@ public class EndConveerZone : MonoBehaviour
 
             if (box != null)
             {
-                box.ResetBox();
+                if(box.isGetNumber == false)
+                {
+                    var currentBoxNumber = beep.GetNumberToBox();
+                    box.SetBoxNumber(currentBoxNumber);
+                }
+                else
+                {
+                    box.ResetBox();
+                }
                 //Debug.Log("reset box status");
             }
         }

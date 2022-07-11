@@ -8,6 +8,16 @@ ModelImporter:
     second: Take 001
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cardboard_Box_Mat
+    second: {fileID: 2100000, guid: f041a0562a03f9d4eab9291bf57b0c57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #99
+    second: {fileID: 2100000, guid: 7e178a5d7ad604d4d8241eac69df6d93, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Cardboard_boxes_1_Normal

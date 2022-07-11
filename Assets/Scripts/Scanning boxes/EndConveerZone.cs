@@ -10,7 +10,7 @@ public class EndConveerZone : MonoBehaviour
 
             if (box != null)
             {
-                box.isScanned = false;
+                box.ResetBox();
                 //Debug.Log("reset box status");
             }
         }

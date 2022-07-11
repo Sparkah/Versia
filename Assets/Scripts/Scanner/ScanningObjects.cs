@@ -14,10 +14,10 @@ public class ScanningObjects : MonoBehaviour
             var hitBox = hit.transform.gameObject.GetComponent<Scannable>();
             if (hitBox != null && hitBox.isScanned == false)
             {
-                //попали в коробку, выясняем в скан зоне она или нет
+                //коробка в скан зоне и не просканирована
                 if (hitBox.isInScanZone)
                 {
-                    hitBox.isScanned = true; //чтобы просканировать коробку только один раз
+                    hitBox.ScanBox(); //чтобы просканировать коробку только один раз
                     //Debug.Log("YES");
 
                     //секция со звуком
@@ -29,9 +29,9 @@ public class ScanningObjects : MonoBehaviour
                         scanDetector2.DetectorGreen();
                     }
                 }
-                else
+                else //коробка НЕ в скан зоне и не просканирована
                 {
-                    hitBox.isScanned = true; //чтобы просканировать коробку только один раз
+                    hitBox.ScanBox(); //чтобы просканировать коробку только один раз
                     //Debug.Log("NO");
 
                     //секция со звуком

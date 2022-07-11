@@ -2,7 +2,7 @@ using OculusSampleFramework;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class Scanner : MonoBehaviour
 {
@@ -25,16 +25,6 @@ public class Scanner : MonoBehaviour
 
     void Update()
     {
-        RaycastHit hit;
-        
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
-        {
-            if(hit.transform.gameObject.GetComponent<Scannable>()!=null)
-            {
-                Destroy(hit.transform.gameObject);
-            }
-        }
-
         if(Vector3.Distance(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z)
             , new Vector3(rightHand.transform.position.x, rightHand.transform.position.y, rightHand.transform.position.z))<1f)
         {

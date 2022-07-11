@@ -1,12 +1,20 @@
 using UnityEngine;
-
+[RequireComponent(typeof(CountingBoxes))]
 public class ScanningObjects : MonoBehaviour
 {
     [SerializeField] private LayerMask scanningLayer;
+
     [SerializeField] private ScanDetector scanDetector1;
     [SerializeField] private ScanDetector scanDetector2;
 
+    private CountingBoxes countBoxesDisplay;
+
     [SerializeField] private BoxBeepSoundSystem beepSound;
+
+    private void Start()
+    {
+        countBoxesDisplay = GetComponent<CountingBoxes>();
+    }
     void Update()
     {
         RaycastHit hit;
@@ -31,6 +39,9 @@ public class ScanningObjects : MonoBehaviour
                         scanDetector1.DetectorGreen();
                         scanDetector2.DetectorGreen();
                     }
+
+                    //обновить счётчик коробок
+                    countBoxesDisplay.UpdateCounter();
                 }
                 else //коробка НЕ в скан зоне и не просканирована
                 {
@@ -46,6 +57,9 @@ public class ScanningObjects : MonoBehaviour
                         scanDetector1.DetectorRed();
                         scanDetector2.DetectorRed();
                     }
+
+                    //обновить счётчик коробок
+                    countBoxesDisplay.ResetCounter();
                 }
             }
         }

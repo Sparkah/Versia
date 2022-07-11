@@ -11,12 +11,12 @@ public class EndConveerZone : MonoBehaviour
 
             if (box != null)
             {
-                if(box.isGetNumber == false)
+                if(box.isGetNumber == false) //коробка в начале линии. присваиваем коробке порядковый номер, чтобы впоследствии извлечь звук сканирования по этому номеру
                 {
                     var currentBoxNumber = beep.GetNumberToBox();
                     box.SetBoxNumber(currentBoxNumber);
                 }
-                else
+                else // коробка доехала до конца линии, сбрасываем её настройки
                 {
                     box.ResetBox();
                 }

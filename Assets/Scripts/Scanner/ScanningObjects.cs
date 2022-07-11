@@ -22,7 +22,7 @@ public class ScanningObjects : MonoBehaviour
                     hitBox.ScanBox(); //чтобы просканировать коробку только один раз
                     //Debug.Log("YES");
 
-                    //секция со звуком
+                    //воспроизвести звук из массива звуков по порядковому номеру коробки
                     beepSound.PlayCurrentSound(hitBox.boxNumber);
 
                     //моргание цвета у детекторов
@@ -37,7 +37,7 @@ public class ScanningObjects : MonoBehaviour
                     hitBox.ScanBox(); //чтобы просканировать коробку только один раз
                     //Debug.Log("NO");
 
-                    //секция со звуком
+                    //воспроизвести звук ошибки
                     beepSound.PlayErrorSound();
 
                     //моргание цвета у детекторов

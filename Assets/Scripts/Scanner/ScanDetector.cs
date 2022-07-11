@@ -21,7 +21,7 @@ public class ScanDetector : MonoBehaviour
 
     void Update()
     {
-        if(isActive)
+        if(isActive) //пока активно, отсчитываетс€ таймер до деактивации
         {
             currentTime+= Time.deltaTime;
             if(currentTime > duration)
@@ -51,7 +51,7 @@ public class ScanDetector : MonoBehaviour
         isActive = true;
     }
 
-    private void SetBaseDetectorSettings()
+    private void SetBaseDetectorSettings() //устанавливает стандартные значени€
     {
         targetMesh.material = baseMaterial;
         redLight.SetActive(false);

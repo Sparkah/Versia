@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1446331424499790800}
   - component: {fileID: 1446331424499790814}
   - component: {fileID: 1446331424499790801}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1446331425146416598}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DeadCockroach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1446331425428379192}
   - component: {fileID: 1446331425428379193}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Splatter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 1446331425851172927}
   - component: {fileID: 1446331425851172926}
   - component: {fileID: 1446331425851172924}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cockroach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 6510486816857586672}
   - component: {fileID: 7923589663244678229}
   - component: {fileID: 5337550166242558111}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Optimized Cockroach
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -35,7 +35,7 @@ public class FishFoodSpawner : MonoBehaviour
     void Update()
     {
         var differenece = (up.position.y - bottom.position.y) / percent * -1;
-        Debug.Log(_spawnedFishFood.ToArray().Length);
+        //Debug.Log(_spawnedFishFood.ToArray().Length);
         if (differenece > 5)
         {
             currentTime += Time.deltaTime;

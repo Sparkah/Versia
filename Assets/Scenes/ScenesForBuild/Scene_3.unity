@@ -3561,12 +3561,13 @@ GameObject:
   - component: {fileID: 817607209958498812}
   - component: {fileID: 2797578722034941769}
   - component: {fileID: 8678030368843533821}
+  - component: {fileID: 8678030368843533822}
   m_Layer: 0
-  m_Name: "\xEC\xEE\xED\xE8\xF2\xEE\xF0 \xF2\xE2"
+  m_Name: Tv_screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &510053654962520179
 Transform:
@@ -4548,7 +4549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508351110927394503}
   m_LocalRotation: {x: 0.7071068, y: 3.997993e-14, z: 3.997993e-14, w: 0.7071068}
-  m_LocalPosition: {x: -0.04045313, y: -1.365, z: 1.208629}
+  m_LocalPosition: {x: -0.04, y: -1.25, z: 1.21}
   m_LocalScale: {x: 1.005364, y: 1.005364, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31774,7 +31775,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8176352510634893620, guid: b12cd7d5e08feef4ba9cb9e0d63c2e32, type: 3}
+  - {fileID: 2100000, guid: 4b0ed769442080a4a8e8817ae6dc736a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31796,6 +31797,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!328 &8678030368843533822
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508351110927394503}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: fb0ed52277f413a4d9c3ce893c3aad8f, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: c416506d74b70ab42bde60c329156d19, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _EmissionMap
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!23 &8694508661773579589
 MeshRenderer:
   m_ObjectHideFlags: 0

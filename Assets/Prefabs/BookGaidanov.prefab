@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5406476529215286839}
   - component: {fileID: 627923324365223681}
   - component: {fileID: 6265784742300858420}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Object088
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4070378444333501976}
   - component: {fileID: 1691636053059390526}
   - component: {fileID: 150330266335830435}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Object086
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6317807631182998927}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BookGaidanov
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 8993410087823654221}
   - component: {fileID: 2601596259542101192}
   - component: {fileID: 5483127156883985245}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Object087
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 3618936433517805968}
   - component: {fileID: 1115350138582466833}
   - component: {fileID: 5488851315661648528}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Box008
   m_TagString: Untagged
   m_Icon: {fileID: 0}

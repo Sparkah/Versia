@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 490643388870064109}
   - component: {fileID: 490643388870064108}
   - component: {fileID: 490643388870064099}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4959,7 +4959,7 @@ GameObject:
   - component: {fileID: 5494807308781947992}
   - component: {fileID: 8930252919331357693}
   - component: {fileID: 6632209053822285623}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cigarette
   m_TagString: Untagged
   m_Icon: {fileID: 0}

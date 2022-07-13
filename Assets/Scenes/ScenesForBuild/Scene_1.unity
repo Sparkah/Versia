@@ -256,7 +256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4610977246214983684, guid: 7affb297cba1633498b19911df2a17a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.294
+      value: -2.884
       objectReference: {fileID: 0}
     - target: {fileID: 4610977246214983684, guid: 7affb297cba1633498b19911df2a17a9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2058,6 +2058,7 @@ Transform:
   m_Children:
   - {fileID: 2114935570}
   - {fileID: 717676273}
+  - {fileID: 1932820071}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2328,13 +2329,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932820069}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.54, y: 2.12, z: -3.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1809614653}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2020613879
 GameObject:
@@ -3838,10 +3839,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5202768724534247493}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ea3ab7131a2dbad458843cbdd62279fa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: aeb5fce962009994bacb28341cc7886e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4044,6 +4045,314 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: currentBoxNumber
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.size
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 34d5c1d78a70fcd4f859694ff2874020, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 01f82429c70a63f4db1c3e9d6fef9ee0, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: b0efb85d011eaa64881459fe7ecda802, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: bc123183acce0dd4a929c1ed30ffad87, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8c86ae8e7a230cb49bb443ad74ec4aa7, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: fdc145aa7c7bb5d4e96817434ab46ce5, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ddd42466f2ccb144bfd5bcccd8c650e, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 42d3cd4167bcc7f45820eccd1d3de892, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ff9fb15852a8a344815137a98411853, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8acfbd3053b61f34699c9ef935be5f0f, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: a89d4a248c586104e8a6508fcb1c5dfd, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4416b8073db675c45a12cd36aa214a86, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: ef65aa543c31b5d4cb8092fee08d8eb9, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: f90704e6a348d0949b8149d0d0286b1d, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[14]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c5ea37625455cf4bab581d24ef81b3f, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[15]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7cf4b502c3b97b448a813ec67d9a7be9, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[16]
+      value: 
+      objectReference: {fileID: 8300000, guid: 03218877119b5f04f9b1e80522ee7855, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[17]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b6384a8c615e9c4abb4d74bed2f8d28, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[18]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9d0b3f5d686b5bf46bb82c99c5c17edf, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[19]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1086bab8495e99a45939cffddef98450, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[20]
+      value: 
+      objectReference: {fileID: 8300000, guid: 699995ecef90e8d47a2287ee31013a2c, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[21]
+      value: 
+      objectReference: {fileID: 8300000, guid: 61c08e974ca3af649bb0b0496d63b5af, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[22]
+      value: 
+      objectReference: {fileID: 8300000, guid: c3341ed10a8aef248a3298d368d0f563, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[23]
+      value: 
+      objectReference: {fileID: 8300000, guid: b2eb6e1eca7352e47a735edec2f4647e, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[24]
+      value: 
+      objectReference: {fileID: 8300000, guid: cd436f6b12dff7845a7e956af80ec12f, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[25]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f040bec274c17f4ba0fc3b7bd128351, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[26]
+      value: 
+      objectReference: {fileID: 8300000, guid: d46e5132c2194e0478691b8e85d0e81b, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[27]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ecf5b8acf68878409e8c2f5a9125e6f, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[28]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4a84473ff385df64b9ea3616073c716c, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[29]
+      value: 
+      objectReference: {fileID: 8300000, guid: 22e9c6c38c9979742a194c4ce4418eca, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[30]
+      value: 
+      objectReference: {fileID: 8300000, guid: 35997bb36907a254c9e1392c1acf2896, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[31]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e37e015d76ae79439ab4c4a8a729e40, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[32]
+      value: 
+      objectReference: {fileID: 8300000, guid: c041a74521d78c54e88f20d807febbff, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[33]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0af9d6c34d472e54da8747d9fa85436d, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[34]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b067d7f1138ee44e9b5ef3b2ea9279b, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[35]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0356db6d66ecaa2408528a2322f54d5a, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[36]
+      value: 
+      objectReference: {fileID: 8300000, guid: f2a9d11c496cc084bb7adbf5d78eda20, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[37]
+      value: 
+      objectReference: {fileID: 8300000, guid: da54866f49878c54684d81196423ca9e, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[38]
+      value: 
+      objectReference: {fileID: 8300000, guid: b107957df279da449a6d6e4a73cbd0d2, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[39]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ada7900302257b4e8365b27da59216c, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[40]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0c910b9d585d517448ec25dd3f16250d, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[41]
+      value: 
+      objectReference: {fileID: 8300000, guid: f1d96df5dc46e734bb42f52541e10459, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[42]
+      value: 
+      objectReference: {fileID: 8300000, guid: caa2c1bae83afe44b8f0e0cb5fbec905, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[43]
+      value: 
+      objectReference: {fileID: 8300000, guid: ed460f81babd33e42a9b101074ea367a, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[44]
+      value: 
+      objectReference: {fileID: 8300000, guid: d0280c9f57cfbab4d8f5a28b65babe80, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[45]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3575c221a9ef4984ead48ef12c1c7e58, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[46]
+      value: 
+      objectReference: {fileID: 8300000, guid: 79aec7b58e333ee4aad537120039574a, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[47]
+      value: 
+      objectReference: {fileID: 8300000, guid: 037f6c56bd1eb8f4295ee2c3ad5bc8ea, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[48]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a64371897e66724ebd590c0ea1dca87, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[49]
+      value: 
+      objectReference: {fileID: 8300000, guid: 99316baf6b1b3a849964b44bd9481e1f, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[50]
+      value: 
+      objectReference: {fileID: 8300000, guid: b0bb153241399234b8fe522776125625, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[51]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1c26989ed87e388499f0f93c5a47f5dd, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[52]
+      value: 
+      objectReference: {fileID: 8300000, guid: 794860e907dbc954285024b92a87ab8a, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[53]
+      value: 
+      objectReference: {fileID: 8300000, guid: d822f3a50aaa4a346b8a93263b541cba, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[54]
+      value: 
+      objectReference: {fileID: 8300000, guid: 99f515c0a8a3e8e419194d853f928a98, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[55]
+      value: 
+      objectReference: {fileID: 8300000, guid: c379d7c6647a05541b3809a31b708bfe, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[56]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1bcfa08f203d6bf49809b699678dbb46, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[57]
+      value: 
+      objectReference: {fileID: 8300000, guid: a196c42b0284e5a40a226d871da6b994, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[58]
+      value: 
+      objectReference: {fileID: 8300000, guid: 390c12ff19747f142963c43bcdafd583, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[59]
+      value: 
+      objectReference: {fileID: 8300000, guid: b574d2782ff784743894d3cf67a2f39f, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[60]
+      value: 
+      objectReference: {fileID: 8300000, guid: c3b2af60b6c1dea4abacff96cd6a9aaa, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[61]
+      value: 
+      objectReference: {fileID: 8300000, guid: ebefedb6659a2a3488202090cdeb9f45, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[62]
+      value: 
+      objectReference: {fileID: 8300000, guid: b1fbaadd9690e6a488cd91713d9f68ce, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[63]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a75b1f9729710b4490f2aa3c944dae4, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[64]
+      value: 
+      objectReference: {fileID: 8300000, guid: e73a6ca98dfdfc44291af5ee0530b17d, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[65]
+      value: 
+      objectReference: {fileID: 8300000, guid: c954304eceeea6a40be225b88c99f5ea, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[66]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b1fdc9c43fe7d046ad6e41e3c0fa6af, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[67]
+      value: 
+      objectReference: {fileID: 8300000, guid: b8efa1e18770a264aae0479a037d88a5, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[68]
+      value: 
+      objectReference: {fileID: 8300000, guid: e2fb1a176a3698b4ca86bb79a98c909e, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[69]
+      value: 
+      objectReference: {fileID: 8300000, guid: 969b03ca186102149861ec807548ea2b, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[70]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f062017253b7d641af7f70f4287b97d, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[71]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3cd4be63357cca843bf596429270c0b3, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[72]
+      value: 
+      objectReference: {fileID: 8300000, guid: 12d7dabe49cdb4e4eb6f15b9a53e9717, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[73]
+      value: 
+      objectReference: {fileID: 8300000, guid: d8de37e8277146743917021278107189, type: 3}
+    - target: {fileID: 7077075973671385693, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
+      propertyPath: beepSounds.Array.data[74]
+      value: 
+      objectReference: {fileID: 8300000, guid: a85a59950bbec9f4dabb0778e2ea25f8, type: 3}
     - target: {fileID: 7077075973671385695, guid: a05f1de1ae817084f805b901f9544bc5, type: 3}
       propertyPath: m_Name
       value: BoxBeepSoundSystem

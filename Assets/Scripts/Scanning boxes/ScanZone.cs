@@ -1,31 +1,34 @@
 using System;
 using UnityEngine;
 
-public class ScanZone : MonoBehaviour
+namespace Trudogolik
 {
-    private void OnTriggerEnter(Collider other)
+    public class ScanZone : MonoBehaviour
     {
-        if (other.gameObject.CompareTag("ScanBox"))
+        private void OnTriggerEnter(Collider other)
         {
-            var box = other.gameObject.GetComponent<Scannable>();
-            
-            if (box != null)
+            if (other.gameObject.CompareTag("ScanBox"))
             {
-                box.isInScanZone = true;
-                //Debug.Log("in");
+                var box = other.gameObject.GetComponent<Scannable>();
+
+                if (box != null)
+                {
+                    box.isInScanZone = true;
+                    //Debug.Log("in");
+                }
             }
         }
-    }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("ScanBox"))
+        private void OnTriggerExit(Collider other)
         {
-            var box = other.gameObject.GetComponent<Scannable>();
-            if (box != null)
+            if (other.gameObject.CompareTag("ScanBox"))
             {
-                box.isInScanZone = false;
-                //Debug.Log("out");
+                var box = other.gameObject.GetComponent<Scannable>();
+                if (box != null)
+                {
+                    box.isInScanZone = false;
+                    //Debug.Log("out");
+                }
             }
         }
     }

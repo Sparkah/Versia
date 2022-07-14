@@ -1,12 +1,15 @@
 using UnityEngine;
 
-public class PlayerCheckObjectDestroyer : MonoBehaviour
+namespace Trudogolik
 {
-    private void OnTriggerEnter(Collider other)
+    public class PlayerCheckObjectDestroyer : MonoBehaviour
     {
-        if(other.CompareTag("Player"))
+        private void OnTriggerEnter(Collider other)
         {
-            Destroy(gameObject);
+            if (other.CompareTag("Player"))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

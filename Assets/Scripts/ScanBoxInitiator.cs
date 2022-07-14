@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScanBoxInitiator : MonoBehaviour
+namespace Trudogolik
 {
-    [SerializeField] private GameObject scanBox;
-    void Start()
+    public class ScanBoxInitiator : MonoBehaviour
     {
-        StartCoroutine(ScanBoxInitiatorCoroutine());
-    }
+        [SerializeField] private GameObject scanBox;
+        void Start()
+        {
+            StartCoroutine(ScanBoxInitiatorCoroutine());
+        }
 
-    IEnumerator ScanBoxInitiatorCoroutine()
-    {
-        yield return new WaitForSeconds(Random.Range(1, 6));
-        Instantiate(scanBox, transform.position, Quaternion.identity);
-        StartCoroutine(ScanBoxInitiatorCoroutine());
+        IEnumerator ScanBoxInitiatorCoroutine()
+        {
+            yield return new WaitForSeconds(Random.Range(1, 6));
+            Instantiate(scanBox, transform.position, Quaternion.identity);
+            StartCoroutine(ScanBoxInitiatorCoroutine());
+        }
     }
 }

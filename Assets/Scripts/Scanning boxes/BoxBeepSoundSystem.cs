@@ -1,36 +1,39 @@
 using UnityEngine;
 
-public class BoxBeepSoundSystem : MonoBehaviour
+namespace Trudogolik
 {
-    public int currentBoxNumber = -1;
-    private AudioSource audio;
-    [SerializeField] AudioClip[] beepSounds;
-    [SerializeField] AudioClip errorSound;
-
-    private void Start()
+    public class BoxBeepSoundSystem : MonoBehaviour
     {
-        audio = GetComponent<AudioSource>();
-    }
+        public int currentBoxNumber = -1;
+        private AudioSource audio;
+        [SerializeField] AudioClip[] beepSounds;
+        [SerializeField] AudioClip errorSound;
 
-    public int GetNumberToBox()
-    {
-        currentBoxNumber += 1;
-        if(currentBoxNumber >= beepSounds.Length)
+        private void Start()
         {
-            currentBoxNumber = 0;
+            audio = GetComponent<AudioSource>();
         }
-        return currentBoxNumber;
-    }
 
-    public void PlayCurrentSound(int i)
-    {
-        if(beepSounds[i] != null)
-            audio.PlayOneShot(beepSounds[i]);
-    }
-    public void PlayErrorSound()
-    {
-        if(errorSound != null)
-            audio.PlayOneShot(errorSound);
-    }
+        public int GetNumberToBox()
+        {
+            currentBoxNumber += 1;
+            if (currentBoxNumber >= beepSounds.Length)
+            {
+                currentBoxNumber = 0;
+            }
+            return currentBoxNumber;
+        }
 
+        public void PlayCurrentSound(int i)
+        {
+            if (beepSounds[i] != null)
+                audio.PlayOneShot(beepSounds[i]);
+        }
+        public void PlayErrorSound()
+        {
+            if (errorSound != null)
+                audio.PlayOneShot(errorSound);
+        }
+
+    }
 }

@@ -1,23 +1,26 @@
 using System.Collections;
 using UnityEngine;
 
-public class WaterTrigger : MonoBehaviour
+namespace Trudogolik
 {
-    private void OnTriggerEnter(Collider other)
+    public class WaterTrigger : MonoBehaviour
     {
-        if (other.CompareTag("FishFood"))
+        private void OnTriggerEnter(Collider other)
         {
-            var rb = other.gameObject.GetComponent<Rigidbody>();
-            rb.drag = 42f;
-            rb.angularDrag = 42f;
-            StartCoroutine(ReturnRbDrag(rb));
+            if (other.CompareTag("FishFood"))
+            {
+                var rb = other.gameObject.GetComponent<Rigidbody>();
+                rb.drag = 42f;
+                rb.angularDrag = 42f;
+                StartCoroutine(ReturnRbDrag(rb));
+            }
         }
-    }
 
-    IEnumerator ReturnRbDrag(Rigidbody rb)
-    {
-        yield return new WaitForSeconds(3f);
-        rb.drag = 1;
-        rb.angularDrag = 1;
+        IEnumerator ReturnRbDrag(Rigidbody rb)
+        {
+            yield return new WaitForSeconds(3f);
+            rb.drag = 1;
+            rb.angularDrag = 1;
+        }
     }
 }

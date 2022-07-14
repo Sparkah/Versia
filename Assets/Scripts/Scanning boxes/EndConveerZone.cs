@@ -1,29 +1,32 @@
 using UnityEngine;
 
-public class EndConveerZone : MonoBehaviour
+namespace Trudogolik
 {
-    [SerializeField] private BoxBeepSoundSystem beep;
-    private void OnTriggerEnter(Collider other)
+    public class EndConveerZone : MonoBehaviour
     {
-        if (other.gameObject.CompareTag("ScanBox"))
+        [SerializeField] private BoxBeepSoundSystem beep;
+        private void OnTriggerEnter(Collider other)
         {
-            var box = other.gameObject.GetComponent<Scannable>();
-
-            if (box != null)
+            if (other.gameObject.CompareTag("ScanBox"))
             {
-                if(box.isGetNumber == false) //коробка в начале линии. присваиваем коробке порядковый номер, чтобы впоследствии извлечь звук сканирования по этому номеру
+                var box = other.gameObject.GetComponent<Scannable>();
+
+                if (box != null)
                 {
-                    var currentBoxNumber = beep.GetNumberToBox();
-                    box.SetBoxNumber(currentBoxNumber);
+                    if (box.isGetNumber == false) //коробка в начале линии. присваиваем коробке порядковый номер, чтобы впоследствии извлечь звук сканирования по этому номеру
+                    {
+                        var currentBoxNumber = beep.GetNumberToBox();
+                        box.SetBoxNumber(currentBoxNumber);
+                    }
+                    else // коробка доехала до конца линии, сбрасываем её настройки
+                    {
+                        box.ResetBox();
+                    }
+                    //Debug.Log("reset box status");
                 }
-                else // коробка доехала до конца линии, сбрасываем её настройки
-                {
-                    box.ResetBox();
-                }
-                //Debug.Log("reset box status");
             }
         }
-    }
 
-    
+
+    }
 }

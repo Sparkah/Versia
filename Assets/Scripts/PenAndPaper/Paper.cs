@@ -9,7 +9,7 @@ namespace Trudogolik
         public bool isEmpty = true;
         private SkinnedMeshRenderer skinnedMesh;
         private BoxCollider paperCollider;
-        private SphereCollider crumplePaperCollider;
+        [SerializeField] GameObject newCollider;
         private Rigidbody rb;
         [SerializeField] private GameObject drawing;
         [SerializeField]private Animator animator;
@@ -22,12 +22,11 @@ namespace Trudogolik
         {
             skinnedMesh = GetComponentInChildren<SkinnedMeshRenderer>();
             paperCollider = GetComponent<BoxCollider>();
-            crumplePaperCollider = GetComponent<SphereCollider>();
-            crumplePaperCollider.enabled = false;
             rb = GetComponent<Rigidbody>(); 
             drawing.SetActive(false);
             distanceGrabbable = GetComponent<DistanceGrabbable>();
             distanceGrabbable.enabled = false;
+            newCollider.SetActive(false);
             
 
         }
@@ -85,15 +84,15 @@ namespace Trudogolik
         private void AfterCrumple() //запускается в конце твина
         {
             paperCollider.enabled = false;
-            crumplePaperCollider.enabled = true;
+            newCollider.SetActive(true);
         }
 
 
 
-        //temp
+        //temp. можно включить для проверки работы
         //private void OnTriggerExit(Collider other)
         //{
-            
+
         //    if (other.gameObject.CompareTag("Pen") && !isEmpty)
         //    {
         //        Debug.Log("collided");

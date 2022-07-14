@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 namespace Trudogolik
 {
@@ -9,38 +10,49 @@ namespace Trudogolik
         private float _timeToSwitchScene;
 
         [SerializeField] private SceneSettings _sceneSettings;
+
+        private int _minutes;
+        private int _seconds;
         void Start()
         {
             _clockTimer = GetComponentInChildren<TextMeshProUGUI>();
             _timeToSwitchScene = _sceneSettings.TimeToNextScene;
+            StartCoroutine(TimeChanger());
         }
 
-        // Update is called once per frame
+        IEnumerator TimeChanger()
+        {
+            CalculateMinutes();
+            yield return new WaitForSeconds(1f);
+            StartCoroutine(TimeChanger());
+        }
         void Update()
         {
             _timeToSwitchScene -= Time.deltaTime;
-            int a;
-            int b;
 
+            if (_seconds < 10)
+            {
+                _clockTimer.text = "0" + _minutes.ToString() + " : 0" + _seconds.ToString();
+            }
+            else
+            {
+                _clockTimer.text = "0" + _minutes.ToString() + " : " + _seconds.ToString();
+            }
+        }
+
+        private void CalculateMinutes()
+        {
             if (_timeToSwitchScene >= 60)
             {
-                a = 1;
-                b = (int)_timeToSwitchScene - 60;
+                _minutes += 1;
+                _timeToSwitchScene -= 60;
+                CalculateMinutes();
             }
             else
             {
-                a = 0;
-                b = (int)_timeToSwitchScene;
+                _seconds = (int)_timeToSwitchScene;
             }
 
-            if (b < 10)
-            {
-                _clockTimer.text = "0" + a.ToString() + " : 0" + b.ToString();
-            }
-            else
-            {
-                _clockTimer.text = "0" + a.ToString() + " : " + b.ToString();
-            }
         }
     }
 }

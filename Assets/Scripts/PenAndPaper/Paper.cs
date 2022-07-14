@@ -6,16 +6,22 @@ namespace Trudogolik
 {
     public class Paper : MonoBehaviour
     {
-        public bool isEmpty = true;
+        [SerializeField] GameObject newCollider;
+        [SerializeField] private GameObject drawing;
+        [SerializeField] private Animator animator;
+
+        [SerializeField] private AudioSource audioSource;
+        [SerializeField] private AudioClip drawSound;
+        [SerializeField] private AudioClip crumbleSound;
+
+        private DistanceGrabbable distanceGrabbable;
+        private PaperSpawner paperSpawner;
         private SkinnedMeshRenderer skinnedMesh;
         private BoxCollider paperCollider;
-        [SerializeField] GameObject newCollider;
         private Rigidbody rb;
-        [SerializeField] private GameObject drawing;
-        [SerializeField]private Animator animator;
         private Tween drawTween;
-        private DistanceGrabbable distanceGrabbable;
-        public PaperSpawner paperSpawner;
+
+        public bool isEmpty = true;
         private bool isCrumpled = false;
 
         private void Start()
@@ -28,7 +34,6 @@ namespace Trudogolik
             distanceGrabbable.enabled = false;
             newCollider.SetActive(false);
             
-
         }
         private void OnTriggerEnter(Collider other)
         {
@@ -45,14 +50,16 @@ namespace Trudogolik
         {
             drawing.SetActive(true); //делает активным объект с аниматором, на котором начинает проигрыватьс€ анимаци€ рисовани€
             int animationNumber = Random.Range(0, 2); //поправить под количество анимаций
-            animator.SetInteger("animationNumb", animationNumber);
+            animator.SetInteger("animationNumb", animationNumber); //выбираем случайную анимацию исход€ из количества анимаций
+            if(drawSound != null)
+            {
+                audioSource.PlayOneShot(drawSound);
+            }
         }
 
         //вызываетс€ из скрипта DrawZagony  по ивенту в конце анимации рисовани€
         public void FinishDraw()
         {
-            
-
             //¬ Ћё„»“№ 
             //distanceGrabbable.enabled = true;
         }
@@ -63,18 +70,21 @@ namespace Trudogolik
 
         public void CrumplePaper() //запускаетс€, когда игрок кликает по листу с нарисованным рисунком
         {
-          
-
             if (isCrumpled)
                 return;
             isCrumpled = true;
+
+            if (crumbleSound != null)
+            {
+                audioSource.PlayOneShot(crumbleSound);
+            }
 
             rb.isKinematic = false;
             rb.useGravity = true;
 
             if (paperSpawner != null)
             {
-                Debug.Log("spawned paper");
+                //Debug.Log("spawned paper");
                 paperSpawner.SpawnPaper();
             }
             
@@ -88,14 +98,13 @@ namespace Trudogolik
         }
 
 
-
         //temp. можно включить дл€ проверки работы
         //private void OnTriggerExit(Collider other)
         //{
 
         //    if (other.gameObject.CompareTag("Pen") && !isEmpty)
         //    {
-        //        Debug.Log("collided");
+        //        //Debug.Log("collided");
         //        CrumplePaper();
         //    }
         //}

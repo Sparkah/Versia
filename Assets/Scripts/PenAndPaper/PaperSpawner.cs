@@ -16,9 +16,9 @@ namespace Trudogolik
         {
             var newPaper = Instantiate(paperPrefab, spawnPosition.position, Quaternion.identity );
             newPaper.transform.parent = null;
-            var val = Random.Range(-8f, 8f);
-            newPaper.transform.Rotate(new Vector3(0,val,0), Space.Self);
-            newPaper.GetComponent<Paper>().SetPaperSpawner(this);
+            var RandomPaperRotation = Random.Range(-8f, 8f);
+            newPaper.transform.Rotate(new Vector3(0, RandomPaperRotation, 0), Space.Self);
+            newPaper.GetComponent<Paper>().SetPaperSpawner(this); //чтобы не использовать синглтон
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Trudogolik
         [SerializeField] private Paper paper;
         public void OnDrawingEnd()
         {
-            paper.FinishDraw();
+           paper.FinishDraw();
         }
     }
 }

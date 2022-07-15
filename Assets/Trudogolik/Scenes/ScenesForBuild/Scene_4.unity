@@ -22845,7 +22845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef65db1b41a5f8942b2d565e1d5e2c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeToNextScene: 90
+  TimeToNextScene: 40
   timeUIToDisappear: 5
   timeUIToAppear: 5
   scareSpeedMultiplier: 0

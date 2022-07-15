@@ -9,7 +9,7 @@ namespace Trudogolik
     {
         [SerializeField] private GameObject _leftArmScanner;
         [SerializeField] private GameObject _rightArmScanner;
-        private Scanner scanner;
+        [SerializeField] private Scanner scanner;
 
         void LateStart()
         {
@@ -18,7 +18,7 @@ namespace Trudogolik
 
         private void Start()
         {
-            scanner = GetComponentInChildren<Scanner>();
+            //scanner = GetComponentInChildren<Scanner>();
         }
 
         void Update()

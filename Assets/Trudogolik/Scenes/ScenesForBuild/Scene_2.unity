@@ -1005,8 +1005,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeToNextScene: 45
-  timeUIToDisappear: 5
-  timeUIToAppear: 5
+  timeUIToDisappear: 1
+  timeUIToAppear: 1
   scareSpeedMultiplier: 1
 --- !u!65 &2045944922
 BoxCollider:
@@ -4139,6 +4139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leftArmScanner: {fileID: 0}
   _rightArmScanner: {fileID: 0}
+  scanner: {fileID: 0}
 --- !u!4 &5945406736506832685
 Transform:
   m_ObjectHideFlags: 0
@@ -10724,6 +10725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leftArmScanner: {fileID: 0}
   _rightArmScanner: {fileID: 0}
+  scanner: {fileID: 0}
 --- !u!23 &8651211610733240320
 MeshRenderer:
   m_ObjectHideFlags: 0

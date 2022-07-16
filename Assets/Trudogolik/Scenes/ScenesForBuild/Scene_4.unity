@@ -19115,6 +19115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leftArmScanner: {fileID: 0}
   _rightArmScanner: {fileID: 0}
+  scanner: {fileID: 0}
 --- !u!1 &5945406737428286016
 GameObject:
   m_ObjectHideFlags: 0
@@ -22846,8 +22847,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeToNextScene: 40
-  timeUIToDisappear: 5
-  timeUIToAppear: 5
+  timeUIToDisappear: 1
+  timeUIToAppear: 1
   scareSpeedMultiplier: 0
 --- !u!82 &5981911922749632773
 AudioSource:
@@ -22959,6 +22960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leftArmScanner: {fileID: 0}
   _rightArmScanner: {fileID: 0}
+  scanner: {fileID: 0}
 --- !u!114 &5986453266969250246
 MonoBehaviour:
   m_ObjectHideFlags: 0

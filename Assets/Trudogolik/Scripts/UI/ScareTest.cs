@@ -8,8 +8,10 @@ namespace Trudogolik
         public CanvasManager canvasManager;
         public float newSpeed;
         public bool isImpulse;
-    // Start is called before the first frame update
-    void Start()
+        public float impulseForce = 0.1f;
+        public float impulseSpeed = 0.1f;
+        // Start is called before the first frame update
+        void Start()
         {
 
         }
@@ -17,10 +19,10 @@ namespace Trudogolik
         // Update is called once per frame
         void Update()
         {
-            canvasManager.speed = newSpeed;
-            if(isImpulse)
+            canvasManager.SetScareFadeSpeed(newSpeed);
+            if (isImpulse)
             {
-                canvasManager.MakeImpulseScareFade();
+                canvasManager.MakeImpulseScareFade(impulseForce, impulseSpeed);
                 isImpulse = false;
                 Debug.Log("impulse");
             }

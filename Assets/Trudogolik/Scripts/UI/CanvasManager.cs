@@ -34,10 +34,17 @@ namespace Trudogolik
         private int timeUIToAppear;
         private int timeToNextScene;
 
-        public float speed = 100f;
-        private float defaulttLevelSpeed = 0.1f;
-        private float impulseforce = -0.01f;
-        private float impulseSpeed = 0.01f;
+
+        //default scare fade values
+        private float defaultImpulseSpeed = 0.1f;
+        private float defaultImpulseForce = -0.1f;
+        private float defaultScareFadeLevelSpeed = 1f;
+
+
+        private float currentSpeed = 1f;
+        private float currentImpulseForce = -0.1f;
+        private float currentImpulseSpeed = 0.1f;
+
         private float currentTime = 0f;
         private int maxValuePercent = 80;
         private bool isImpulse;
@@ -53,8 +60,8 @@ namespace Trudogolik
             time = 0;
 
             textureAmount = m_MainTexture.Length / 100 * maxValuePercent;
-            if (textureAmount > m_MainTexture.Length -1)
-                textureAmount = m_MainTexture.Length -1;
+            if (textureAmount > m_MainTexture.Length - 1)
+                textureAmount = m_MainTexture.Length - 1;
 
             //additionalTextureAmount = m_AdditionalAlpha.Length;
 
@@ -65,7 +72,7 @@ namespace Trudogolik
 
         private void Update()
         {
-            if(!isImpulse)
+            if (!isImpulse)
             {
                 PlayScareFade();
             }
@@ -73,17 +80,15 @@ namespace Trudogolik
             {
                 ImpulseScareFade();
             }
-            
+
         }
 
         private void PlayScareFade()
         {
-            //speed = speed / 100f;
-            
-            if(speed >= 0) //проигрывание вперёд
+            if (currentSpeed >= 0) //проигрывание вперёд
             {
-                currentTime += Time.deltaTime;
-                if (currentTime >= speed)
+                currentTime += Time.deltaTime * 10;
+                if (currentTime >= currentSpeed)
                 {
 
                     currentTime = 0f;
@@ -101,8 +106,8 @@ namespace Trudogolik
             }
             else //проигрывание назад
             {
-                currentTime -= Time.deltaTime;
-                if (currentTime <= speed)
+                currentTime -= Time.deltaTime * 10;
+                if (currentTime <= currentSpeed)
                 {
 
                     currentTime = 0f;
@@ -118,35 +123,40 @@ namespace Trudogolik
                     }
                 }
             }
-            
+
+        }
+        public void SetScareFadeSpeed(float speed)
+        {
+            currentSpeed = speed;
         }
 
-        public void MakeImpulseScareFade()
+        public void MakeImpulseScareFade(float force, float speed)
         {
             currentTime = 0;
             isImpulse = true;
-            //impulseforce = impulseforce / 100f;
-            //impulseSpeed = impulseSpeed / 100f;
+            currentImpulseSpeed = speed;
+            currentImpulseForce = force * -1; //чтобы сделать отрицательной, тк мне лень переписывать код ImpulseScareFade()   
         }
 
         private void ImpulseScareFade()
         {
-            currentTime -= Time.deltaTime;
-            if (currentTime <= impulseforce)
+            currentTime -= Time.deltaTime * 10;
+            if (currentTime <= currentImpulseForce)
             {
-                impulseforce -= impulseSpeed;
+                currentImpulseForce -= currentImpulseSpeed;
                 currentTime = 0f;
-                if (textureCount > 0 && Mathf.Abs(impulseforce) < defaulttLevelSpeed)
+                if (textureCount > 0 && Mathf.Abs(currentImpulseForce) < defaultScareFadeLevelSpeed)
                 {
                     scaryFadeMain.sprite = m_MainTexture[textureCount];
                     textureCount--;
                 }
                 else
                 {
-                    //установить стандартные значения для переменных импульса
+                    //имульс закончен. установить стандартные значения для переменных импульса и текущего времени
                     isImpulse = false;
                     currentTime = 0f;
-                    impulseforce = -0.01f;
+                    currentImpulseForce = defaultImpulseForce;
+                    currentImpulseSpeed = defaultImpulseSpeed;
                     return;
                 }
             }

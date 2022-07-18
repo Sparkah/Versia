@@ -21,7 +21,7 @@ namespace Trudogolik
         }
         public void DecreaseCanvasFade()
         {
-           // canvasManager.DecreaseScreFader();
+           // canvasManager.DecreaseScreFader(); не понимаю зачем оно нужно
         }
 
         private void Update()

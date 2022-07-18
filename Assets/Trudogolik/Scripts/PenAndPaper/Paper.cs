@@ -20,6 +20,7 @@ namespace Trudogolik
         private BoxCollider paperCollider;
         private Rigidbody rb;
         private Tween drawTween;
+        public int animationNumber = 0;
 
         public bool isEmpty = true;
         private bool isCrumpled = false;
@@ -49,8 +50,7 @@ namespace Trudogolik
         private void DrawPicture()
         {
             drawing.SetActive(true); //делает активным объект с аниматором, на котором начинает проигрываться анимация рисования
-            int animationNumber = Random.Range(0, 2); //поправить под количество анимаций
-            animator.SetInteger("animationNumb", animationNumber); //выбираем случайную анимацию исходя из количества анимаций
+            animator.SetInteger("animationNumb", animationNumber); //устанавливаем анимацию, которую задавали через PaperSpawner
             if(drawSound != null)
             {
                 audioSource.PlayOneShot(drawSound);
@@ -98,7 +98,7 @@ namespace Trudogolik
         }
 
 
-        //temp. можно включить для проверки работы
+        //temp.можно включить для проверки работы
         //private void OnTriggerExit(Collider other)
         //{
 

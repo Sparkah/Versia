@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Trudogolik/Scenes/ScenesForBuild/Scene_1.unity
+    guid: f2c4656efa3865047960ce8ca0b46a63
+  - enabled: 1
+    path: Assets/Trudogolik/Scenes/ScenesForBuild/Scene_2.unity
+    guid: f2462085a0bb48d47b8094416492fac0
+  - enabled: 1
     path: Assets/Trudogolik/Scenes/ScenesForBuild/Scene_3.unity
     guid: 1bfee51b8f064e844898fdeb08581101
+  - enabled: 1
+    path: Assets/Trudogolik/Scenes/ScenesForBuild/Scene_4.unity
+    guid: 6141413c6cb993047a1b108bf277298b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c389170861f696043a5f620057b482d8, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b87c6057f7abf6c4283043f34e2d2ddf, type: 2}

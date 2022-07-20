@@ -5,7 +5,7 @@ namespace Trudogolik
 {
     public static class SceneChangeSystem
     {
-        private static string[] _scenes = new string[] { "Scene_1", "Scene_2", "Scene_3", "Scene_4", "Scene_5" };
+        private static string[] _scenes = new string[] { "Scene_1", "Scene_2", "Scene_3", "Scene_4", "Scene_5", "Scene_6", "Scene_7", "Scene_8", "Scene_9", };
         public static int current = 0;
 
         //Здесь перечисляем статические переменые, при обращении к которым меняем в менеджере самой сцены объекты

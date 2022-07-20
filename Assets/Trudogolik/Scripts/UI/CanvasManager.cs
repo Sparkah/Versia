@@ -11,11 +11,11 @@ namespace Trudogolik
         [SerializeField] private SceneSettings sceneSettings;
         [SerializeField] private Image fadeImage;
         [Space]
-        [SerializeField] private Image scareFadeAdditionalAlpha;
+        [SerializeField] private Image scareFadeAdditionalVinette;
         [SerializeField] private Image scaryFadeMain;
         [Space]
         public Sprite[] m_MainTexture;
-        public Sprite[] m_AdditionalAlpha;
+        public Sprite[] m_AdditionalVinette;
 
         private bool canFade = true;
         private bool canAppear = true;
@@ -46,7 +46,7 @@ namespace Trudogolik
         private float currentImpulseSpeed = 0.1f;
 
         private float currentTime = 0f;
-        private int maxValuePercent = 80;
+        private int maxValuePercent = 100;
         private bool isImpulse;
 
         void Start()
@@ -94,7 +94,12 @@ namespace Trudogolik
                     currentTime = 0f;
                     if (textureCount < textureAmount)
                     {
+                        //main texture
                         scaryFadeMain.sprite = m_MainTexture[textureCount];
+
+                        //additional vinette
+                        scareFadeAdditionalVinette.sprite = m_AdditionalVinette[textureCount];
+
                         textureCount++;
                     }
                     else
@@ -114,6 +119,10 @@ namespace Trudogolik
                     if (textureCount > 0)
                     {
                         scaryFadeMain.sprite = m_MainTexture[textureCount];
+
+                        //additional vinette
+                        scareFadeAdditionalVinette.sprite = m_AdditionalVinette[textureCount];
+
                         textureCount--;
                     }
                     else
@@ -148,6 +157,10 @@ namespace Trudogolik
                 if (textureCount > 0 && Mathf.Abs(currentImpulseForce) < defaultScareFadeLevelSpeed)
                 {
                     scaryFadeMain.sprite = m_MainTexture[textureCount];
+
+                    //additional vinette
+                    scareFadeAdditionalVinette.sprite = m_AdditionalVinette[textureCount];
+
                     textureCount--;
                 }
                 else

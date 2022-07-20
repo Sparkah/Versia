@@ -61,9 +61,9 @@ namespace Trudogolik
             audioS.Play();
             audioS.volume = 0f;
             fadeImage.DOFade(0, fadeOutTime);
-            maxTextureCount = m_MainTexture.Length;
-            textureAmount = m_MainTexture.Length/ 100 * maxValuePercent;
-            Debug.Log("texture amount = " + textureAmount);
+            maxTextureCount = (float)m_MainTexture.Length;
+            textureAmount = (int)(m_MainTexture.Length / 100f * maxValuePercent);
+      
             if (textureAmount > m_MainTexture.Length - 1)
                 textureAmount = m_MainTexture.Length - 1;
         }
@@ -73,7 +73,7 @@ namespace Trudogolik
             if (delay <= 0)
             {
                 delay = 0;
-                volume = textureCount / maxTextureCount;
+                volume = (float)textureCount / maxTextureCount;
                 audioS.volume = volume;
 
                 if (!isImpulse)
@@ -110,7 +110,7 @@ namespace Trudogolik
                     else
                     {
                         currentTime = 0;
-                        Debug.Log(textureCount);
+                       
                         return;
                     }
                 }
@@ -205,68 +205,5 @@ namespace Trudogolik
                 }
             }
         }
-
-
-        
-
-        //void Update()
-        //{
-        //time += Time.deltaTime;
-        //if (time > timeUIToDisappear && canAppear)
-        //{
-        //    canAppear = false;
-        //    //descriptionText.DOFade(0, 1);
-        //    fadeImage.DOFade(0, timeUIToDisappear);
-        //    StartCoroutine(ScareFader());
-        //}
-        //if (time > timeToNextScene - timeUIToAppear && canFade)
-        //{
-        //    canFade = false;
-        //    fadeImage.DOFade(1, timeUIToAppear);
-        //}
-        // }
-
-        //private IEnumerator ScareFader()
-        //{
-        //    yield return new WaitForSeconds(2f);
-        //    scaryFadeMain.DOFade(scareFadeMultiplier * 0.01f, 1.5f);
-        //    scareFadeAdditionalAlpha.DOFade(scareFadeMultiplier * 0.09f, 1.5f);
-        //    if (scareFadeMultiplier < 12f)
-        //    {
-        //        scareFadeMultiplier += 2.5f;
-        //    }
-        //    StartCoroutine(ScareFader());
-        //}
-        //public void DecreaseScreFader()
-        //{
-        //    if (scareFadeMultiplier > 1)
-        //    {
-        //        scareFadeMultiplier -= 1;
-        //        if (textureCount > 10)
-        //        {
-        //            textureCount -= 10;
-        //            textureAdditionalCount -= 20;
-        //        }
-        //        else
-        //        {
-        //            textureCount = 0;
-        //            textureAdditionalCount = 0;
-        //        }
-        //    }
-        //    else
-        //    {
-        //        scareFadeMultiplier = 0;
-        //        if (textureCount > 10)
-        //        {
-        //            textureCount -= 10;
-        //            textureAdditionalCount -= 20;
-        //        }
-        //        else
-        //        {
-        //            textureCount = 0;
-        //            textureAdditionalCount = 0;
-        //        }
-        //    }
-        //}
     }
 }

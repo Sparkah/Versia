@@ -130,30 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1932412831, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1932412831, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
-      propertyPath: m_Volume
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1932412831, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1932412831, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: e10b584e241c4404aa03b90dc2aff1e4, type: 3}
-    - target: {fileID: 2941598757189259577, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2941598757379510868, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2941598757379510869, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -400,7 +376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &512390918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,7 +968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef65db1b41a5f8942b2d565e1d5e2c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeToNextScene: 90
+  TimeToNextScene: 15
   FadeInTime: 3
   FadeOutTime: 3
   ScareFadeSpeed: 1

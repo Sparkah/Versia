@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,18 +8,21 @@ namespace Trudogolik
         public int TimeToNextScene = 300;
         public int timeUIToDisappear = 5;
         public int timeUIToAppear = 5;
-        public int scareSpeedMultiplier;
+        [Space]
+        public float ScareFadeSpeed = 1f;
+        public float SceneStartDelay = 5f;
+        public int SceneScareFadePercent = 100;
 
         private float time = 0;
-        private CanvasManager canvasManager;
 
-        public void SetCanvasManager(CanvasManager _canvas)
+        private void Awake()
         {
-            canvasManager = _canvas;
+            CanvasManager.Instance.SetSceneSettings(SceneStartDelay, ScareFadeSpeed, SceneScareFadePercent);
         }
+
         public void DecreaseCanvasFade()
         {
-           // canvasManager.DecreaseScreFader(); не понимаю зачем оно нужно
+            // canvasManager.DecreaseScreFader(); не понимаю зачем оно нужно
         }
 
         private void Update()

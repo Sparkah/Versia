@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
@@ -7,8 +6,10 @@ namespace Trudogolik
 {
     public class CanvasManager : MonoBehaviour
     {
+        public static CanvasManager Instance { get; private set; }
+
         // [SerializeField] private Text descriptionText;
-        [SerializeField] private SceneSettings sceneSettings;
+        //[SerializeField] private SceneSettings sceneSettings;
         [SerializeField] private Image fadeImage;
         [Space]
         [SerializeField] private Image scareFadeAdditionalVinette;
@@ -21,13 +22,10 @@ namespace Trudogolik
         private bool canAppear = true;
 
         private float time;
-        private float scareFadeMultiplier;
 
         private int textureCount = 0;
         private int textureAmount;
 
-        private int textureAdditionalCount = 0;
-        private int additionalTextureAmount;
 
         //scene settings values
         private int timeUIToDisappear;
@@ -49,10 +47,21 @@ namespace Trudogolik
         private int maxValuePercent = 100;
         private bool isImpulse;
 
+        private float delay = 5f;
+
+        private void Awake()
+        {
+            if (Instance != null && Instance != this)
+            {
+                Destroy(this);
+                return;
+            }
+            Instance = this;
+        }
+
         void Start()
         {
-            //sceneSettings.SetCanvasManager(this.gameObject.GetComponent<CanvasManager>());
-            //scareFadeMultiplier = sceneSettings.scareSpeedMultiplier;
+
             //timeUIToDisappear = sceneSettings.timeUIToDisappear;
             //timeUIToAppear = sceneSettings.timeUIToAppear;
             //timeToNextScene = sceneSettings.TimeToNextScene;
@@ -63,24 +72,26 @@ namespace Trudogolik
             if (textureAmount > m_MainTexture.Length - 1)
                 textureAmount = m_MainTexture.Length - 1;
 
-            //additionalTextureAmount = m_AdditionalAlpha.Length;
+    
 
-            //Debug.Log(m_AdditionalAlpha.Length);
-            //StartCoroutine(SetMaterialTexture());
-            //StartCoroutine(SetAdditionalAlphaTexture());
+            
         }
 
         private void Update()
         {
-            if (!isImpulse)
+            if (delay <= 0)
             {
-                PlayScareFade();
+                delay = 0;
+                if (!isImpulse)
+                {
+                    PlayScareFade();
+                }
+                else
+                {
+                    ImpulseScareFade();
+                }
             }
-            else
-            {
-                ImpulseScareFade();
-            }
-
+            delay -= Time.deltaTime;
         }
 
         private void PlayScareFade()
@@ -139,12 +150,30 @@ namespace Trudogolik
             currentSpeed = speed;
         }
 
+        public void SetScareFadeDelay(float val)
+        {
+            delay = val;
+        }
+
+        public void SetScareFadeDefaultSpeed(float val)
+        {
+            defaultScareFadeLevelSpeed = val;
+        }
+
         public void MakeImpulseScareFade(float force, float speed)
         {
             currentTime = 0;
             isImpulse = true;
             currentImpulseSpeed = speed;
             currentImpulseForce = force * -1; //чтобы сделать отрицательной, тк мне лень переписывать код ImpulseScareFade()   
+        }
+
+        public void SetSceneSettings(float startDelay, float scareSpeed, int percent)
+        {
+            delay = startDelay;
+            defaultScareFadeLevelSpeed = scareSpeed;
+            currentSpeed = scareSpeed;
+            maxValuePercent = percent;
         }
 
         private void ImpulseScareFade()
@@ -174,19 +203,6 @@ namespace Trudogolik
                 }
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         // Use this for initialization

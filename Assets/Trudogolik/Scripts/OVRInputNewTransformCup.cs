@@ -49,7 +49,7 @@ namespace Trudogolik
 
             if (OVRInput.Get(OVRInput.Button.Any))
             {
-                GetComponent<SceneSettings>().DecreaseCanvasFade();
+               // GetComponent<SceneSettings>().DecreaseCanvasFade();
             }
         }
     }

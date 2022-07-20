@@ -6,18 +6,21 @@ namespace Trudogolik
     public class SceneSettings : MonoBehaviour
     {
         public int TimeToNextScene = 300;
-        public int timeUIToDisappear = 5;
-        public int timeUIToAppear = 5;
+       
+        public int FadeInTime = 5;
+        public int FadeOutTime = 5;
         [Space]
         public float ScareFadeSpeed = 1f;
-        public float SceneStartDelay = 5f;
+        public float SceneCareFadeStartDelay = 5f;
         public int SceneScareFadePercent = 100;
 
-        private float time = 0;
+        private float currentTime = 0;
+        private bool canFade = true;
 
         private void Awake()
         {
-            CanvasManager.Instance.SetSceneSettings(SceneStartDelay, ScareFadeSpeed, SceneScareFadePercent);
+            //set scene settings to canvas manager singleton
+            CanvasManager.Instance.SetSceneSettings(SceneCareFadeStartDelay, ScareFadeSpeed, SceneScareFadePercent, FadeInTime, FadeOutTime);
         }
 
         public void DecreaseCanvasFade()
@@ -27,8 +30,15 @@ namespace Trudogolik
 
         private void Update()
         {
-            time += Time.deltaTime;
-            if (time > TimeToNextScene)
+            currentTime += Time.deltaTime;
+            //start fading before loading next scene
+            if (currentTime > TimeToNextScene - FadeInTime && canFade)
+            {
+                canFade = false;
+                CanvasManager.Instance.FadeInImage();
+            }
+   
+            if (currentTime > TimeToNextScene)
             {
                 if (SceneChangeSystem.current < SceneManager.sceneCountInBuildSettings)
                 {

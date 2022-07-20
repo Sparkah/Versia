@@ -4,12 +4,11 @@ using UnityEngine.UI;
 
 namespace Trudogolik
 {
+    [RequireComponent(typeof(AudioSource))]
     public class CanvasManager : MonoBehaviour
     {
         public static CanvasManager Instance { get; private set; }
 
-        // [SerializeField] private Text descriptionText;
-        //[SerializeField] private SceneSettings sceneSettings;
         [SerializeField] private Image fadeImage;
         [Space]
         [SerializeField] private Image scareFadeAdditionalVinette;
@@ -18,27 +17,20 @@ namespace Trudogolik
         public Sprite[] m_MainTexture;
         public Sprite[] m_AdditionalVinette;
 
-        private bool canFade = true;
-        private bool canAppear = true;
-
-        private float time;
-
         private int textureCount = 0;
-        private int textureAmount;
+        private int textureAmount =0;
+        private float maxTextureCount;
 
-
-        //scene settings values
-        private int timeUIToDisappear;
-        private int timeUIToAppear;
-        private int timeToNextScene;
-
+        //fade 
+        private int fadeOutTime = 1;
+        private int fadeInTime = 1;
 
         //default scare fade values
         private float defaultImpulseSpeed = 0.1f;
         private float defaultImpulseForce = -0.1f;
         private float defaultScareFadeLevelSpeed = 1f;
 
-
+        //current scare fade values
         private float currentSpeed = 1f;
         private float currentImpulseForce = -0.1f;
         private float currentImpulseSpeed = 0.1f;
@@ -48,6 +40,10 @@ namespace Trudogolik
         private bool isImpulse;
 
         private float delay = 5f;
+
+        //audio
+        private AudioSource audioS;
+        private float volume;
 
         private void Awake()
         {
@@ -61,20 +57,15 @@ namespace Trudogolik
 
         void Start()
         {
-
-            //timeUIToDisappear = sceneSettings.timeUIToDisappear;
-            //timeUIToAppear = sceneSettings.timeUIToAppear;
-            //timeToNextScene = sceneSettings.TimeToNextScene;
-
-            time = 0;
-
-            textureAmount = m_MainTexture.Length / 100 * maxValuePercent;
+            audioS = GetComponent<AudioSource>();
+            audioS.Play();
+            audioS.volume = 0f;
+            fadeImage.DOFade(0, fadeOutTime);
+            maxTextureCount = m_MainTexture.Length;
+            textureAmount = m_MainTexture.Length/ 100 * maxValuePercent;
+            Debug.Log("texture amount = " + textureAmount);
             if (textureAmount > m_MainTexture.Length - 1)
                 textureAmount = m_MainTexture.Length - 1;
-
-    
-
-            
         }
 
         private void Update()
@@ -82,6 +73,9 @@ namespace Trudogolik
             if (delay <= 0)
             {
                 delay = 0;
+                volume = textureCount / maxTextureCount;
+                audioS.volume = volume;
+
                 if (!isImpulse)
                 {
                     PlayScareFade();
@@ -116,6 +110,7 @@ namespace Trudogolik
                     else
                     {
                         currentTime = 0;
+                        Debug.Log(textureCount);
                         return;
                     }
                 }
@@ -168,12 +163,19 @@ namespace Trudogolik
             currentImpulseForce = force * -1; //чтобы сделать отрицательной, тк мне лень переписывать код ImpulseScareFade()   
         }
 
-        public void SetSceneSettings(float startDelay, float scareSpeed, int percent)
+        public void SetSceneSettings(float startDelay, float scareSpeed, int percent, int fadeIn, int fadeOut)
         {
             delay = startDelay;
             defaultScareFadeLevelSpeed = scareSpeed;
             currentSpeed = scareSpeed;
             maxValuePercent = percent;
+            fadeInTime = fadeIn;
+            fadeOutTime = fadeOut;
+        }
+
+        public void FadeInImage()
+        {
+            fadeImage.DOFade(1, fadeInTime);
         }
 
         private void ImpulseScareFade()
@@ -205,39 +207,7 @@ namespace Trudogolik
         }
 
 
-        // Use this for initialization
-        //IEnumerator SetMaterialTexture()
-        //{
-        //    yield return new WaitForSeconds(0.2f);
-        //    //15-30 = success
-        //    if (textureCount < textureAmount - 1)
-        //    {
-        //        scaryFadeMain.sprite = m_MainTexture[textureCount];
-        //        textureCount++;
-
-        //        StartCoroutine(SetMaterialTexture());
-        //    }
-        //    else
-        //    {
-        //        StartCoroutine(SetMaterialTexture());
-        //    }
-        //}
-
-        //IEnumerator SetAdditionalAlphaTexture()
-        //{
-        //    yield return new WaitForSeconds(0.2f);
-        //    if (textureAdditionalCount < additionalTextureAmount - 1)
-        //    {
-        //        scareFadeAdditionalAlpha.sprite = m_AdditionalAlpha[textureAdditionalCount];
-        //        textureAdditionalCount++;
-
-        //        StartCoroutine(SetAdditionalAlphaTexture());
-        //    }
-        //    else
-        //    {
-        //        StartCoroutine(SetAdditionalAlphaTexture());
-        //    }
-        //}
+        
 
         //void Update()
         //{

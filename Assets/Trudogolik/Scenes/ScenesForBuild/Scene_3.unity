@@ -130,6 +130,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1932412831, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932412831, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932412831, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932412831, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e10b584e241c4404aa03b90dc2aff1e4, type: 3}
+    - target: {fileID: 2941598757189259577, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510868, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2941598757379510869, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -969,10 +993,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeToNextScene: 90
-  timeUIToDisappear: 1
-  timeUIToAppear: 1
-  ScareFadeSpeed: 0.7
-  SceneStartDelay: 0
+  FadeInTime: 3
+  FadeOutTime: 3
+  ScareFadeSpeed: 1
+  SceneCareFadeStartDelay: 1
+  SceneScareFadePercent: 100
 --- !u!65 &2045944922
 BoxCollider:
   m_ObjectHideFlags: 0

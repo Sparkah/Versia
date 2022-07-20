@@ -24840,12 +24840,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -75
       objectReference: {fileID: 0}
+    - target: {fileID: 6409878477803914069, guid: 2d7a4a8773c99c742ab1978947ef841f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83de4bdf95bc24d318c17ae79d743908, type: 2}
     - target: {fileID: 6409878477803914072, guid: 2d7a4a8773c99c742ab1978947ef841f, type: 3}
       propertyPath: m_Name
       value: Pen
       objectReference: {fileID: 0}
+    - target: {fileID: 6409878477803914072, guid: 2d7a4a8773c99c742ab1978947ef841f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d7a4a8773c99c742ab1978947ef841f, type: 3}
+--- !u!1 &6409878478481501920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6409878477803914072, guid: 2d7a4a8773c99c742ab1978947ef841f, type: 3}
+  m_PrefabInstance: {fileID: 6409878478481501919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6409878478481501921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6409878478481501920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: _Outline
 --- !u!23 &6437530806220287271
 MeshRenderer:
   m_ObjectHideFlags: 0

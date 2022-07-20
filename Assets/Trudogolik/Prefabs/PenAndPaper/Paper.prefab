@@ -189,6 +189,7 @@ MonoBehaviour:
   audioSource: {fileID: 7790691372596257201}
   drawSound: {fileID: 8300000, guid: 34d5c1d78a70fcd4f859694ff2874020, type: 3}
   crumbleSound: {fileID: 8300000, guid: fa6ee68e14c5bad4cb5d84105c0396a6, type: 3}
+  animationNumber: 0
   isEmpty: 1
 --- !u!54 &1658794705149532335
 Rigidbody:

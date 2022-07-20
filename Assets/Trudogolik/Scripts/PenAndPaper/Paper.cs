@@ -45,6 +45,11 @@ namespace Trudogolik
                 DrawPicture();
                 
             }
+
+            if (other.CompareTag("Player"))
+            {
+                CrumplePaper();
+            }
         }
 
         private void DrawPicture()
@@ -61,7 +66,7 @@ namespace Trudogolik
         public void FinishDraw()
         {
             //ÂÊËÞ×ÈÒÜ 
-            //distanceGrabbable.enabled = true;
+            distanceGrabbable.enabled = true;
         }
         public void SetPaperSpawner(PaperSpawner spawner)
         {

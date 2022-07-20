@@ -347,6 +347,29 @@ Transform:
   m_Father: {fileID: 335752366}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &424978695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6409878477803914072, guid: 2d7a4a8773c99c742ab1978947ef841f, type: 3}
+  m_PrefabInstance: {fileID: 6409878478481501919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &424978700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424978695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 
 --- !u!65 &582310949
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17953,7 +17976,7 @@ GameObject:
   - component: {fileID: 6009932061706038342}
   m_Layer: 0
   m_Name: GrabVolumeBig
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19270,7 +19293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5945406737428286016}
   m_LocalRotation: {x: 0, y: 0, z: 0.0002617804, w: 1}
-  m_LocalPosition: {x: 0.9, y: 1.291, z: -0.61}
+  m_LocalPosition: {x: 0.9, y: 0.706, z: -0.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19376,9 +19399,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.24
-  m_Height: 2.3815174
+  m_Height: 1.7832904
   m_Direction: 1
-  m_Center: {x: -5.7418518e-11, y: -1.2380193, z: 0}
+  m_Center: {x: -3.7142837e-11, y: -0.9389112, z: 0}
 --- !u!114 &5945406737428286023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20132,7 +20155,7 @@ GameObject:
   - component: {fileID: 6009181142680050186}
   m_Layer: 0
   m_Name: GrabVolumeSmall
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21101,7 +21124,7 @@ GameObject:
   - component: {fileID: 6008200675472593423}
   m_Layer: 0
   m_Name: GrabVolumeSmall
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25030,7 +25053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409878477803914072, guid: 2d7a4a8773c99c742ab1978947ef841f, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6409878478003612405, guid: 2d7a4a8773c99c742ab1978947ef841f, type: 3}
       propertyPath: m_Enabled

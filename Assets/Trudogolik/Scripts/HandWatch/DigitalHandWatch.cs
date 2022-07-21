@@ -9,14 +9,32 @@ namespace Trudogolik
         private TextMeshProUGUI _clockTimer;
         private float _timeToSwitchScene;
 
+        [SerializeField]  private AudioSource _audioAlarm;
+        [SerializeField] private AudioClip _soundAlarm;
         [SerializeField] private SceneSettings _sceneSettings;
 
+        //alarm
+        private bool isFirstBeep = true;
+        private bool isSecondBeep = true;
+        private bool isThirdBeep = true;
+        private int firstBeep;
+        private int secondBeep;
+        private int thirdBeep;
+        private int fadeInTime;
+
+        //timer
         private int _minutes;
         private int _seconds;
+
         void Start()
         {
             _clockTimer = GetComponentInChildren<TextMeshProUGUI>();
             _timeToSwitchScene = _sceneSettings.TimeToNextScene;
+            fadeInTime = _sceneSettings.FadeInTime;
+            thirdBeep = fadeInTime;
+            secondBeep = fadeInTime + 1;
+            firstBeep = fadeInTime + 2;
+
             StartCoroutine(TimeChanger());
         }
 
@@ -29,6 +47,8 @@ namespace Trudogolik
         void Update()
         {
             _timeToSwitchScene -= Time.deltaTime;
+
+            Alarm();
 
             if (_seconds < 10)
             {
@@ -53,6 +73,29 @@ namespace Trudogolik
                 _seconds = (int)_timeToSwitchScene;
             }
 
+        }
+
+        //checking for alarm and playing alarm sounds 3 seconds before fade in  starting
+        private void Alarm()
+        {
+            if (_seconds > firstBeep)
+                return;
+
+            if (_seconds == firstBeep && isFirstBeep)
+            {
+                _audioAlarm.PlayOneShot(_soundAlarm);
+                isFirstBeep = false;
+            }
+            if (_seconds == secondBeep && isSecondBeep)
+            {
+                _audioAlarm.PlayOneShot(_soundAlarm);
+                isSecondBeep = false;
+            }
+            if (_seconds == thirdBeep && isThirdBeep)
+            {
+                _audioAlarm.PlayOneShot(_soundAlarm);
+                isThirdBeep = false;
+            }
         }
     }
 }

@@ -28,6 +28,11 @@ namespace Trudogolik
             // canvasManager.DecreaseScreFader(); не понимаю зачем оно нужно
         }
 
+        public void SetTimeToNextScene(int val)
+        {
+            TimeToNextScene = val;
+        }
+
         private void Update()
         {
             currentTime += Time.deltaTime;

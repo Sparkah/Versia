@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
 public class AudioScript : MonoBehaviour
 {
     private AudioSource _audioSource;

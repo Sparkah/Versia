@@ -17,10 +17,12 @@ namespace Trudogolik
         private DistanceGrabbable distanceGrabbable;
         private PaperSpawner paperSpawner;
         private SkinnedMeshRenderer skinnedMesh;
-        private BoxCollider paperCollider;
+        private SphereCollider paperCollider;
+        private BoxCollider paperCollide2;
         private Rigidbody rb;
         private Tween drawTween;
         public int animationNumber = 0;
+        [SerializeField] private GameObject crumpledPaper;
 
         public bool isEmpty = true;
         private bool isCrumpled = false;
@@ -28,12 +30,13 @@ namespace Trudogolik
         private void Start()
         {
             skinnedMesh = GetComponentInChildren<SkinnedMeshRenderer>();
-            paperCollider = GetComponent<BoxCollider>();
+            paperCollider = GetComponent<SphereCollider>();
+            paperCollide2 = GetComponent<BoxCollider>();
             rb = GetComponent<Rigidbody>(); 
             drawing.SetActive(false);
             distanceGrabbable = GetComponent<DistanceGrabbable>();
             distanceGrabbable.enabled = false;
-            newCollider.SetActive(false);
+            newCollider.SetActive(true);
             
         }
         private void OnTriggerEnter(Collider other)
@@ -46,7 +49,7 @@ namespace Trudogolik
                 
             }
 
-            if (other.CompareTag("Player"))
+            if (other.CompareTag("Player") && isEmpty ==false)
             {
                 CrumplePaper();
             }
@@ -66,7 +69,7 @@ namespace Trudogolik
         public void FinishDraw()
         {
             //¬ Ћё„»“№ 
-            distanceGrabbable.enabled = true;
+            //distanceGrabbable.enabled = true;
         }
         public void SetPaperSpawner(PaperSpawner spawner)
         {
@@ -98,8 +101,12 @@ namespace Trudogolik
         }
         private void AfterCrumple() //запускаетс€ в конце твина
         {
-            paperCollider.enabled = false;
-            newCollider.SetActive(true);
+            paperCollider.enabled = true;
+            paperCollide2.enabled = true;
+            newCollider.SetActive(false);
+            distanceGrabbable.enabled = true;
+            Instantiate(crumpledPaper, gameObject.transform.position, Quaternion.identity);
+            gameObject.SetActive(false);
         }
 
 

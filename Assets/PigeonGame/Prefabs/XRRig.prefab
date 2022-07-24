@@ -236,7 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6155743845696733824}
   - component: {fileID: 6155743845696733839}
-  - component: {fileID: 6155743845696733838}
+  - component: {fileID: 1574759085465125045}
   m_Layer: 0
   m_Name: GleechiLib
   m_TagString: Untagged
@@ -303,7 +303,7 @@ MonoBehaviour:
     m_releaseAnimationSpeed: 0.1
   m_debugSettings:
     m_saveDebugFiles: 0
---- !u!114 &6155743845696733838
+--- !u!114 &1574759085465125045
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -312,13 +312,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 6155743845696733837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c21c93d43a515fc4bb64444425bc4d54, type: 3}
+  m_Script: {fileID: 11500000, guid: 0760c79ffb6df714087773b28ca8f9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_character: {fileID: 6155743845600731381}
-  _speedModifier: 0.1
+  _soundsRandomizer: {fileID: 0}
+  _speedModifier: 0.3
+  _rotateModifier: 0.5
   m_verticalOnly: 0
   m_horizontalOnly: 1
+  _stepsDelay: 0.3
   TestMove: 0
   x_speed: 1
   y_speed: 1

@@ -23,7 +23,7 @@ public class LocomotionController : MonoBehaviour
 {
     public OVRCameraRig CameraRig;
     //public CharacterController CharacterController;
-    public CapsuleCollider CharacterController;
+    public CharacterController CharacterController;
 	//public OVRPlayerController PlayerController;
 	public SimpleCapsuleWithStickMovement PlayerController;
 

@@ -18,7 +18,8 @@ namespace Trudogolik
 
         public void ModifyZagony()
         {
-            _canvasManager.SetScareFadeDelay(speed);
+            //Debug.Log("modify");
+            _canvasManager.SetScareFadeSpeed(speed);
             if(delay >0)
                 _canvasManager.SetScareFadeDelay(delay);
         }

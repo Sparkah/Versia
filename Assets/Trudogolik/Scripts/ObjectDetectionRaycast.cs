@@ -19,6 +19,7 @@ namespace Trudogolik
             {
                 _currentObj = obj;
                 _currentObj.ModifyZagony();
+                //Debug.Log("enter trigger");
             }
         }
 
@@ -27,6 +28,7 @@ namespace Trudogolik
             if (_currentObj != null)
             {
                 _currentObj.ModifyZagony();
+                //Debug.Log("trigger stay");
             }
         }
 
@@ -35,7 +37,8 @@ namespace Trudogolik
             if (other.GetComponent<TestScriptGeneralUse>() == _currentObj)
             {
                 _currentObj = null;
-                _canvasManager.SetScareFadeDefault();
+                CanvasManager.Instance.SetScareFadeDefault();
+                //Debug.Log("exit stay");
             }
         }
     }

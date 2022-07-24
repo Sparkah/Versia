@@ -23,8 +23,9 @@ namespace Pigeon
             _source.Play();
             _fadeOut.FadeIn();
             yield return new WaitForSeconds(2f);
-            int level = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(level);
+            SceneLoaderHubMain.LoadHubMenu();
+            // int level = SceneManager.GetActiveScene().buildIndex;
+            // SceneManager.LoadScene(level);
         }
 
     }

@@ -50193,6 +50193,10 @@ PrefabInstance:
       propertyPath: _hand2
       value: 
       objectReference: {fileID: 1963363332}
+    - target: {fileID: 1574759085465125045, guid: ee7f79f58a1932e4facce76d55907b42, type: 3}
+      propertyPath: _soundsRandomizer
+      value: 
+      objectReference: {fileID: 1947921876}
     - target: {fileID: 6155743845419218770, guid: ee7f79f58a1932e4facce76d55907b42, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.748
@@ -50289,6 +50293,10 @@ PrefabInstance:
       propertyPath: y_speed
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6155743845696733838, guid: ee7f79f58a1932e4facce76d55907b42, type: 3}
+      propertyPath: m_character
+      value: 
+      objectReference: {fileID: 6155743845691241258}
     - target: {fileID: 6155743845696733838, guid: ee7f79f58a1932e4facce76d55907b42, type: 3}
       propertyPath: _speedModifier
       value: 0.05

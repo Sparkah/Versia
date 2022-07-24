@@ -10,9 +10,15 @@ public class MainHubView : MonoBehaviour
         {
             SceneLoaderHubMain.LoadPigeonGame();
         }
+
         if(other.CompareTag("FishFood"))
         {
             SceneLoaderHubMain.LoadTrudogolikGame();
+        }
+
+        if (other.CompareTag("WindZone"))
+        {
+            SceneLoaderHubMain.LoadVeterokGame();
         }
     }
 }

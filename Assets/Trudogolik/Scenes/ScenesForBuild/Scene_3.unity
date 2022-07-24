@@ -5923,7 +5923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef65db1b41a5f8942b2d565e1d5e2c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeToNextScene: 15
+  TimeToNextScene: 60
   FadeInTime: 3
   FadeOutTime: 3
   ScareFadeSpeed: 1

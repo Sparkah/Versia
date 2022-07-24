@@ -19,7 +19,7 @@ public static class SceneLoaderHubMain
 
     public static void LoadVeterokGame()
     {
-        //SceneManager.LoadScene("Veterok?");
+        SceneManager.LoadScene("VeterokMainScene");
     }
 
     public static void LoadHubMenu()

@@ -1684,7 +1684,7 @@ Transform:
   m_GameObject: {fileID: 679757917}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.001}
-  m_LocalScale: {x: 0.999, y: 0.99, z: 0.99}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1445339688}
@@ -1719,7 +1719,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679757917}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5570,7 +5570,7 @@ Transform:
   m_GameObject: {fileID: 1885701795}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: -0, z: 0}
-  m_LocalScale: {x: 0.999, y: 0.99, z: 1.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1454913988}
@@ -5605,7 +5605,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885701795}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8503,6 +8503,7 @@ GameObject:
   - component: {fileID: 6637627434554753535}
   - component: {fileID: 6637627434554753534}
   - component: {fileID: 6637627434554753538}
+  - component: {fileID: 6637627434554753539}
   m_Layer: 8
   m_Name: door2
   m_TagString: Untagged
@@ -26650,6 +26651,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767056011291d1d48a76370084f76a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6637627434554753539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732593405047716604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7271333, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!33 &6676955407609415496
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -28058,6 +28077,7 @@ GameObject:
   - component: {fileID: 8599045213624701382}
   - component: {fileID: 8599045213624701381}
   - component: {fileID: 8599045213624701385}
+  - component: {fileID: 8599045213624701386}
   m_Layer: 8
   m_Name: door1
   m_TagString: Untagged
@@ -29577,6 +29597,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767056011291d1d48a76370084f76a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8599045213624701386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7739651121945586447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!23 &8603049300885454052
 MeshRenderer:
   m_ObjectHideFlags: 0

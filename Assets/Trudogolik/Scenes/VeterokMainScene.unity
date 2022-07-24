@@ -32758,12 +32758,20 @@ PrefabInstance:
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1813824181438747071, guid: 536efb32d1a62234ca4c09f44711c1cc, type: 3}
+      propertyPath: m_UseForceGrab
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813824181438747071, guid: 536efb32d1a62234ca4c09f44711c1cc, type: 3}
       propertyPath: m_MaxRaycastDistance
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1813824181849864897, guid: 536efb32d1a62234ca4c09f44711c1cc, type: 3}
       propertyPath: m_LineLength
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813824181849864927, guid: 536efb32d1a62234ca4c09f44711c1cc, type: 3}
+      propertyPath: m_UseForceGrab
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1813824181849864927, guid: 536efb32d1a62234ca4c09f44711c1cc, type: 3}
       propertyPath: m_MaxRaycastDistance

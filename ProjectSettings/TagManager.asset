@@ -8,6 +8,9 @@ TagManager:
   - ScanBox
   - FishFood
   - Pen
+  - Packet
+  - WindZone
+  - Human
   layers:
   - Default
   - TransparentFX
@@ -29,8 +32,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Packet
+  - Humanoid
   - 
   - 
   - 

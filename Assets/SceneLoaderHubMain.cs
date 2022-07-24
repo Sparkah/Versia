@@ -21,4 +21,14 @@ public static class SceneLoaderHubMain
     {
         //SceneManager.LoadScene("Veterok?");
     }
+
+    public static void LoadHubMenu()
+    {
+        SceneManager.LoadScene("HubScene");
+    }
+
+    public static void RestartCurrentScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }

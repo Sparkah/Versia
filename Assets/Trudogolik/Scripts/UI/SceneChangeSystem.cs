@@ -14,7 +14,12 @@ namespace Trudogolik
 
         public static void NextScene()
         {
-
+            if(SceneManager.GetActiveScene().name=="Scene_9")
+            {
+                ResetValues();
+                SceneLoaderHubMain.LoadHubMenu();
+                return;
+            }
             current += 1;
             SceneManager.LoadScene(_scenes[current]);
         }

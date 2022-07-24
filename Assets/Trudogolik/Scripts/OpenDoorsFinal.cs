@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenDoorsFinal : MonoBehaviour
+namespace Trudogolik
 {
-    private void OnTriggerStay(Collider other)
+    public class OpenDoorsFinal : MonoBehaviour
     {
-        if (other.CompareTag("MainCamera") && OVRInput.Get(OVRInput.Button.Any))
+        private void OnTriggerStay(Collider other)
         {
-            GetComponentInParent<FinalLauncher>().StartTimeline();
+            if (other.CompareTag("MainCamera") && OVRInput.Get(OVRInput.Button.Any))
+            {
+                GetComponentInParent<FinalLauncher>().StartTimeline();
+            }
         }
     }
 }

@@ -2,21 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider))]
-public class AudioScript : MonoBehaviour
+namespace Trudogolik
 {
-    private AudioSource _audioSource;
-
-    private void Start()
+    [RequireComponent(typeof(Collider))]
+    public class AudioScript : MonoBehaviour
     {
-        _audioSource = GetComponent<AudioSource>();
-    }
+        private AudioSource _audioSource;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("MainCamera"))
+        private void Start()
         {
-            GetComponent<AudioSource>().Play();
+            _audioSource = GetComponent<AudioSource>();
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("MainCamera"))
+            {
+                GetComponent<AudioSource>().Play();
+            }
         }
     }
 }

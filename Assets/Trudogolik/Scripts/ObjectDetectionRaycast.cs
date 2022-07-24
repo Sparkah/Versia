@@ -1,33 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Trudogolik
 {
     public class ObjectDetectionRaycast : MonoBehaviour
     {
+        private TestScriptGeneralUse _currentObj = null;
+        private CanvasManager _canvasManager;
+
         void Start()
         {
-
+            _canvasManager = CanvasManager.Instance;
         }
+
         private void OnTriggerEnter(Collider other)
         {
-            if (other.TryGetComponent(out TestScriptGeneralUse anyName))
+            var obj = other.GetComponent<TestScriptGeneralUse>();
+            if (obj)
             {
-                //FadeImage.DoSomething
+                _currentObj = obj;
+                _currentObj.ModifyZagony();
             }
-
-            //Add here other classes to look for
         }
 
         private void OnTriggerStay(Collider other)
         {
-            if (other.TryGetComponent(out TestScriptGeneralUse anyName))
+            if (_currentObj != null)
             {
-                //FadeImage.DoSomething
+                _currentObj.ModifyZagony();
             }
+        }
 
-            //Add here other classes to look for
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.GetComponent<TestScriptGeneralUse>() == _currentObj)
+            {
+                _currentObj = null;
+                _canvasManager.SetScareFadeDefault();
+            }
         }
     }
 }

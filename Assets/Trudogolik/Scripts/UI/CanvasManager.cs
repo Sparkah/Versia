@@ -90,7 +90,7 @@ namespace Trudogolik
 
         private void PlayScareFade()
         {
-            if (currentSpeed >= 0) //проигрывание вперёд
+            if (currentSpeed >= 0) //РїСЂРѕРёРіСЂС‹РІР°РЅРёРµ РІРїРµСЂС‘Рґ
             {
                 currentTime += Time.deltaTime * 10;
                 if (currentTime >= currentSpeed)
@@ -115,7 +115,7 @@ namespace Trudogolik
                     }
                 }
             }
-            else //проигрывание назад
+            else //РїСЂРѕРёРіСЂС‹РІР°РЅРёРµ РЅР°Р·Р°Рґ
             {
                 currentTime -= Time.deltaTime * 10;
                 if (currentTime <= currentSpeed)
@@ -160,7 +160,7 @@ namespace Trudogolik
             currentTime = 0;
             isImpulse = true;
             currentImpulseSpeed = speed;
-            currentImpulseForce = force * -1; //чтобы сделать отрицательной, тк мне лень переписывать код ImpulseScareFade()   
+            currentImpulseForce = force * -1; //С‡С‚РѕР±С‹ СЃРґРµР»Р°С‚СЊ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕР№, С‚Рє РјРЅРµ Р»РµРЅСЊ РїРµСЂРµРїРёСЃС‹РІР°С‚СЊ РєРѕРґ ImpulseScareFade()   
         }
 
         public void SetSceneSettings(float startDelay, float scareSpeed, int percent, int fadeIn, int fadeOut)
@@ -176,6 +176,11 @@ namespace Trudogolik
         public void FadeInImage()
         {
             fadeImage.DOFade(1, fadeInTime);
+        }
+
+        public void SetScareFadeDefault()
+        {
+            currentSpeed = defaultScareFadeLevelSpeed;
         }
 
         private void ImpulseScareFade()
@@ -196,7 +201,7 @@ namespace Trudogolik
                 }
                 else
                 {
-                    //имульс закончен. установить стандартные значения для переменных импульса и текущего времени
+                    //РёРјСѓР»СЊСЃ Р·Р°РєРѕРЅС‡РµРЅ. СѓСЃС‚Р°РЅРѕРІРёС‚СЊ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ РґР»СЏ РїРµСЂРµРјРµРЅРЅС‹С… РёРјРїСѓР»СЊСЃР° Рё С‚РµРєСѓС‰РµРіРѕ РІСЂРµРјРµРЅРё
                     isImpulse = false;
                     currentTime = 0f;
                     currentImpulseForce = defaultImpulseForce;

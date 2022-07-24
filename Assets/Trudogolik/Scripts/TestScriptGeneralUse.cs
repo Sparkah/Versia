@@ -6,16 +6,21 @@ namespace Trudogolik
 {
     public class TestScriptGeneralUse : MonoBehaviour
     {
-        // Start is called before the first frame update
+        [SerializeField] private float speed = 1f;
+        [SerializeField] private float delay = 0f;
+        private CanvasManager _canvasManager;
+        
         void Start()
         {
-
+            _canvasManager = CanvasManager.Instance;
+            
         }
 
-        // Update is called once per frame
-        void Update()
+        public void ModifyZagony()
         {
-
+            _canvasManager.SetScareFadeDelay(speed);
+            if(delay >0)
+                _canvasManager.SetScareFadeDelay(delay);
         }
     }
 }

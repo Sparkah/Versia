@@ -1,0 +1,1668 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &203986964967566289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6366514472836703565}
+  m_Layer: 0
+  m_Name: PIGEON_ L HorseLink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6366514472836703565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203986964967566289}
+  m_LocalRotation: {x: 0.0000000017160481, y: -7.2431083e-10, z: -0.38886142, w: 0.9212963}
+  m_LocalPosition: {x: -0.032781467, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7295084800842103863}
+  m_Father: {fileID: 8342284129959001360}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.0000010870632, y: -0.000000052470142, z: -75.92597}
+--- !u!1 &209091342911033338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8584652427398591122}
+  m_Layer: 0
+  m_Name: PIGEON_ L Toe02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8584652427398591122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209091342911033338}
+  m_LocalRotation: {x: 1.4551915e-11, y: 0.0000000018651463, z: -2.714145e-20, w: 1}
+  m_LocalPosition: {x: -0.0067620385, y: 0.0000000018626451, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7048453989166862269}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -1.5654367e-11, y: 1.241003e-11, z: 56.270256}
+--- !u!1 &426128778296579844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2581477466818591072}
+  m_Layer: 0
+  m_Name: WingLeftC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2581477466818591072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426128778296579844}
+  m_LocalRotation: {x: 0.16496898, y: 0.03560618, z: -0.5670878, w: 0.80618167}
+  m_LocalPosition: {x: -0.028731326, y: 0.091431685, z: -0.010406283}
+  m_LocalScale: {x: 0.99999976, y: 1.0000005, z: 1.0000002}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3796722854309034024}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 17.84082, y: -7.8306518, z: -71.47794}
+--- !u!1 &465381667528907703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2536987059538107310}
+  - component: {fileID: 6142903461715247263}
+  m_Layer: 0
+  m_Name: SK_Pigeon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2536987059538107310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465381667528907703}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6888761653514042273}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &6142903461715247263
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465381667528907703}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 29f8b2ae60aeab04ba2f8776605abb69, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4023413161749983580, guid: 0919801a837d30e4b89557ec563dfd43, type: 3}
+  m_Bones:
+  - {fileID: 1389317448373100151}
+  - {fileID: 8342284129959001360}
+  - {fileID: 7099577071024843280}
+  - {fileID: 7295084800842103863}
+  - {fileID: 1086913208998249400}
+  - {fileID: 5917182020830445923}
+  - {fileID: 6366514472836703565}
+  - {fileID: 5316019671320063870}
+  - {fileID: 7421780056765274703}
+  - {fileID: 7048453989166862269}
+  - {fileID: 6554106621102431108}
+  - {fileID: 8584652427398591122}
+  - {fileID: 2507909205442537904}
+  - {fileID: 303769423192686491}
+  - {fileID: 3796722854309034024}
+  - {fileID: 809586413975157977}
+  - {fileID: 4532881469958836169}
+  - {fileID: 2362997632186393276}
+  - {fileID: 6730389792464732822}
+  - {fileID: 8547195510824443852}
+  - {fileID: 562848402186982011}
+  - {fileID: 7504783928332267345}
+  - {fileID: 4983196469433471096}
+  - {fileID: 7340399726329837001}
+  - {fileID: 4216600014430370724}
+  - {fileID: 8266048279566171205}
+  - {fileID: 3377582525457998169}
+  - {fileID: 3359352911217698879}
+  - {fileID: 7785149718512904828}
+  - {fileID: 7500715270646797130}
+  - {fileID: 3486610861792201395}
+  - {fileID: 3484623501490813647}
+  - {fileID: 2581477466818591072}
+  - {fileID: 4749954423462077814}
+  - {fileID: 6609506070063753743}
+  - {fileID: 5895202186389839943}
+  - {fileID: 214281591262398254}
+  - {fileID: 8582338690072058120}
+  - {fileID: 8700688636987502933}
+  - {fileID: 7502928068028818022}
+  - {fileID: 9091696362996717765}
+  - {fileID: 4012458494623219652}
+  - {fileID: 5317603266082435059}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 4532881469958836169}
+  m_AABB:
+    m_Center: {x: -0.016195767, y: -0.03090889, z: -0.000044852495}
+    m_Extent: {x: 0.15292042, y: 0.14635602, z: 0.26753458}
+  m_DirtyAABB: 0
+--- !u!1 &779622688087089836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2362997632186393276}
+  m_Layer: 0
+  m_Name: PIGEON_ Queue de cheval 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2362997632186393276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779622688087089836}
+  m_LocalRotation: {x: 1.6057834e-12, y: 0.0000022414538, z: -0.8081392, w: 0.5889916}
+  m_LocalPosition: {x: -0.0054844855, y: 0.010371528, z: -0.000000018940863}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1389317448373100151}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.00015846164, y: 0.0001589147, z: -89.83632}
+--- !u!1 &1402269166516093338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7502928068028818022}
+  m_Layer: 0
+  m_Name: WingRightC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7502928068028818022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402269166516093338}
+  m_LocalRotation: {x: 0.7894849, y: -0.5841121, z: 0.02553797, w: 0.18674701}
+  m_LocalPosition: {x: -0.029112438, y: 0.0913588, z: 0.010665889}
+  m_LocalScale: {x: 0.9999995, y: 1.0000002, z: 0.9999999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4216600014430370724}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 18.947523, y: -169.16234, z: -162.85027}
+--- !u!1 &1419756800049734405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6609506070063753743}
+  m_Layer: 0
+  m_Name: WingLeftD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6609506070063753743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419756800049734405}
+  m_LocalRotation: {x: 0.21439888, y: 0.0047869706, z: -0.58393747, w: 0.78296053}
+  m_LocalPosition: {x: -0.08268418, y: 0.08100585, z: -0.011806311}
+  m_LocalScale: {x: 1.0000005, y: 1, z: 0.9999998}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3796722854309034024}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 19.957464, y: -14.975967, z: -6.0812325}
+--- !u!1 &1766999405541373787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2557643060492496224}
+  m_Layer: 0
+  m_Name: PIGEON_
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2557643060492496224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766999405541373787}
+  m_LocalRotation: {x: 0.37992808, y: -0.37992847, z: 0.59636754, w: 0.596368}
+  m_LocalPosition: {x: 2.2737367e-15, y: 0.027, z: 0.086}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4532881469958836169}
+  m_Father: {fileID: 7314345500482465845}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 51.860306, y: -0.00009953627, z: 89.99988}
+--- !u!1 &1986036113288695912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1389317448373100151}
+  m_Layer: 0
+  m_Name: PIGEON_ Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1389317448373100151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986036113288695912}
+  m_LocalRotation: {x: -0.00000010610621, y: -0.00000080607003, z: 0.25095913, w: 0.9679977}
+  m_LocalPosition: {x: -0.042724658, y: -0.000000009536743, z: -2.728484e-14}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2362997632186393276}
+  m_Father: {fileID: 809586413975157977}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.0000004092782, y: 0.000011398069, z: -4.1129365}
+--- !u!1 &1986968947779839474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 809586413975157977}
+  m_Layer: 0
+  m_Name: PIGEON_ Neck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &809586413975157977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986968947779839474}
+  m_LocalRotation: {x: -2.282987e-13, y: -0.00000037195642, z: 0.13410601, w: 0.99096704}
+  m_LocalPosition: {x: -0.061110687, y: -0.00003279686, z: -9.0931276e-11}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1389317448373100151}
+  m_Father: {fileID: 562848402186982011}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0.000013620181, y: 0.000064369335, z: -23.894476}
+--- !u!1 &2134910419720722947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5895202186389839943}
+  m_Layer: 0
+  m_Name: WingLeftE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5895202186389839943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134910419720722947}
+  m_LocalRotation: {x: 0.2119898, y: 0.032404102, z: -0.7216216, w: 0.6582345}
+  m_LocalPosition: {x: -0.02718775, y: 0.10107425, z: -0.011268464}
+  m_LocalScale: {x: 1.0000002, y: 0.9999997, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1086913208998249400}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 47.98745, y: 10.007282, z: -166.22858}
+--- !u!1 &2338740164411042440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4532881469958836169}
+  m_Layer: 0
+  m_Name: PIGEON_ Pelvis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4532881469958836169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2338740164411042440}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.49999934, w: 0.50000066}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5316019671320063870}
+  - {fileID: 7340399726329837001}
+  - {fileID: 562848402186982011}
+  - {fileID: 3377582525457998169}
+  - {fileID: 3359352911217698879}
+  m_Father: {fileID: 2557643060492496224}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 89.999916, z: 0}
+--- !u!1 &2840113514131533097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7785149718512904828}
+  m_Layer: 0
+  m_Name: PIGEON_ R HorseLink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7785149718512904828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840113514131533097}
+  m_LocalRotation: {x: -0.0000000023066449, y: -0.0000000030699419, z: -0.3888611, w: 0.9212964}
+  m_LocalPosition: {x: -0.032781478, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999999, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 214281591262398254}
+  m_Father: {fileID: 6730389792464732822}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.0000003056927, y: 0.00000036645648, z: -76.72632}
+--- !u!1 &2845735664516096007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 214281591262398254}
+  m_Layer: 0
+  m_Name: PIGEON_ R Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &214281591262398254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845735664516096007}
+  m_LocalRotation: {x: 0.013801225, y: -0.03163023, z: 0.15843144, w: 0.9867667}
+  m_LocalPosition: {x: -0.031162895, y: 2.9802322e-10, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3486610861792201395}
+  - {fileID: 8582338690072058120}
+  m_Father: {fileID: 7785149718512904828}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.72096574, y: -5.4695234, z: 77.65347}
+--- !u!1 &2872275383119186743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562848402186982011}
+  m_Layer: 0
+  m_Name: PIGEON_ Spine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562848402186982011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2872275383119186743}
+  m_LocalRotation: {x: -0.0000020269222, y: 0.00000082276387, z: 0.028323347, w: 0.9995988}
+  m_LocalPosition: {x: -0.017973263, y: 0.0048170183, z: 0.00000001824148}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7099577071024843280}
+  - {fileID: 809586413975157977}
+  - {fileID: 8547195510824443852}
+  m_Father: {fileID: 4532881469958836169}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -0.00023261874, y: 0.000036879763, z: 15.608381}
+--- !u!1 &3267929097107587272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4216600014430370724}
+  m_Layer: 0
+  m_Name: PIGEON_ R UpperArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4216600014430370724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3267929097107587272}
+  m_LocalRotation: {x: 0.6999119, y: -0.048475403, z: -0.17483681, w: 0.6908008}
+  m_LocalPosition: {x: -0.016567288, y: -0.000000009536743, z: 0.0000000047683715}
+  m_LocalScale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4983196469433471096}
+  - {fileID: 7502928068028818022}
+  - {fileID: 9091696362996717765}
+  m_Father: {fileID: 8547195510824443852}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 35.75625, y: 64.45021, z: 60.092194}
+--- !u!1 &3846153772519847770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3377582525457998169}
+  m_Layer: 0
+  m_Name: TailLeftFeatherA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3377582525457998169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3846153772519847770}
+  m_LocalRotation: {x: -0.21986791, y: -0.6720542, z: 0.6765108, w: -0.20575342}
+  m_LocalPosition: {x: 0.03381149, y: -0.0007895791, z: 0.0039999853}
+  m_LocalScale: {x: 0.99999976, y: 0.99999994, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532881469958836169}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 88.800896, y: -89.99388, z: 135.03867}
+--- !u!1 &3895971393515190119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5917182020830445923}
+  m_Layer: 0
+  m_Name: PIGEON_ L Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5917182020830445923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3895971393515190119}
+  m_LocalRotation: {x: -0.68869245, y: 0.15862449, z: -0.18417314, w: 0.6830968}
+  m_LocalPosition: {x: -0.07061296, y: -0.0000000023841857, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4749954423462077814}
+  m_Father: {fileID: 1086913208998249400}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -76.28455, y: 85.53737, z: -98.4072}
+--- !u!1 &3999811600834067545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7048453989166862269}
+  m_Layer: 0
+  m_Name: PIGEON_ L Toe01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7048453989166862269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3999811600834067545}
+  m_LocalRotation: {x: 1.4551915e-11, y: 0.0000000018651463, z: -2.714145e-20, w: 1}
+  m_LocalPosition: {x: -0.00539285, y: -7.45058e-10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8584652427398591122}
+  m_Father: {fileID: 7421780056765274703}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 8.725426e-12, y: -5.2555113e-12, z: 56.64801}
+--- !u!1 &4066307892882030930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8266048279566171205}
+  m_Layer: 0
+  m_Name: PIGEON_ R Toe02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8266048279566171205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066307892882030930}
+  m_LocalRotation: {x: 0, y: -0.0000000014612168, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0067620394, y: 0.0000000019744038, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7500715270646797130}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -6.2944545e-12, y: 2.9199912e-13, z: 56.22189}
+--- !u!1 &4084724424261389416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1086913208998249400}
+  m_Layer: 0
+  m_Name: PIGEON_ L Forearm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1086913208998249400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4084724424261389416}
+  m_LocalRotation: {x: 0.0000000157251, y: 0.000000021779952, z: 0.3498917, w: 0.93679017}
+  m_LocalPosition: {x: -0.055767678, y: 0.000000009536743, z: -0.000000014305114}
+  m_LocalScale: {x: 0.9999998, y: 0.99999994, z: 0.9999999}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5917182020830445923}
+  - {fileID: 5895202186389839943}
+  m_Father: {fileID: 3796722854309034024}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.000006426723, y: 0.0000023128575, z: 19.793743}
+--- !u!1 &4169933660221534331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7504783928332267345}
+  m_Layer: 0
+  m_Name: PIGEON_ R Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7504783928332267345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4169933660221534331}
+  m_LocalRotation: {x: 0.68869245, y: -0.15862447, z: -0.18417321, w: 0.6830968}
+  m_LocalPosition: {x: -0.07061295, y: 0.0000000023841857, z: 0.0000000047683715}
+  m_LocalScale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5317603266082435059}
+  m_Father: {fileID: 4983196469433471096}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 76.28457, y: -85.53736, z: -98.4072}
+--- !u!1 &4250315377422791576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303769423192686491}
+  m_Layer: 0
+  m_Name: PIGEON_ L Toe12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &303769423192686491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4250315377422791576}
+  m_LocalRotation: {x: -1.4551915e-11, y: 0.0000000018651463, z: 2.714145e-20, w: 1}
+  m_LocalPosition: {x: -0.004762318, y: 7.45058e-10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2507909205442537904}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -5.963737e-12, y: -3.7685684e-12, z: 62.273438}
+--- !u!1 &4508918444394251395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7421780056765274703}
+  m_Layer: 0
+  m_Name: PIGEON_ L Toe0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7421780056765274703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4508918444394251395}
+  m_LocalRotation: {x: 0.0000000013291475, y: 0.0000000013085679, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.005459683, y: 0.009375908, z: -0.0005167651}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7048453989166862269}
+  m_Father: {fileID: 7295084800842103863}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.00006111494, y: 0.000013554088, z: -55.327473}
+--- !u!1 &4702321907975634834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3486610861792201395}
+  m_Layer: 0
+  m_Name: PIGEON_ R Toe0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3486610861792201395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702321907975634834}
+  m_LocalRotation: {x: 0.00000027033613, y: 0.00000019326606, z: -0.7071065, w: 0.7071071}
+  m_LocalPosition: {x: -0.0054596863, y: 0.009375909, z: 0.0005167675}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7500715270646797130}
+  m_Father: {fileID: 214281591262398254}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.00006111494, y: -0.000013554081, z: -55.028564}
+--- !u!1 &5045721354064435153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3484623501490813647}
+  m_Layer: 0
+  m_Name: PIGEON_ R Toe12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3484623501490813647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045721354064435153}
+  m_LocalRotation: {x: 8.577797e-19, y: -0.0000000018420678, z: 4.656613e-10, w: 1}
+  m_LocalPosition: {x: -0.0047623175, y: 4.0978193e-10, z: -0.0000000023841857}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8700688636987502933}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 8.681558e-12, y: 2.7399123e-11, z: 39.854305}
+--- !u!1 &5294135394597233058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5317603266082435059}
+  m_Layer: 0
+  m_Name: WingRightF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5317603266082435059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294135394597233058}
+  m_LocalRotation: {x: 0.34337482, y: -0.45415655, z: 0.51036316, w: 0.64448816}
+  m_LocalPosition: {x: -0.09129753, y: 0.0066501233, z: -0.07437236}
+  m_LocalScale: {x: 0.9999997, y: 0.99999976, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7504783928332267345}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 55.38148, y: -13.951202, z: -20.140383}
+--- !u!1 &5420423274117983467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8582338690072058120}
+  m_Layer: 0
+  m_Name: PIGEON_ R Toe1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8582338690072058120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5420423274117983467}
+  m_LocalRotation: {x: 0.7071064, y: 0.7071072, z: 0.00000018831382, w: -0.00000018831403}
+  m_LocalPosition: {x: -0.005502192, y: -0.000981487, z: 0.00205549}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8700688636987502933}
+  m_Father: {fileID: 214281591262398254}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0.00008430214, y: -179.99995, z: 124.19402}
+--- !u!1 &5595836834755969701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3796722854309034024}
+  m_Layer: 0
+  m_Name: PIGEON_ L UpperArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3796722854309034024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5595836834755969701}
+  m_LocalRotation: {x: -0.69991195, y: 0.04847553, z: -0.17483653, w: 0.69080067}
+  m_LocalPosition: {x: -0.016567288, y: 0, z: 0.0000000047683715}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1086913208998249400}
+  - {fileID: 2581477466818591072}
+  - {fileID: 6609506070063753743}
+  m_Father: {fileID: 7099577071024843280}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -35.756252, y: -64.45025, z: 60.092213}
+--- !u!1 &5725249589850691634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3359352911217698879}
+  m_Layer: 0
+  m_Name: TailRightFeatherA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3359352911217698879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5725249589850691634}
+  m_LocalRotation: {x: -0.20434594, y: 0.6769353, z: -0.6725116, w: -0.21847084}
+  m_LocalPosition: {x: 0.0338115, y: -0.00078960776, z: -0.0040000067}
+  m_LocalScale: {x: 0.9999998, y: 1.0000004, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532881469958836169}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 88.80122, y: -89.99375, z: 45.211937}
+--- !u!1 &5871905499975148492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6554106621102431108}
+  m_Layer: 0
+  m_Name: PIGEON_ L Toe1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6554106621102431108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5871905499975148492}
+  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: -8.7157646e-33, w: -8.659561e-17}
+  m_LocalPosition: {x: -0.0055021876, y: -0.0009814865, z: -0.0020554876}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2507909205442537904}
+  m_Father: {fileID: 7295084800842103863}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -0.00009242009, y: 179.99997, z: 125.165146}
+--- !u!1 &5913177097893605300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8700688636987502933}
+  m_Layer: 0
+  m_Name: PIGEON_ R Toe11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8700688636987502933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913177097893605300}
+  m_LocalRotation: {x: 8.577797e-19, y: -0.0000000018420678, z: 4.656613e-10, w: 1}
+  m_LocalPosition: {x: -0.003423786, y: -0.0000000011920929, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3484623501490813647}
+  m_Father: {fileID: 8582338690072058120}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 2.5401428e-12, y: 6.788524e-12, z: 31.326824}
+--- !u!1 &5950349018537610493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6730389792464732822}
+  m_Layer: 0
+  m_Name: PIGEON_ R Calf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6730389792464732822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950349018537610493}
+  m_LocalRotation: {x: -0.0000000012265038, y: 0.0000000014018331, z: 0.65847415, w: 0.75260335}
+  m_LocalPosition: {x: -0.037007436, y: 0, z: 0.0000000023841857}
+  m_LocalScale: {x: 0.9999999, y: 1.0000002, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7785149718512904828}
+  m_Father: {fileID: 7340399726329837001}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.00000052931387, y: 0.0000010202749, z: 84.38024}
+--- !u!1 &5977559256782425394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8342284129959001360}
+  m_Layer: 0
+  m_Name: PIGEON_ L Calf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8342284129959001360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977559256782425394}
+  m_LocalRotation: {x: 0, y: 0, z: 0.6584754, w: 0.7526023}
+  m_LocalPosition: {x: -0.037007436, y: 0.0000000047683715, z: 0}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6366514472836703565}
+  m_Father: {fileID: 5316019671320063870}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.0000007573736, y: 0.0000023945975, z: 108.629654}
+--- !u!1 &6040638124643983860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2507909205442537904}
+  m_Layer: 0
+  m_Name: PIGEON_ L Toe11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2507909205442537904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6040638124643983860}
+  m_LocalRotation: {x: -1.4551915e-11, y: 0.0000000018651463, z: 2.714145e-20, w: 1}
+  m_LocalPosition: {x: -0.003423786, y: -9.685754e-10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 303769423192686491}
+  m_Father: {fileID: 6554106621102431108}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 3.6365824e-13, y: -3.6231482e-12, z: 32.29797}
+--- !u!1 &6111979072160080155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6888761653514042273}
+  - component: {fileID: 682824128133374427}
+  - component: {fileID: 6888761653514042303}
+  - component: {fileID: 6888761653514042302}
+  - component: {fileID: 2595035597527958259}
+  m_Layer: 3
+  m_Name: Pigeon@AllAnimations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6888761653514042273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6111979072160080155}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.09000015, y: 0, z: -6.58}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7314345500482465845}
+  - {fileID: 2536987059538107310}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &682824128133374427
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6111979072160080155}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0919801a837d30e4b89557ec563dfd43, type: 3}
+  m_Controller: {fileID: 9100000, guid: e6e9906ef4701a94ab866c529776e4cd, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6888761653514042303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6111979072160080155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68e163e4061c0343ba83e2af24ac436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _triggerZone: {fileID: 0}
+  _landPoint: {fileID: 0}
+  _flyPoint: {fileID: 0}
+  _flySpeed: 3
+  _scaredTimeEncreaser: 5
+--- !u!114 &6888761653514042302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6111979072160080155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9022f2b80d284c4d9cf7b0338090713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2595035597527958259
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6111979072160080155}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0.1, z: 0}
+--- !u!1 &6248708376203693225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7500715270646797130}
+  m_Layer: 0
+  m_Name: PIGEON_ R Toe01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7500715270646797130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6248708376203693225}
+  m_LocalRotation: {x: 0, y: -0.0000000014612168, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0053928476, y: -7.0780515e-10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8266048279566171205}
+  m_Father: {fileID: 3486610861792201395}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -1.3409677e-12, y: -2.0417602e-12, z: 56.702972}
+--- !u!1 &6958428394959010993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7314345500482465845}
+  m_Layer: 0
+  m_Name: root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7314345500482465845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958428394959010993}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -2.2737367e-15, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2557643060492496224}
+  m_Father: {fileID: 6888761653514042273}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1 &7349909774492543317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7099577071024843280}
+  m_Layer: 0
+  m_Name: PIGEON_ L Clavicle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7099577071024843280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7349909774492543317}
+  m_LocalRotation: {x: -0.70049596, y: -0.09646468, z: 0.70057255, w: 0.09590685}
+  m_LocalPosition: {x: -0.036625437, y: -0.014053649, z: 0.0056260866}
+  m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 0.9999998}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3796722854309034024}
+  m_Father: {fileID: 562848402186982011}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.045626286, y: -90.00001, z: 158.90236}
+--- !u!1 &7504336379564377883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5316019671320063870}
+  m_Layer: 0
+  m_Name: PIGEON_ L Thigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5316019671320063870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7504336379564377883}
+  m_LocalRotation: {x: 0.86255985, y: -0.5047896, z: -0.010644686, w: -0.032629114}
+  m_LocalPosition: {x: 0.000000028610229, y: 0.000000038146972, z: 0.02018702}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8342284129959001360}
+  m_Father: {fileID: 4532881469958836169}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -5.955617, y: -179.57478, z: -111.429794}
+--- !u!1 &7580078781627343649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4749954423462077814}
+  m_Layer: 0
+  m_Name: WingLeftF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4749954423462077814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7580078781627343649}
+  m_LocalRotation: {x: 0.6444892, y: 0.5103625, z: -0.45415604, w: 0.3433745}
+  m_LocalPosition: {x: -0.09136811, y: 0.0066943443, z: 0.07437447}
+  m_LocalScale: {x: 1, y: 0.9999999, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5917182020830445923}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 64.98142, y: -146.25832, z: -139.88817}
+--- !u!1 &7900109591838728537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9091696362996717765}
+  m_Layer: 0
+  m_Name: WingRightD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9091696362996717765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7900109591838728537}
+  m_LocalRotation: {x: 0.80865884, y: -0.5617746, z: 0.028496701, w: 0.17224433}
+  m_LocalPosition: {x: -0.082702816, y: 0.08100242, z: 0.011818733}
+  m_LocalScale: {x: 0.9999998, y: 1.0000001, z: 0.9999994}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4216600014430370724}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 18.094864, y: -171.07695, z: -171.57747}
+--- !u!1 &8044467206538051003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7340399726329837001}
+  m_Layer: 0
+  m_Name: PIGEON_ R Thigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7340399726329837001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8044467206538051003}
+  m_LocalRotation: {x: 0.8625595, y: -0.5047901, z: 0.010644246, w: 0.032631185}
+  m_LocalPosition: {x: -0.000000030994414, y: -0.000000028610229, z: -0.020187015}
+  m_LocalScale: {x: 0.99999994, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6730389792464732822}
+  m_Father: {fileID: 4532881469958836169}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 5.7277875, y: 179.52753, z: -112.24789}
+--- !u!1 &8265871100175920761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4983196469433471096}
+  m_Layer: 0
+  m_Name: PIGEON_ R Forearm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4983196469433471096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8265871100175920761}
+  m_LocalRotation: {x: 0.000000019089335, y: -0.0000000724032, z: 0.34989172, w: 0.93679017}
+  m_LocalPosition: {x: -0.0557677, y: 0, z: -0.000000009536743}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7504783928332267345}
+  - {fileID: 4012458494623219652}
+  m_Father: {fileID: 4216600014430370724}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.000005526352, y: 0.0000052704113, z: 19.793756}
+--- !u!1 &8521695561617309713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7295084800842103863}
+  m_Layer: 0
+  m_Name: PIGEON_ L Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7295084800842103863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8521695561617309713}
+  m_LocalRotation: {x: -0.013801563, y: 0.031629965, z: 0.15843123, w: 0.98676676}
+  m_LocalPosition: {x: -0.031162888, y: 0.0000000013411044, z: -0.0000000023841857}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7421780056765274703}
+  - {fileID: 6554106621102431108}
+  m_Father: {fileID: 6366514472836703565}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -2.974315, y: 6.6770334, z: 88.36839}
+--- !u!1 &8988402130334177943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8547195510824443852}
+  m_Layer: 0
+  m_Name: PIGEON_ R Clavicle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8547195510824443852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988402130334177943}
+  m_LocalRotation: {x: 0.7004962, y: 0.09646277, z: 0.70057285, w: 0.09590485}
+  m_LocalPosition: {x: -0.03662544, y: -0.014053621, z: -0.0056261653}
+  m_LocalScale: {x: 1, y: 0.9999998, z: 0.9999998}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4216600014430370724}
+  m_Father: {fileID: 562848402186982011}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -0.045625195, y: 89.99999, z: 158.90266}
+--- !u!1 &9089438360062717131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4012458494623219652}
+  m_Layer: 0
+  m_Name: WingRightE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4012458494623219652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9089438360062717131}
+  m_LocalRotation: {x: -0.6572658, y: 0.7225039, z: -0.03268853, w: -0.2119464}
+  m_LocalPosition: {x: -0.02695364, y: 0.10093871, z: 0.011086988}
+  m_LocalScale: {x: 0.99999964, y: 0.99999994, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4983196469433471096}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 41.33138, y: 5.8333592, z: -161.85106}

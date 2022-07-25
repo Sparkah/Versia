@@ -9,6 +9,8 @@ namespace Trudogolik
 
         [SerializeField] private ScanDetector scanDetector1;
         [SerializeField] private ScanDetector scanDetector2;
+        [SerializeField] private float impulseForce = 0f;
+        [SerializeField] private float impulseSpeed = 0f;
 
         private CountingBoxes countBoxesDisplay;
 
@@ -27,7 +29,7 @@ namespace Trudogolik
                 var hitBox = hit.transform.gameObject.GetComponent<Scannable>();
                 if (hitBox != null && hitBox.isScanned == false)
                 {
-
+                    CanvasManager.Instance.MakeImpulseScareFade(impulseForce, impulseSpeed);
                     if (hitBox.isInScanZone) //коробка в скан зоне и не просканирована
                     {
                         hitBox.ScanBox(); //чтобы просканировать коробку только один раз

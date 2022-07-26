@@ -5,10 +5,16 @@ namespace Trudogolik
 {
     public class WaterTrigger : MonoBehaviour
     {
+        private bool isFishFed = false;
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("FishFood"))
             {
+                if(!isFishFed)
+                {
+                    isFishFed = true;
+                    SceneChangeSystem.FishFed = true;
+                }
                 var rb = other.gameObject.GetComponent<Rigidbody>();
                 rb.drag = 42f;
                 rb.angularDrag = 42f;

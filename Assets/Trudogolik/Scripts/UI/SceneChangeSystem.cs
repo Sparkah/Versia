@@ -10,7 +10,7 @@ namespace Trudogolik
 
         //Здесь перечисляем статические переменые, при обращении к которым меняем в менеджере самой сцены объекты
         //! на первой сцене сделать ресет всех значений к значениям по умолчанию вызвав метод Reset()
-        public static bool FishFed = true; 
+        public static bool FishFed = false; 
 
         public static void NextScene()
         {
@@ -26,7 +26,7 @@ namespace Trudogolik
 
         public static void ResetValues()
         {
-            FishFed = true;
+            FishFed = false;
         }
     }
 }

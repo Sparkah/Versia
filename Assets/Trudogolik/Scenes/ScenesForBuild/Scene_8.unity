@@ -291,6 +291,8 @@ MonoBehaviour:
     m_Bits: 8
   scanDetector1: {fileID: 761050903021249320}
   scanDetector2: {fileID: 1064469981}
+  impulseForce: 0
+  impulseSpeed: 0
   beepSound: {fileID: 771530127}
 --- !u!114 &131344499
 MonoBehaviour:
@@ -504,7 +506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2941598757379510877, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
@@ -12226,6 +12228,8 @@ MonoBehaviour:
     m_Bits: 8
   scanDetector1: {fileID: 761050903021249320}
   scanDetector2: {fileID: 1064469981}
+  impulseForce: 0
+  impulseSpeed: 0
   beepSound: {fileID: 771530127}
 --- !u!114 &8184749292662046371
 MonoBehaviour:

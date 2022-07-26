@@ -47,6 +47,7 @@ namespace Trudogolik
 
                 CheckFishFoodLifetimePool();
                 CanvasManager.Instance.SetScareFadeSpeed(ScareFadeSpeed);
+                
             }
             else
             {

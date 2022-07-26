@@ -14,6 +14,9 @@ namespace Trudogolik
         [SerializeField] private AudioClip drawSound;
         [SerializeField] private AudioClip crumbleSound;
 
+        [SerializeField] private float impulseForce = 0f;
+        [SerializeField] private float impulseSpeed = 0f;
+
         private DistanceGrabbable distanceGrabbable;
         private PaperSpawner paperSpawner;
         private SkinnedMeshRenderer skinnedMesh;
@@ -46,6 +49,7 @@ namespace Trudogolik
                 isEmpty = false;
                 
                 DrawPicture();
+                CanvasManager.Instance.MakeImpulseScareFade(impulseForce, impulseSpeed);
                 
             }
 

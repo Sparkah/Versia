@@ -5112,6 +5112,8 @@ MonoBehaviour:
     m_Bits: 8
   scanDetector1: {fileID: 761050903021249320}
   scanDetector2: {fileID: 1064469981}
+  impulseForce: 0
+  impulseSpeed: 0
   beepSound: {fileID: 771530127}
 --- !u!114 &131344499
 MonoBehaviour:
@@ -5627,14 +5629,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 563793529990466843, guid: c13e07a46fc9adc45b40bc7e786d24ba, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 563793529990466843, guid: c13e07a46fc9adc45b40bc7e786d24ba, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 563793529990466843, guid: c13e07a46fc9adc45b40bc7e786d24ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -5678,10 +5672,6 @@ PrefabInstance:
       propertyPath: beep
       value: 
       objectReference: {fileID: 771530127}
-    - target: {fileID: 3273015656508866524, guid: c13e07a46fc9adc45b40bc7e786d24ba, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8059416518997114109, guid: c13e07a46fc9adc45b40bc7e786d24ba, type: 3}
       propertyPath: beep
       value: 
@@ -5693,24 +5683,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 563793529990466843, guid: c13e07a46fc9adc45b40bc7e786d24ba, type: 3}
   m_PrefabInstance: {fileID: 535248975}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &535248977 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1495270367736597699, guid: c13e07a46fc9adc45b40bc7e786d24ba, type: 3}
-  m_PrefabInstance: {fileID: 535248975}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &535248978
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535248977}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.02900001, y: 0.029000008, z: 0.029000012}
-  m_Center: {x: -0.00000022351742, y: -0.0000005941838, z: 0.000000011175871}
 --- !u!1 &717676272
 GameObject:
   m_ObjectHideFlags: 0
@@ -12186,6 +12158,8 @@ MonoBehaviour:
     m_Bits: 8
   scanDetector1: {fileID: 761050903021249320}
   scanDetector2: {fileID: 1064469981}
+  impulseForce: 0
+  impulseSpeed: 0
   beepSound: {fileID: 771530127}
 --- !u!114 &8184749292662046371
 MonoBehaviour:

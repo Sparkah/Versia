@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +9,9 @@ namespace Trudogolik
         [SerializeField] private Transform bottom;
         [SerializeField] private Transform up;
         [SerializeField] private GameObject fishFood;
+        [Space]
+        [SerializeField] private float ScareFadeSpeed = 1f;
+        [Space]
         public float val1 = 1f;
         public float val2 = 0.5f;
         public float val3 = 0.1f;
@@ -44,6 +46,7 @@ namespace Trudogolik
                 gap = DetermineGap(differenece);
 
                 CheckFishFoodLifetimePool();
+                CanvasManager.Instance.SetScareFadeSpeed(ScareFadeSpeed);
             }
             else
             {

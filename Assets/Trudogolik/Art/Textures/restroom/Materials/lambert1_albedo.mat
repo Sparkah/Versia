@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SportsBottleLidWithOutline
+  m_Name: lambert1_albedo
   m_Shader: {fileID: 4800000, guid: 05483dbea409e4cc8853dced3eb9f5dc, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -21,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: cb517bae3153c82488f1abcbe0dfd8ee, type: 3}
+        m_Texture: {fileID: 2800000, guid: 38e6ec6fa585b56489ac64e9a22df89e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -29,9 +29,9 @@ Material:
     - _DstBlend: 0
     - _Mode: 0
     - _OutlineWidth: 0.005
-    - _SrcBlend: 1
-    - _ZWrite: 1
+    - _SrcBlend: 0
+    - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 0}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

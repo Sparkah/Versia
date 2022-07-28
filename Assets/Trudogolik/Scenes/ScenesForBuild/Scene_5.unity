@@ -740,6 +740,7 @@ GameObject:
   - component: {fileID: 634727238}
   - component: {fileID: 634727240}
   - component: {fileID: 634727239}
+  - component: {fileID: 634727241}
   m_Layer: 10
   m_Name: Plate (1)
   m_TagString: Untagged
@@ -812,6 +813,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634727237}
   m_Mesh: {fileID: 3736213754101489272, guid: 9079be7ffbda735448edbb89b91dabf6, type: 3}
+--- !u!114 &634727241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634727237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &757323928
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,6 +2250,7 @@ GameObject:
   - component: {fileID: 1609264052}
   - component: {fileID: 1609264054}
   - component: {fileID: 1609264053}
+  - component: {fileID: 1609264055}
   m_Layer: 10
   m_Name: Cup (1)
   m_TagString: Untagged
@@ -2304,6 +2324,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609264051}
   m_Mesh: {fileID: -4119317738140548247, guid: 9079be7ffbda735448edbb89b91dabf6, type: 3}
+--- !u!114 &1609264055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609264051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1677608092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,6 +2353,7 @@ GameObject:
   - component: {fileID: 1677608093}
   - component: {fileID: 1677608095}
   - component: {fileID: 1677608094}
+  - component: {fileID: 1677608096}
   m_Layer: 10
   m_Name: Handle (1)
   m_TagString: Untagged
@@ -2387,6 +2426,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677608092}
   m_Mesh: {fileID: -6659003102834268097, guid: 9079be7ffbda735448edbb89b91dabf6, type: 3}
+--- !u!114 &1677608096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677608092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &1708802386 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 710744894430562655, guid: f02f4aa6d4d609a4fa93127a841610aa, type: 3}
@@ -2493,9 +2550,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2996936290218192855, guid: bd3bc0cf4363df546bb20c5a4d856ef0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 224bc482e7aea5e4d9490f9acb2fa89c, type: 2}
     - target: {fileID: 3645591181443796482, guid: bd3bc0cf4363df546bb20c5a4d856ef0, type: 3}
       propertyPath: m_Name
       value: apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 3645591181547167442, guid: bd3bc0cf4363df546bb20c5a4d856ef0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4169327690843772088, guid: bd3bc0cf4363df546bb20c5a4d856ef0, type: 3}
       propertyPath: m_RootOrder
@@ -2685,8 +2750,26 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.062461052
-  m_Center: {x: 0.00044967048, y: 0.011874963, z: -0.000650011}
+  m_Radius: 0.05937212
+  m_Center: {x: 0.0004496649, y: 0.00878603, z: -0.000650011}
+--- !u!114 &1799794885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799794858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1840495079
 GameObject:
   m_ObjectHideFlags: 0
@@ -2827,6 +2910,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5841790939535286602, guid: 15d098442cf1a774194e1087b4f740d6, type: 3}
   m_PrefabInstance: {fileID: 1910807297}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1910807303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910807300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &2085235975
 GameObject:
   m_ObjectHideFlags: 0
@@ -5100,6 +5201,7 @@ GameObject:
   - component: {fileID: 6955985665196312819}
   - component: {fileID: 94171686257921340}
   - component: {fileID: 3510315273724132335}
+  - component: {fileID: 6955985665196312820}
   m_Layer: 10
   m_Name: Plate
   m_TagString: Untagged
@@ -10814,6 +10916,7 @@ GameObject:
   - component: {fileID: 1853215233124278702}
   - component: {fileID: 9220086914348313601}
   - component: {fileID: 8032750205205416555}
+  - component: {fileID: 9220086914348313602}
   m_Layer: 10
   m_Name: Handle
   m_TagString: Untagged
@@ -19901,7 +20004,7 @@ GameObject:
   - component: {fileID: 6009932062137646069}
   m_Layer: 0
   m_Name: GrabVolumeBig
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22111,7 +22214,7 @@ GameObject:
   - component: {fileID: 6009181142029323705}
   m_Layer: 0
   m_Name: GrabVolumeSmall
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23080,7 +23183,7 @@ GameObject:
   - component: {fileID: 6008200673731511740}
   m_Layer: 0
   m_Name: GrabVolumeSmall
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28286,6 +28389,7 @@ GameObject:
   - component: {fileID: 4151436660793140144}
   - component: {fileID: 3513031814658793401}
   - component: {fileID: 1348853087141447696}
+  - component: {fileID: 6886713078648469909}
   m_Layer: 10
   m_Name: Cup
   m_TagString: Untagged
@@ -28293,6 +28397,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6886713078648469909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6886713078648469908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &6888199312989728699
 Transform:
   m_ObjectHideFlags: 0
@@ -28543,6 +28665,24 @@ Transform:
   m_Father: {fileID: 933802565}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6955985665196312820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686559454535190916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!23 &6965298409806484931
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34727,6 +34867,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2766212504559054729}
   m_Mesh: {fileID: -6659003102834268097, guid: 9079be7ffbda735448edbb89b91dabf6, type: 3}
+--- !u!114 &9220086914348313602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2766212504559054729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &9221578205731043915
 Transform:
   m_ObjectHideFlags: 0

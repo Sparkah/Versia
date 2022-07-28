@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 7790691372596257201}
   - component: {fileID: 4110305511867593505}
   - component: {fileID: -3457984352018426472}
-  - component: {fileID: 2805651181381597477}
-  - component: {fileID: 722529088517014088}
-  m_Layer: 10
+  - component: {fileID: 5565819233587154943}
+  - component: {fileID: 6746879659320811948}
+  m_Layer: 8
   m_Name: Paper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,6 +179,8 @@ MonoBehaviour:
   audioSource: {fileID: 7790691372596257201}
   drawSound: {fileID: 8300000, guid: 34d5c1d78a70fcd4f859694ff2874020, type: 3}
   crumbleSound: {fileID: 8300000, guid: fa6ee68e14c5bad4cb5d84105c0396a6, type: 3}
+  impulseForce: 0
+  impulseSpeed: 0
   animationNumber: 0
   crumpledPaper: {fileID: 3058668886144914216, guid: 67d2c7b02379f044c8f81fbdd46f93ef, type: 3}
   isEmpty: 1
@@ -332,7 +334,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c4838c9fceddb43a5b32cf5f3d35522d, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -362,20 +364,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658794705149532332}
   m_Mesh: {fileID: 6174799932403526007, guid: b2ac816bb6e2b804caa7528efb043605, type: 3}
---- !u!135 &2805651181381597477
-SphereCollider:
+--- !u!114 &5565819233587154943
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658794705149532332}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.09547681
-  m_Center: {x: 0, y: 0.103356294, z: 0}
---- !u!65 &722529088517014088
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec2297b6389a254d99f41a3b834e346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &6746879659320811948
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -384,10 +385,10 @@ BoxCollider:
   m_GameObject: {fileID: 1658794705149532332}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.14976442, y: 0.18229596, z: 0.1306909}
-  m_Center: {x: -0.0014006495, y: 0.10413959, z: -0.0026378334}
+  m_Size: {x: 0.354645, y: 0.0012951028, z: 0.50224185}
+  m_Center: {x: -0.005600095, y: -0.0038759047, z: 0.004851997}
 --- !u!1 &4010278841414444662
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +430,7 @@ BoxCollider:
   m_GameObject: {fileID: 4010278841414444662}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.025889443, y: 0.0012951026, z: 0.030322473}
   m_Center: {x: -0.00045047738, y: -0.003875905, z: 0.00050478266}
@@ -443,6 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8228911792952838835}
   - component: {fileID: 4590785491430798666}
+  - component: {fileID: 1889393009330462885}
   m_Layer: 10
   m_Name: paperBlendShape
   m_TagString: Untagged
@@ -519,3 +521,21 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000011444092, y: -0.0000076293945, z: -54.453117}
     m_Extent: {x: 105.000015, y: 148.5, z: 55.111862}
   m_DirtyAABB: 0
+--- !u!114 &1889393009330462885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8753070239380033545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

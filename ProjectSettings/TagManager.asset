@@ -11,6 +11,7 @@ TagManager:
   - Packet
   - WindZone
   - Human
+  - Outline
   layers:
   - Default
   - TransparentFX

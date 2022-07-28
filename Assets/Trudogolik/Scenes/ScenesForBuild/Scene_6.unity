@@ -8356,6 +8356,7 @@ GameObject:
   - component: {fileID: 702070637214852007}
   - component: {fileID: 3340564565877181607}
   - component: {fileID: 2941236574937571306}
+  - component: {fileID: 3340564565877181608}
   m_Layer: 10
   m_Name: Cube.018
   m_TagString: Untagged
@@ -9518,6 +9519,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902552052800048318}
   m_Mesh: {fileID: -5928785198427282456, guid: 212140d1d7c540d4c956fb46ec52e5e1, type: 3}
+--- !u!114 &3340564565877181608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902552052800048318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!114 &3395412249264537038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9872,6 +9891,7 @@ GameObject:
   - component: {fileID: 4610977246661520603}
   - component: {fileID: 4610977246661520597}
   - component: {fileID: 4610977246661520596}
+  - component: {fileID: 4610977246661520604}
   m_Layer: 0
   m_Name: Cube.018
   m_TagString: Untagged
@@ -9894,6 +9914,24 @@ Transform:
   m_Father: {fileID: 4610977245760356764}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4610977246661520604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4610977246661520602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!33 &4610977247034237780
 MeshFilter:
   m_ObjectHideFlags: 0

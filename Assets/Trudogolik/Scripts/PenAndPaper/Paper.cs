@@ -1,6 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 using OculusSampleFramework;
+using ObjectOutline;
 
 namespace Trudogolik
 {
@@ -73,7 +74,11 @@ namespace Trudogolik
         public void FinishDraw()
         {
             //ÂÊËÞ×ÈÒÜ 
-            //distanceGrabbable.enabled = true;
+            distanceGrabbable.enabled = true;
+            GameObject outlineView = GetComponentInChildren<SkinnedMeshRenderer>().gameObject;
+            outlineView.AddComponent<Outline>();
+            outlineView.GetComponent<Outline>().OutlineColor = new Color(185,255,255);
+            outlineView.GetComponent<Outline>().OutlineWidth = 10;
         }
         public void SetPaperSpawner(PaperSpawner spawner)
         {

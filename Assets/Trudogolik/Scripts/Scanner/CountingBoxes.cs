@@ -6,6 +6,7 @@ namespace Trudogolik
     public class CountingBoxes : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI _boxCounter;
+        [SerializeField] private TextMeshProUGUI _boxCounterLeft;
         private int _counter = 0;
 
         private void Start()
@@ -13,6 +14,7 @@ namespace Trudogolik
             if (_boxCounter == null)
                 return;
             _boxCounter.text = _counter.ToString();
+            _boxCounterLeft.text = _counter.ToString();
         }
         public void UpdateCounter()
         {
@@ -20,6 +22,7 @@ namespace Trudogolik
                 return;
             _counter++;
             _boxCounter.text = _counter.ToString();
+            _boxCounterLeft.text = _counter.ToString();
         }
         public void ResetCounter()
         {
@@ -27,6 +30,7 @@ namespace Trudogolik
                 return;
             _counter = 0;
             _boxCounter.text = _counter.ToString();
+            _boxCounterLeft.text = _counter.ToString();
         }
     }
 }

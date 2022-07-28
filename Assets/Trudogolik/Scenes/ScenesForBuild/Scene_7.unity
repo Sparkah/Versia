@@ -443,6 +443,24 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
   m_materialColorField: _OutlineColor
+--- !u!114 &424978701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424978695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!65 &582310949
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -862,7 +880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &968762814
 Transform:
   m_ObjectHideFlags: 0
@@ -10940,6 +10958,7 @@ GameObject:
   - component: {fileID: 8569118656582992144}
   - component: {fileID: 8569118656582992146}
   - component: {fileID: 8569118656582992147}
+  - component: {fileID: 8569118656582992148}
   m_Layer: 8
   m_Name: BadIdea014
   m_TagString: Untagged
@@ -26021,7 +26040,7 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
-  m_materialColorField: _OutlineColor
+  m_materialColorField: 
 --- !u!114 &8569118656582992147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26035,6 +26054,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionEffect: {fileID: 968762820}
+--- !u!114 &8569118656582992148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5847947775318628057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &8599045213624701379
 Transform:
   m_ObjectHideFlags: 0

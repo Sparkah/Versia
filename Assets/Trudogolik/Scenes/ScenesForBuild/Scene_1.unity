@@ -997,6 +997,50 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 5945406736710832587}
+    - target: {fileID: 2941598757379510870, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510870, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510870, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510871, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_ScaleFactor
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510871, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510871, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_DefaultSpriteDPI
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510871, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_FallbackScreenDPI
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510871, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510871, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1832
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510871, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510874, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2941598757379510877, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
       propertyPath: m_Name
       value: LightCanvas
@@ -1004,6 +1048,18 @@ PrefabInstance:
     - target: {fileID: 2941598757379510877, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845055474465981496, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845055474465981496, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845055474465981496, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.85
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
@@ -2156,7 +2212,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2277308449513220227, guid: 50bece684d5181f4580b55ffe32fb0a7, type: 3}
   m_PrefabInstance: {fileID: 1739054075}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1739054078
+--- !u!114 &1739054085
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2165,15 +2221,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1739054077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ec2297b6389a254d99f41a3b834e346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1811577570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,29 +2511,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902184671}
   m_Mesh: {fileID: 4300000, guid: 39bcb2bc55ab6c14a8d3f24fc5e07575, type: 3}
---- !u!1 &1917068885 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6347955382689067424, guid: 50bece684d5181f4580b55ffe32fb0a7, type: 3}
-  m_PrefabInstance: {fileID: 1739054075}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1917068889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917068885}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &2006028769
 GameObject:
   m_ObjectHideFlags: 0
@@ -4737,6 +4764,7 @@ GameObject:
   - component: {fileID: 3681715433383789390}
   - component: {fileID: 3681715433383789393}
   - component: {fileID: 3681715433383789394}
+  - component: {fileID: 3681715433383789395}
   m_Layer: 8
   m_Name: Combez
   m_TagString: Untagged
@@ -7634,8 +7662,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.02933399, y: 0.023385592, z: 0.15813594}
-  m_Center: {x: 0.0042827073, y: -0.0035242992, z: 0.07381991}
+  m_Size: {x: 0.021910282, y: 0.018017702, z: 0.15813594}
+  m_Center: {x: 0.0051085134, y: -0.0018669583, z: 0.07381991}
 --- !u!54 &3681715433383789391
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7702,6 +7730,18 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &3681715433383789395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418969380388463710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec2297b6389a254d99f41a3b834e346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &3689993754228917299
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15789,7 +15829,7 @@ GameObject:
   - component: {fileID: 5937886492081112044}
   m_Layer: 0
   m_Name: GrabVolumeCone
-  m_TagString: Untagged
+  m_TagString: Outline
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16608,9 +16648,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 109
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 1.06
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -18455,7 +18495,7 @@ GameObject:
   - component: {fileID: 5937603370414822405}
   m_Layer: 0
   m_Name: GrabVolumeCone
-  m_TagString: Untagged
+  m_TagString: Outline
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20914,12 +20954,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef65db1b41a5f8942b2d565e1d5e2c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeToNextScene: 40
-  FadeInTime: 5
-  FadeOutTime: 5
-  ScareFadeSpeed: 1
-  SceneCareFadeStartDelay: 5
-  SceneScareFadePercent: 100
+  TimeToNextScene: 60
+  FadeInTime: 3
+  FadeOutTime: 3
+  ScareFadeSpeed: 2
+  SceneCareFadeStartDelay: 0
+  SceneScareFadePercent: 50
 --- !u!82 &5981911922749632773
 AudioSource:
   m_ObjectHideFlags: 0

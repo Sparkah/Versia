@@ -12,6 +12,8 @@ namespace Veterok.Controllers
 {
     public class PacketController : MonoBehaviour
     {
+        public event Action<int> RisedPackets;
+        
         [Header("Prefabs")]
         [SerializeField] private PacketView _packetView;
         [SerializeField] private AngelView _angelPrefab;
@@ -36,9 +38,21 @@ namespace Veterok.Controllers
         private float _firstScanTime = 0;
         private float _timeToNextScan = 0.3f;
 
+        private int _packetRiseCounter;       
+        public int PacketsCounter
+        {
+            get => _packetRiseCounter;
+            private set
+            {
+                _packetRiseCounter = value;
+                RisedPackets?.Invoke(_packetRiseCounter);
+            }
+        }
+
         [SerializeField][Range(2f, 20f)] private float _destructionHeight;
         public void Start()
         {
+            _packetRiseCounter = 0;
             _angels = new List<AngelView>();
             _packetsInWind = new Queue<PacketView>();
             _packetPool = new PacketPool<PacketView>(10, transform, _packetView);
@@ -107,7 +121,7 @@ namespace Veterok.Controllers
         {
             _packetsInWind.Dequeue();
             //packeto.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            Debug.Log(_packetsInWind.Count);
+            //Debug.Log(_packetsInWind.Count);
             _firstDequeue = 0;
         }
 
@@ -128,6 +142,7 @@ namespace Veterok.Controllers
         
         private void DestroyPacket(PacketView packet)
         {
+            PacketsCounter += 1;
             packet.PacketFadeOut -= DestroyPacket;
             var angel = Instantiate(_angelPrefab, packet.transform.position, Quaternion.identity);
             _packetPool.ReturnToPool(packet);

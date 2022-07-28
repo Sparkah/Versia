@@ -1,8 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Pigeon;
-using Trudogolik;
 using UnityEngine.SceneManagement;
 
 public static class SceneLoaderHubMain 

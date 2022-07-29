@@ -6,7 +6,6 @@ namespace Hub
 {
     public class VignetteHub : Q_Vignette_Single
     {
-        public event Action Focused;
         public bool IsFocused { get; private set; }
         
         public void ScaleVignete()
@@ -15,17 +14,22 @@ namespace Hub
             if (mainScale >= 2f)
             {
                 IsFocused = true;
-                Focused?.Invoke();
                 return;
             }
             
-            var speed = 2f;
+            var speed = 0.5f;
             var diff = Time.deltaTime * speed;
             mainScale += diff;
         
         }
-        
-        
+
+        protected override void Start()
+        {
+            base.Start();
+            mainScale = 0;
+            IsFocused = false;
+        }
+
         IEnumerator RemoveFocus()
         {
             var speed = 2f;

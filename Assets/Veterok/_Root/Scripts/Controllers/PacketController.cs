@@ -142,12 +142,12 @@ namespace Veterok.Controllers
         
         private void DestroyPacket(PacketView packet)
         {
-            PacketsCounter += 1;
             packet.PacketFadeOut -= DestroyPacket;
             var angel = Instantiate(_angelPrefab, packet.transform.position, Quaternion.identity);
             _packetPool.ReturnToPool(packet);
             _spawnedPackets.Remove(packet);
             _angels.Add(angel);
+            PacketsCounter += 1;
         }
 
         private void DestroyAngel(AngelView obj)

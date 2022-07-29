@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 
@@ -33,7 +32,7 @@ namespace Hub
             {
                 if (_vignette.IsFocused)
                 {
-                    LoadLevelFromInteractable(grabInteractable.Name);
+                    LoadLevelFromInteractable(grabInteractable.Id);
                 }
                 FocusProcess();
             }
@@ -53,18 +52,18 @@ namespace Hub
             _vignette.ScaleVignete();
         }
 
-        private void LoadLevelFromInteractable(string name)
+        private void LoadLevelFromInteractable(int id)
         {
             Debug.Log("Check");
-            // switch (name)
-            // {
-            //     case "GolubNaUgin": SceneLoaderHubMain.LoadPigeonGame();
-            //         break;
-            //     case "Scene_1": SceneLoaderHubMain.LoadTrudogolikGame();
-            //         break;
-            //     case "VeterokMainScene": SceneLoaderHubMain.LoadVeterokGame();
-            //         break;
-            // }
+            switch (id)
+            {
+                case 1: SceneLoaderHubMain.LoadPigeonGame();
+                    break;
+                case 2: SceneLoaderHubMain.LoadTrudogolikGame();
+                    break;
+                case 3: SceneLoaderHubMain.LoadVeterokGame();
+                    break;
+            }
         }
     }
 }

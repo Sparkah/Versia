@@ -41,7 +41,7 @@ public class Q_Vignette_Single : Q_Vignette_Base
     public bool IsStopped { get; set; }
 
                 
-    void Start()
+    protected virtual void Start()
     {
         CheckReferences();
 

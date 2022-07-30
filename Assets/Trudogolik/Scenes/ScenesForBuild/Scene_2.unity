@@ -6535,6 +6535,10 @@ PrefabInstance:
       propertyPath: rightHand
       value: 
       objectReference: {fileID: 1916270652}
+    - target: {fileID: 4937416101154014499, guid: 1b2889d98afba714084ed6a9dfcd6693, type: 3}
+      propertyPath: m_materialColorField
+      value: _OutlinColor
+      objectReference: {fileID: 0}
     - target: {fileID: 4937416101154014502, guid: 1b2889d98afba714084ed6a9dfcd6693, type: 3}
       propertyPath: m_RootOrder
       value: 0

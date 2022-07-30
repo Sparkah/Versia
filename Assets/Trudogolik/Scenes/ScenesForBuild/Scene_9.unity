@@ -1990,6 +1990,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2941598757379510870, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 5945406736710832587}
     - target: {fileID: 2941598757379510877, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
       propertyPath: m_Name
       value: LightCanvas
@@ -16430,7 +16434,7 @@ GameObject:
   - component: {fileID: 5937886492081112044}
   m_Layer: 0
   m_Name: GrabVolumeCone
-  m_TagString: Untagged
+  m_TagString: Outline
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19110,7 +19114,7 @@ GameObject:
   - component: {fileID: 5937603370414822405}
   m_Layer: 0
   m_Name: GrabVolumeCone
-  m_TagString: Untagged
+  m_TagString: Outline
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21568,8 +21572,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef65db1b41a5f8942b2d565e1d5e2c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeToNextScene: 500
-  FadeInTime: 1
+  TimeToNextScene: 45
+  FadeInTime: 3
   FadeOutTime: 3
   ScareFadeSpeed: 100
   SceneCareFadeStartDelay: 90
@@ -23789,6 +23793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57974378f2f8d5441ad3e776bac41f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _impulseForce: 0
+  _impulseSpeed: 0
 --- !u!54 &6637627434554753536
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23835,6 +23841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767056011291d1d48a76370084f76a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timeToNextScene: 15
 --- !u!114 &6637627434554753539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26432,7 +26439,7 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
-  m_materialColorField: 
+  m_materialColorField: _OutlineColor
 --- !u!54 &8599045213624701383
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26461,6 +26468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57974378f2f8d5441ad3e776bac41f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _impulseForce: 0
+  _impulseSpeed: 0
 --- !u!114 &8599045213624701385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26473,6 +26482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767056011291d1d48a76370084f76a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timeToNextScene: 16
 --- !u!114 &8599045213624701386
 MonoBehaviour:
   m_ObjectHideFlags: 0

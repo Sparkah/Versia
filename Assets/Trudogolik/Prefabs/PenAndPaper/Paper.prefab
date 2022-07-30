@@ -130,12 +130,11 @@ GameObject:
   - component: {fileID: 1658794705149532328}
   - component: {fileID: 1658794705149532334}
   - component: {fileID: 1658794705149532335}
-  - component: {fileID: 1658794705149532330}
   - component: {fileID: 7790691372596257201}
   - component: {fileID: 4110305511867593505}
   - component: {fileID: -3457984352018426472}
-  - component: {fileID: 5565819233587154943}
   - component: {fileID: 6746879659320811948}
+  - component: {fileID: -2261609361316108276}
   m_Layer: 8
   m_Name: Paper
   m_TagString: Untagged
@@ -174,14 +173,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 872d8b10e703e274f939886f6f11193c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newCollider: {fileID: 4010278841414444662}
   drawing: {fileID: 1658794703676579851}
   animator: {fileID: 1658794703676579845}
   audioSource: {fileID: 7790691372596257201}
   drawSound: {fileID: 8300000, guid: 34d5c1d78a70fcd4f859694ff2874020, type: 3}
   crumbleSound: {fileID: 8300000, guid: fa6ee68e14c5bad4cb5d84105c0396a6, type: 3}
-  impulseForce: 0
-  impulseSpeed: 0
+  impulseForce: 0.6
+  impulseSpeed: 0.04
   animationNumber: 0
   crumpledPaper: {fileID: 3058668886144914216, guid: 67d2c7b02379f044c8f81fbdd46f93ef, type: 3}
   isEmpty: 1
@@ -196,29 +194,11 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1658794705149532330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658794705149532332}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_materialColorField: _OutlineColor
 --- !u!82 &7790691372596257201
 AudioSource:
   m_ObjectHideFlags: 0
@@ -322,7 +302,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658794705149532332}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -335,7 +315,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: c2ace68b1ed79454a8d2febfb98c4a2b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -364,19 +344,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658794705149532332}
-  m_Mesh: {fileID: 6174799932403526007, guid: b2ac816bb6e2b804caa7528efb043605, type: 3}
---- !u!114 &5565819233587154943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658794705149532332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ec2297b6389a254d99f41a3b834e346, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &6746879659320811948
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -388,8 +356,26 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.354645, y: 0.0012951028, z: 0.50224185}
-  m_Center: {x: -0.005600095, y: -0.0038759047, z: 0.004851997}
+  m_Size: {x: 0.354645, y: 0.008530162, z: 0.50224185}
+  m_Center: {x: -0.005600095, y: -0.0002583752, z: 0.004851997}
+--- !u!114 &-2261609361316108276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658794705149532332}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 1
+  m_snapOrientation: 1
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 
 --- !u!1 &4010278841414444662
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,24 +592,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2563dac657cbd6a42a60120b6296d662, type: 3}
   m_PrefabInstance: {fileID: 4164626298949389309}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8320678497341206854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3822096327990179500}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!114 &859584635110171431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,6 +604,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec2297b6389a254d99f41a3b834e346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8320678497341206854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3822096327990179500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.7254902, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &4485867737811102742 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2563dac657cbd6a42a60120b6296d662, type: 3}

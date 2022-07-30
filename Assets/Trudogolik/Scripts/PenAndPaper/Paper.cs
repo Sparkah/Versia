@@ -2,12 +2,13 @@ using DG.Tweening;
 using UnityEngine;
 using OculusSampleFramework;
 using ObjectOutline;
+using System.Collections;
 
 namespace Trudogolik
 {
     public class Paper : MonoBehaviour
     {
-        [SerializeField] GameObject newCollider;
+
         [SerializeField] private GameObject drawing;
         [SerializeField] private Animator animator;
 
@@ -21,10 +22,8 @@ namespace Trudogolik
         private DistanceGrabbable distanceGrabbable;
         private PaperSpawner paperSpawner;
         private SkinnedMeshRenderer skinnedMesh;
-        private SphereCollider paperCollider;
-        private BoxCollider paperCollide2;
         private Rigidbody rb;
-        private Tween drawTween;
+        //private Tween drawTween;
         public int animationNumber = 0;
         [SerializeField] private GameObject crumpledPaper;
 
@@ -33,16 +32,13 @@ namespace Trudogolik
 
         private void Start()
         {
-            skinnedMesh = GetComponentInChildren<SkinnedMeshRenderer>();
-            paperCollider = GetComponent<SphereCollider>();
-            paperCollide2 = GetComponent<BoxCollider>();
-            rb = GetComponent<Rigidbody>(); 
-            drawing.SetActive(false);
             distanceGrabbable = GetComponent<DistanceGrabbable>();
             distanceGrabbable.enabled = false;
-            newCollider.SetActive(true);
-            
+            skinnedMesh = GetComponentInChildren<SkinnedMeshRenderer>();
+            rb = GetComponent<Rigidbody>(); 
+            drawing.SetActive(false);
         }
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag("Pen") && isEmpty && other.gameObject.GetComponent<Pen>().isPenActive)
@@ -75,6 +71,8 @@ namespace Trudogolik
         {
             //¬ Ћё„»“№ 
             distanceGrabbable.enabled = true;
+            rb.useGravity = true;
+
             /*GameObject outlineView = GetComponentInChildren<SkinnedMeshRenderer>().gameObject;
             outlineView.AddComponent<Outline>();
             outlineView.GetComponent<Outline>().OutlineColor = new Color(185,255,255);
@@ -91,6 +89,10 @@ namespace Trudogolik
                 return;
             isCrumpled = true;
 
+            drawing.SetActive(false);
+            //drawTween = DOTween.To(() => skinnedMesh.GetBlendShapeWeight(0), x => skinnedMesh.SetBlendShapeWeight(0, x), 100f, 0.1f).OnComplete(() => AfterCrumple());
+            AfterCrumple();
+
             if (crumbleSound != null)
             {
                 audioSource.PlayOneShot(crumbleSound);
@@ -104,9 +106,6 @@ namespace Trudogolik
                 //Debug.Log("spawned paper");
                 paperSpawner.SpawnPaper();
             }
-            
-            drawing.SetActive(false);
-            drawTween = DOTween.To(() => skinnedMesh.GetBlendShapeWeight(0), x => skinnedMesh.SetBlendShapeWeight(0, x), 100f, 0.1f).OnComplete(() => AfterCrumple());
         }
         private void AfterCrumple() //запускаетс€ в конце твина
         {
@@ -115,8 +114,8 @@ namespace Trudogolik
             //newCollider.SetActive(false);
             //distanceGrabbable.enabled = true;
             Instantiate(crumpledPaper, gameObject.transform.position, Quaternion.identity);
-            //gameObject.SetActive(false);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
         }
 
 

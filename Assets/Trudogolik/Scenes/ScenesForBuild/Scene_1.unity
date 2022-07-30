@@ -1972,7 +1972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 331686959130118487, guid: 50bece684d5181f4580b55ffe32fb0a7, type: 3}
       propertyPath: m_materialColorField
-      value: 
+      value: _OutlineColor
       objectReference: {fileID: 0}
     - target: {fileID: 1500067375293887033, guid: 50bece684d5181f4580b55ffe32fb0a7, type: 3}
       propertyPath: m_RootOrder
@@ -7754,7 +7754,7 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
-  m_materialColorField: 
+  m_materialColorField: _OutlineColor
 --- !u!114 &3681715433383789393
 MonoBehaviour:
   m_ObjectHideFlags: 0

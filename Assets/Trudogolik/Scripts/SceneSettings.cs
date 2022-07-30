@@ -30,7 +30,7 @@ namespace Trudogolik
 
         public void SetTimeToNextScene(int val)
         {
-            TimeToNextScene = val;
+            SceneChangeSystem.NextScene();
         }
 
         private void Update()

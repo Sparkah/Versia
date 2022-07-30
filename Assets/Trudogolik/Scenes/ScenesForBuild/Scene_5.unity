@@ -19954,7 +19954,7 @@ GameObject:
   - component: {fileID: 5937886490600936543}
   m_Layer: 0
   m_Name: GrabVolumeCone
-  m_TagString: Untagged
+  m_TagString: Outline
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22651,7 +22651,7 @@ GameObject:
   - component: {fileID: 5937603368682062774}
   m_Layer: 0
   m_Name: GrabVolumeCone
-  m_TagString: Untagged
+  m_TagString: Outline
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

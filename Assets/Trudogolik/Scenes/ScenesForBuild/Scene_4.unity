@@ -307,6 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _boxCounter: {fileID: 6881035684746034752}
+  _boxCounterLeft: {fileID: 0}
 --- !u!1 &136886730
 GameObject:
   m_ObjectHideFlags: 0
@@ -7729,6 +7730,10 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 0.03
       objectReference: {fileID: 0}
+    - target: {fileID: 5945219515635191139, guid: 8417680490fce564ca0e9b0c24682b52, type: 3}
+      propertyPath: m_TagString
+      value: Outline
+      objectReference: {fileID: 0}
     - target: {fileID: 5945406735681740555, guid: 8417680490fce564ca0e9b0c24682b52, type: 3}
       propertyPath: m_Name
       value: PlayerController
@@ -7800,6 +7805,10 @@ PrefabInstance:
     - target: {fileID: 5946538104657437721, guid: 8417680490fce564ca0e9b0c24682b52, type: 3}
       propertyPath: m_TagString
       value: LeftArm
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946754653013768620, guid: 8417680490fce564ca0e9b0c24682b52, type: 3}
+      propertyPath: m_TagString
+      value: Outline
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8417680490fce564ca0e9b0c24682b52, type: 3}
@@ -12249,6 +12258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _boxCounter: {fileID: 873810561}
+  _boxCounterLeft: {fileID: 0}
 --- !u!114 &8184749292662046370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12282,6 +12292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _boxCounter: {fileID: 0}
+  _boxCounterLeft: {fileID: 0}
 --- !u!224 &8323556406463264024
 RectTransform:
   m_ObjectHideFlags: 0

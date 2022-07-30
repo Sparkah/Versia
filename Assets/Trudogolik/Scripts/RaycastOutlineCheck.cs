@@ -7,17 +7,23 @@ namespace Trudogolik
 {
     public class RaycastOutlineCheck : MonoBehaviour
     {
-        private Outline _outline;
+        private Outline[] _outline;
         private void Start()
         {
-            _outline = GetComponentInChildren<Outline>();
-            _outline.enabled = false;
+            _outline = GetComponentsInChildren<Outline>();
+            foreach (var outline in _outline)
+            {
+                outline.enabled = false;
+            }
         }
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Outline"))
             {
-                _outline.enabled = true;
+                foreach (var outline in _outline)
+                {
+                    outline.enabled = true;
+                }
             }
         }
 
@@ -25,7 +31,10 @@ namespace Trudogolik
         {
             if (other.CompareTag("Outline"))
             {
-                _outline.enabled = false;
+                foreach (var outline in _outline)
+                {
+                    outline.enabled = false;
+                }
             }
         }
     }

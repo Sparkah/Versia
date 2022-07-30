@@ -10,7 +10,8 @@ namespace Trudogolik
         [SerializeField] private Transform up;
         [SerializeField] private GameObject fishFood;
         [Space]
-        [SerializeField] private float ScareFadeSpeed = 1f;
+        [SerializeField] private float impulseForce;
+        [SerializeField] private float impulseSpeed;
         [Space]
         public float val1 = 1f;
         public float val2 = 0.5f;
@@ -46,7 +47,7 @@ namespace Trudogolik
                 gap = DetermineGap(differenece);
 
                 CheckFishFoodLifetimePool();
-                CanvasManager.Instance.SetScareFadeSpeed(ScareFadeSpeed);
+                
                 
             }
             else
@@ -59,6 +60,7 @@ namespace Trudogolik
         {
             if (currentTime > gap)
             {
+                CanvasManager.Instance.MakeImpulseScareFade(impulseForce, impulseSpeed);
                 if (newlySpawnedFishFood < maxFishFood)
                 {
                     var food = Instantiate(fishFood, up.position, Quaternion.identity);

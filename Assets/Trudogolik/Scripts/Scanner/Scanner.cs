@@ -51,6 +51,14 @@ namespace Trudogolik
             scannerMaterial.SetTextureOffset("_MainTex", new Vector2(xOffSet, yOffSet));
         }
 
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                CanvasManager.Instance.MakeImpulseScareFade(0, 0);
+            }
+        }
+
         private void OnTriggerStay(Collider other)
         {
             if (other.CompareTag("Player"))

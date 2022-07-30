@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: DanVeterok
+  productName: Versia
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.12156863, g: 0.12156863, b: 0.1254902, a: 1}
@@ -230,6 +230,10 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 8962608529188665788, guid: da9a14d0eca70c64f915255bce4c1c95, type: 2}
+  - {fileID: 5599136735428557248, guid: b87c6057f7abf6c4283043f34e2d2ddf, type: 2}
+  - {fileID: 11400000, guid: c389170861f696043a5f620057b482d8, type: 2}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -249,7 +253,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.DanVeterok
+    Android: com.DefaultCompany.Versia
   buildNumber:
     Standalone: 0
     iPhone: 0

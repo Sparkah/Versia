@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1813824181438747040
 Transform:
   m_ObjectHideFlags: 0
@@ -414,7 +414,7 @@ MonoBehaviour:
   m_HapticHoverCancelDuration: 0
   m_LineType: 0
   m_BlendVisualLinePoints: 1
-  m_MaxRaycastDistance: 30
+  m_MaxRaycastDistance: 18
   m_RayOriginTransform: {fileID: 0}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 16
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
   m_AllowAnchorControl: 0
-  m_UseForceGrab: 1
+  m_UseForceGrab: 0
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
   m_AnchorRotateReferenceFrame: {fileID: 0}
@@ -554,7 +554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.0247
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 30
+  m_LineLength: 18
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -686,7 +686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1813824181849864896
 Transform:
   m_ObjectHideFlags: 0
@@ -962,7 +962,7 @@ MonoBehaviour:
   m_HapticHoverCancelDuration: 0
   m_LineType: 0
   m_BlendVisualLinePoints: 1
-  m_MaxRaycastDistance: 30
+  m_MaxRaycastDistance: 18
   m_RayOriginTransform: {fileID: 0}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 16
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
   m_AllowAnchorControl: 0
-  m_UseForceGrab: 1
+  m_UseForceGrab: 0
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
   m_AnchorRotateReferenceFrame: {fileID: 0}
@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.02
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 30
+  m_LineLength: 18
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -1386,7 +1386,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300001, guid: 1dd706bb85d8aef4e83a6229dbd62c36, type: 2}
   m_audioClip: {fileID: 8300000, guid: 324df11690aced64cafc09ebdeeb1583, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.923
+  m_Volume: 0.98
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1569,6 +1569,8 @@ MonoBehaviour:
   _rayInteractorLeft: {fileID: 1813824181438747071}
   _lineRendererLeft: {fileID: 1813824181438747070}
   _xrInteractorLineVisualLeft: {fileID: 1813824181438747041}
+  _leftHand: {fileID: 1813824181438747043}
+  _rightHand: {fileID: 1813824181849864899}
   _vignette: {fileID: 0}
   _isFrightened: 0
 --- !u!54 &464927459

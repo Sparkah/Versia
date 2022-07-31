@@ -49,25 +49,7 @@ namespace Veterok.Controllers
         {
             _targetDevice.SendHapticImpulse(0, 0.5f, 1.5f);
         }
-
-        void Update()
-        {
-            _firstCast += Time.deltaTime;
-            _firstShoot += Time.deltaTime;
-            
-            // if (_firstCast >= _timeToNextCast)
-            // {
-            //     SendRayCast();
-            //     _firstCast = 0;
-            // }
-
-            if (_targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
-            {
-                var value = triggerValue;
-            }
-
-        }
-
+        
         // private void SendRayCast()
         // {
         //     var originPosition = _raycastOrigin.position;

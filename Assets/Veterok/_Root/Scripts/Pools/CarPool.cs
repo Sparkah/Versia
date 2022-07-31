@@ -34,7 +34,10 @@ namespace Veterok.Pools
 
         public override void ReturnToPool(T obj)
         {
-            throw new System.NotImplementedException();
+            obj.transform.SetParent(Root);
+            obj.transform.localPosition = Vector3.zero;
+            ObjectPool.Push(obj);
+            obj.gameObject.SetActive(false);
         }
     }
 }

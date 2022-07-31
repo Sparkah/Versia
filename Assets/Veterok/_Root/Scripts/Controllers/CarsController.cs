@@ -4,14 +4,23 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Veterok.Pools;
 using Veterok.Views;
+using Random = UnityEngine.Random;
+
 
 namespace Veterok.Controllers
 {
+    public enum CarType
+    {
+        None = 0,
+        LeftSide = 1,
+        RightSide = 2
+    }
+    
     public sealed class CarsController : MonoBehaviour
     {
         [Header("Settings")]
         [SerializeField] private float _timeToNextSpawn;
-        [SerializeField] private float _destinationReachedThreshold;
+        [SerializeField] private float _destinationReachedThreshold = 0.2f;
         [Space]
         [Header("Attachements")]
         [SerializeField] private List<CarView> _carPrefabs;
@@ -19,22 +28,23 @@ namespace Veterok.Controllers
         [SerializeField] private Transform _rightSpawnPoint;
         [SerializeField] private Transform _leftWayPoint;
         [SerializeField] private Transform _rightWayPoint;
+
+        
         
         private float _firstSpawn = 0;
-        private CarPool<CarView> _leftSideCarPool;
-        private CarPool<CarView> _rightSideCarPool;
-        
+        private CarPool<CarView> _carPool;
+
         private HashSet<CarView> _spawnedCars;
 
         private void Start()
         {
-            _leftSideCarPool = new CarPool<CarView>(10, this.transform, _carPrefabs);
-            _rightSideCarPool = new CarPool<CarView>(10, this.transform, _carPrefabs);
+            _firstSpawn = _timeToNextSpawn;
+            _spawnedCars = new HashSet<CarView>();
+            _carPool = new CarPool<CarView>(10, transform, _carPrefabs);
         }
 
         private void Update()
         {
-
             _firstSpawn += Time.deltaTime;
             if (_firstSpawn >= _timeToNextSpawn)
             {
@@ -45,14 +55,32 @@ namespace Veterok.Controllers
             {
                 if (CheckDestinationReached(car))
                 {
-                    
+                    ReturnToPool(car);
                 }
+                car.MoveToTargetPosition(Time.deltaTime);
             }
         }
 
         private void SpawnCar()
         {
-            
+            var rnd = Random.Range(0, 2);
+            var car = _carPool.GetObject();
+            var carTransform = car.transform;
+            switch (rnd)
+            {
+                case 0: 
+                    carTransform.position = _leftSpawnPoint.position;
+                    carTransform.rotation = _leftSpawnPoint.rotation;
+                    car.SetTarget(_rightWayPoint);
+                    break;
+                case 1:
+                    carTransform.position = _rightSpawnPoint.position;
+                    carTransform.rotation = _rightSpawnPoint.rotation;
+                    car.SetTarget(_leftWayPoint);
+                    break; 
+            }
+            _spawnedCars.Add(car);
+            _firstSpawn = 0;
         }
 
         private void OnDestroy()
@@ -68,7 +96,7 @@ namespace Veterok.Controllers
         
         private void ReturnToPool(CarView carView)
         {
-            throw new NotImplementedException();
+            _carPool.ReturnToPool(carView);
         }
     }
 }

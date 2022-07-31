@@ -1,44 +1,64 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.XR;
+using UnityEngine.InputSystem.XR;
 
 public class HandsAnimatorController : MonoBehaviour
 {
     [SerializeField] private Animator _rightHand;
     [SerializeField] private Animator _leftHand;
-    [SerializeField] private InputActionAsset _input;
-    private bool _isRGrab;
-    private bool _isLGrab;
+    [SerializeField] private InputActionReference _rightTriggerInput;
+    [SerializeField] private InputActionReference _leftTriggerInput;
+    private const string _isGrab = "Grap";
+    private const string _isFree = "Free";
+
 
     private void Start()
     {
+        _rightTriggerInput.action.started += SetRightGrab;
+        _leftTriggerInput.action.started += SetLeftGrab;
+        _rightTriggerInput.action.canceled += SetRightFree;
+        _leftTriggerInput.action.canceled += SetLeftFree;
+    }
+    
+    private void OnDestroy()
+    {
+        _rightTriggerInput.action.started -= SetRightGrab;
+        _leftTriggerInput.action.started -= SetLeftGrab;
+        _rightTriggerInput.action.canceled -= SetRightFree;
+        _leftTriggerInput.action.canceled -= SetLeftFree;
+    }
 
+    public void SetLeftGrab(InputAction.CallbackContext value)
+    {
+        if (_leftHand.GetCurrentAnimatorStateInfo(0).IsName(_isFree))
+        {
+         _leftHand.Play(_isGrab);
+        }
+    }
+    
+    public void SetLeftFree(InputAction.CallbackContext value)
+    {
+        if (_leftHand.GetCurrentAnimatorStateInfo(0).IsName(_isGrab))
+        {
+            _leftHand.Play(_isFree);
+        }
     }
 
-    private void SetLeftGrab()
+    public void SetRightGrab(InputAction.CallbackContext value)
     {
-        _leftHand.SetBool("Grab", true);
-        _leftHand.SetBool("Free", false);
+        if (_rightHand.GetCurrentAnimatorStateInfo(0).IsName(_isFree))
+        {
+            _rightHand.Play(_isGrab);
+        }
     }
     
-    private void SetLeftFree()
+    public void SetRightFree(InputAction.CallbackContext value)
     {
-        _leftHand.SetBool("Grab", false);
-        _leftHand.SetBool("Free", true);
-    }
-    
-    private void SetRightFree()
-    {
-        _rightHand.SetBool("Grab", false);
-        _rightHand.SetBool("Free", true);
-    }
-    
-    private void SetRightGrab()
-    {
-        _rightHand.SetBool("Grab", true);
-        _rightHand.SetBool("Free", false);
+        if (_rightHand.GetCurrentAnimatorStateInfo(0).IsName(_isGrab))
+        {
+            _rightHand.Play(_isFree);
+        }
     }
 }

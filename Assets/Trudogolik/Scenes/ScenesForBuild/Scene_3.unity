@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6554653560824706893, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
+      propertyPath: m_Color.a
+      value: 0.19607843
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43db6fb816cdfb14f92d65879abbde10, type: 3}
 --- !u!198 &35953809 stripped
@@ -5757,7 +5761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ea63c16df70e740a1b37e94749e08b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: -0.8
   delay: 0
 --- !u!1 &1772196144
 GameObject:
@@ -5827,12 +5831,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef65db1b41a5f8942b2d565e1d5e2c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeToNextScene: 60
+  TimeToNextScene: 45
   FadeInTime: 3
   FadeOutTime: 3
-  ScareFadeSpeed: 1
-  SceneCareFadeStartDelay: 1
-  SceneScareFadePercent: 100
+  ScareFadeSpeed: 1.3
+  SceneCareFadeStartDelay: 3
+  SceneScareFadePercent: 70
 --- !u!65 &2045944922
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6323,6 +6327,10 @@ PrefabInstance:
     - target: {fileID: 710744894430562648, guid: f02f4aa6d4d609a4fa93127a841610aa, type: 3}
       propertyPath: m_Name
       value: ScareFadeModifier
+      objectReference: {fileID: 0}
+    - target: {fileID: 710744894430562651, guid: f02f4aa6d4d609a4fa93127a841610aa, type: 3}
+      propertyPath: speed
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 710744894430562653, guid: f02f4aa6d4d609a4fa93127a841610aa, type: 3}
       propertyPath: m_Enabled

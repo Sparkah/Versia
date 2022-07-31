@@ -67,6 +67,7 @@ namespace Veterok.Controllers
             var human = _humanPool.GetHuman();
             human.transform.position = spawnPoints[rnd].position;
             human.HumanFadeOut += ReturnToPool;
+            
             var rnd2 = Random.Range(0, waypoints.Count);
             human.SetWayPoint(waypoints[rnd2].position);
             human.NavAgent.isStopped = false;

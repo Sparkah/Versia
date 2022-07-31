@@ -75,10 +75,10 @@ namespace Trudogolik
         {
             //¬ Ћё„»“№ 
             distanceGrabbable.enabled = true;
-            /*GameObject outlineView = GetComponentInChildren<SkinnedMeshRenderer>().gameObject;
+            GameObject outlineView = GetComponentInChildren<SkinnedMeshRenderer>().gameObject;
             outlineView.AddComponent<Outline>();
             outlineView.GetComponent<Outline>().OutlineColor = new Color(185,255,255);
-            outlineView.GetComponent<Outline>().OutlineWidth = 10;*/
+            outlineView.GetComponent<Outline>().OutlineWidth = 10;
         }
         public void SetPaperSpawner(PaperSpawner spawner)
         {
@@ -96,8 +96,8 @@ namespace Trudogolik
                 audioSource.PlayOneShot(crumbleSound);
             }
 
-            //rb.isKinematic = false;
-            //rb.useGravity = true;
+            rb.isKinematic = false;
+            rb.useGravity = true;
 
             if (paperSpawner != null)
             {
@@ -110,13 +110,12 @@ namespace Trudogolik
         }
         private void AfterCrumple() //запускаетс€ в конце твина
         {
-            //paperCollider.enabled = true;
-            //paperCollide2.enabled = true;
-            //newCollider.SetActive(false);
-            //distanceGrabbable.enabled = true;
+            paperCollider.enabled = true;
+            paperCollide2.enabled = true;
+            newCollider.SetActive(false);
+            distanceGrabbable.enabled = true;
             Instantiate(crumpledPaper, gameObject.transform.position, Quaternion.identity);
-            //gameObject.SetActive(false);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
 
 

@@ -6,23 +6,25 @@ namespace Veterok.Views
 {
     public class PlayerView : MonoBehaviour
     {
-        [Header("Right Hand interactables")]
+        [Header("Right Hand interactors")]
         [SerializeField] private XRRayInteractor _rayInteractorRight;
         [SerializeField] private LineRenderer _lineRendererRight;
         [SerializeField] private XRInteractorLineVisual _xrInteractorLineVisualRight;
         
-        [Header("Left Hand interactables")]        
+        [Header("Left Hand interactors")]        
         [SerializeField] private XRRayInteractor _rayInteractorLeft;
         [SerializeField] private LineRenderer _lineRendererLeft;
         [SerializeField] private XRInteractorLineVisual _xrInteractorLineVisualLeft;
 
+        [Header("Hand GameObjects")] 
+        [SerializeField] private GameObject _leftHand;
+        [SerializeField] private GameObject _rightHand;
+        
         [Header("Vignette")] 
         [SerializeField] private Q_Vignette_Single _vignette;
 
         [SerializeField] private bool _isFrightened;
 
-      
-        
         private void OnTriggerExit(Collider other)
         {
             if (!other.gameObject.CompareTag("Human")) return;
@@ -30,6 +32,12 @@ namespace Veterok.Views
 
         }
 
+        public void ToggleHands(bool value)
+        {
+            _leftHand.SetActive(value);
+            _rightHand.SetActive(value);
+        }
+        
         private void Update()
         {
             if (_isFrightened)

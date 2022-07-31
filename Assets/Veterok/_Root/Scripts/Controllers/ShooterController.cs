@@ -7,7 +7,7 @@ using CommonUsages = UnityEngine.XR.CommonUsages;
 using InputDevice = UnityEngine.XR.InputDevice;
 
 
-namespace _Root.Controllers
+namespace Veterok.Controllers
 {
     public class ShooterController : MonoBehaviour
     {

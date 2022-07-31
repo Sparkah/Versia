@@ -41,7 +41,7 @@ public class Q_Vignette_Single : Q_Vignette_Base
     public bool IsStopped { get; set; }
 
                 
-    void Start()
+    protected virtual void Start()
     {
         CheckReferences();
 
@@ -96,14 +96,11 @@ public class Q_Vignette_Single : Q_Vignette_Base
         IsPulsating = false;
         StopCoroutine(ChangeAlpha());
     }
-       
-
 
     public void StartPulsation() =>
         StartCoroutine(ChangeAlpha());
     
 
-    
     private void OnDisable()
     {
         StopAllCoroutines();
@@ -129,9 +126,6 @@ public class Q_Vignette_Single : Q_Vignette_Base
             o_mainCornerType = mainCornerType;
             SetVignetteMainSprite( mainCornerType );
             SetVignetteSkySprite( mainCornerType );
-
-
-
         }
     }
 

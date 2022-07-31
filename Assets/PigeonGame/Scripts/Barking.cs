@@ -15,15 +15,15 @@ namespace Pigeon
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.TryGetComponent(out CharacterController character))
+            if (other.CompareTag("Player"))
             {
                 _barking.loop = true;
                 _barking.Play();
-                StartCoroutine(FollowPlayer(character));
+                StartCoroutine(FollowPlayer(other.transform));
             }
         }
 
-        private IEnumerator FollowPlayer(CharacterController character)
+        private IEnumerator FollowPlayer(Transform character)
         {
             while (_barking.loop == true)
             {
@@ -38,7 +38,7 @@ namespace Pigeon
 
         private void OnTriggerExit(Collider other)
         {
-            if (other.TryGetComponent(out CharacterController character))
+            if (other.CompareTag("Player"))
             {
                 _barking.loop = false;
             }

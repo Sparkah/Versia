@@ -7,7 +7,7 @@ using CommonUsages = UnityEngine.XR.CommonUsages;
 using InputDevice = UnityEngine.XR.InputDevice;
 
 
-namespace _Root.Controllers
+namespace Veterok.Controllers
 {
     public class ShooterController : MonoBehaviour
     {
@@ -49,25 +49,7 @@ namespace _Root.Controllers
         {
             _targetDevice.SendHapticImpulse(0, 0.5f, 1.5f);
         }
-
-        void Update()
-        {
-            _firstCast += Time.deltaTime;
-            _firstShoot += Time.deltaTime;
-            
-            // if (_firstCast >= _timeToNextCast)
-            // {
-            //     SendRayCast();
-            //     _firstCast = 0;
-            // }
-
-            if (_targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
-            {
-                var value = triggerValue;
-            }
-
-        }
-
+        
         // private void SendRayCast()
         // {
         //     var originPosition = _raycastOrigin.position;

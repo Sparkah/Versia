@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Hub/HubCanvas.prefab.meta
+guid: a96dbbfec38a56f469b3e36d1816a9ba
+========
 guid: 1b2889d98afba714084ed6a9dfcd6693
+>>>>>>>> FinalBuild:Assets/Trudogolik/Prefabs/Scanners 1.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

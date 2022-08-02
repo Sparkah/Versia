@@ -9,7 +9,7 @@ namespace Pigeon
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.TryGetComponent(out CharacterController controller))
+            if (other.CompareTag("Player"))
             {
                 IsInZone = true;
             }
@@ -17,7 +17,7 @@ namespace Pigeon
 
         private void OnTriggerExit(Collider other)
         {
-            if (other.TryGetComponent(out CharacterController controller))
+            if (other.CompareTag("Player"))
             {
                 IsInZone = false;
             }

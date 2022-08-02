@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/HubScene.unity
+    path: Assets/Hub/HubScene.unity
     guid: ab63ad000f89e5049adf30054157ae78
   - enabled: 0
-    path: Assets/Trudogolik/Scenes/VeterokMainScene.unity
+    path: Assets/Veterok/_Root/VeterokScenes/VeterokMainScene.unity
     guid: 5a2cc15e807a79146bc3675ba66e2d21
   - enabled: 0
     path: Assets/Trudogolik/Scenes/ScenesForBuild/Scene_1.unity

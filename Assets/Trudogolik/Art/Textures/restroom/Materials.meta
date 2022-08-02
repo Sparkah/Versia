@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Hub.meta
+guid: 00ed85af908bb6646810a66fc0af40af
+========
 guid: 79e4473231d8eb344a353a81aa734912
+>>>>>>>> FinalBuild:Assets/Trudogolik/Art/Textures/restroom/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

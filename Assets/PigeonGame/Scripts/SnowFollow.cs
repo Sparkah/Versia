@@ -6,7 +6,7 @@ namespace Pigeon
 {
     public class SnowFollow : MonoBehaviour
     {
-        [SerializeField] private CharacterController _character;
+        [SerializeField] private Transform _character;
 
         private const float k_delay = 1f;
 

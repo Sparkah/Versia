@@ -1,0 +1,29 @@
+using UnityEngine.SceneManagement;
+
+public static class SceneLoaderHubMain 
+{
+    public static void LoadPigeonGame()
+    {
+        SceneManager.LoadScene("GolubNaUgin");
+    }
+
+    public static void LoadTrudogolikGame()
+    {
+        SceneManager.LoadScene("Scene_1");
+    }
+
+    public static void LoadVeterokGame()
+    {
+        SceneManager.LoadScene("VeterokMainScene");
+    }
+
+    public static void LoadHubMenu()
+    {
+        SceneManager.LoadScene("HubScene");
+    }
+
+    public static void RestartCurrentScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+}
